@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{79269E1A-E590-5291-2ECF-03379A7830E6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Effects">
+      <UniqueIdentifier>{10C1D5F2-FC78-1740-6580-F09B5157B230}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Effects\Common">
+      <UniqueIdentifier>{48FC20FD-B412-1F93-FD89-AAB469DFEF1A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Common\AkColoredNoise.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Common\AkWhiteNoise.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Effects\Common\OnePoleZeroHPFilter.h">
+      <Filter>Effects\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AkSynthOne.h" />
+    <ClInclude Include="..\AkSynthOneDsp.h" />
+    <ClInclude Include="..\AkSynthOneParams.h" />
+    <ClInclude Include="..\AkWaveTables.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Common\AkColoredNoise.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Common\AkWhiteNoise.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Effects\Common\OnePoleZeroHPFilter.cpp">
+      <Filter>Effects\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AkSynthOne.cpp" />
+    <ClCompile Include="..\AkSynthOneDsp.cpp" />
+    <ClCompile Include="..\AkSynthOneParams.cpp" />
+    <ClCompile Include="..\InitAkSynthOne.cpp" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|GGP">
+      <Configuration>Debug</Configuration>
+      <Platform>GGP</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|GGP">
+      <Configuration>Profile</Configuration>
+      <Platform>GGP</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile_EnableAsserts|GGP">
+      <Configuration>Profile_EnableAsserts</Configuration>
+      <Platform>GGP</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|GGP">
+      <Configuration>Release</Configuration>
+      <Platform>GGP</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{084F9999-A23F-5A75-223A-2A5E90FD27D1}</ProjectGuid>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <ProjectName>AkHarmonizerFX</ProjectName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <VcpkgEnabled Condition="'$(Configuration)|$(Platform)'=='Debug|GGP'">false</VcpkgEnabled>
+    <VcpkgEnabled Condition="'$(Configuration)|$(Platform)'=='Profile|GGP'">false</VcpkgEnabled>
+    <VcpkgEnabled Condition="'$(Configuration)|$(Platform)'=='Profile_EnableAsserts|GGP'">false</VcpkgEnabled>
+    <VcpkgEnabled Condition="'$(Configuration)|$(Platform)'=='Release|GGP'">false</VcpkgEnabled>
+    <GgpToolchainPath>$(GGP_SDK_PATH)\BaseSDK\LLVM\7.0.1</GgpToolchainPath>
+    <GgpHeaderPath>$(GGP_SDK_PATH)\BaseSDK\ggp\include\ggp_latest</GgpHeaderPath>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|GGP'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|GGP'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile_EnableAsserts|GGP'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|GGP'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|GGP'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Profile|GGP'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Profile_EnableAsserts|GGP'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|GGP'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|GGP'">
+    <OutDir>..\..\..\..\..\..\$(Platform)\$(Configuration)\lib\</OutDir>
+    <IntDir>..\..\..\..\..\..\$(Platform)\$(Configuration)\obj\$(ProjectName)\</IntDir>
+    <TargetName>libAkHarmonizerFX</TargetName>
+    <TargetExt>.a</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|GGP'">
+    <OutDir>..\..\..\..\..\..\$(Platform)\$(Configuration)\lib\</OutDir>
+    <IntDir>..\..\..\..\..\..\$(Platform)\$(Configuration)\obj\$(ProjectName)\</IntDir>
+    <TargetName>libAkHarmonizerFX</TargetName>
+    <TargetExt>.a</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile_EnableAsserts|GGP'">
+    <OutDir>..\..\..\..\..\..\$(Platform)\$(Configuration)\lib\</OutDir>
+    <IntDir>..\..\..\..\..\..\$(Platform)\$(Configuration)\obj\$(ProjectName)\</IntDir>
+    <TargetName>libAkHarmonizerFX</TargetName>
+    <TargetExt>.a</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|GGP'">
+    <OutDir>..\..\..\..\..\..\$(Platform)\$(Configuration)\lib\</OutDir>
+    <IntDir>..\..\..\..\..\..\$(Platform)\$(Configuration)\obj\$(ProjectName)\</IntDir>
+    <TargetName>libAkHarmonizerFX</TargetName>
+    <TargetExt>.a</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|GGP'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <PreprocessorDefinitions>AKSOUNDENGINE_EXPORTS;_DEBUG;USEALLBUTTERFLIES;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..;.;..\..\..\..\..\..\include;..\..\Common\GGP;..\..\Common;..\..\..\Common;..\..\..\..\AkAudiolib\Common;..\..\..\..\AkAudiolib\Common\ak_fft;..\..\..\..\AkAudiolib\Common\ak_fft\tools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ExceptionHandling>false</ExceptionHandling>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>-fPIC -fvisibility=hidden -Wno-invalid-offsetof %(AdditionalOptions)</AdditionalOptions>
+      <UseMultiToolTask>true</UseMultiToolTask>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>AKSOUNDENGINE_EXPORTS;_DEBUG;USEALLBUTTERFLIES;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..;.;..\..\..\..\..\..\include;..\..\Common\GGP;..\..\Common;..\..\..\Common;..\..\..\..\AkAudiolib\Common;..\..\..\..\AkAudiolib\Common\ak_fft;..\..\..\..\AkAudiolib\Common\ak_fft\tools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)libAkHarmonizerFX.a</OutputFile>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|GGP'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>AKSOUNDENGINE_EXPORTS;NDEBUG;USEALLBUTTERFLIES;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..;.;..\..\..\..\..\..\include;..\..\Common\GGP;..\..\Common;..\..\..\Common;..\..\..\..\AkAudiolib\Common;..\..\..\..\AkAudiolib\Common\ak_fft;..\..\..\..\AkAudiolib\Common\ak_fft\tools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <ExceptionHandling>false</ExceptionHandling>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>-fPIC -fvisibility=hidden -Wno-invalid-offsetof %(AdditionalOptions)</AdditionalOptions>
+      <UseMultiToolTask>true</UseMultiToolTask>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>AKSOUNDENGINE_EXPORTS;NDEBUG;USEALLBUTTERFLIES;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..;.;..\..\..\..\..\..\include;..\..\Common\GGP;..\..\Common;..\..\..\Common;..\..\..\..\AkAudiolib\Common;..\..\..\..\AkAudiolib\Common\ak_fft;..\..\..\..\AkAudiolib\Common\ak_fft\tools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)libAkHarmonizerFX.a</OutputFile>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile_EnableAsserts|GGP'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>AKSOUNDENGINE_EXPORTS;NDEBUG;AK_ENABLE_ASSERTS;USEALLBUTTERFLIES;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..;.;..\..\..\..\..\..\include;..\..\Common\GGP;..\..\Common;..\..\..\Common;..\..\..\..\AkAudiolib\Common;..\..\..\..\AkAudiolib\Common\ak_fft;..\..\..\..\AkAudiolib\Common\ak_fft\tools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <ExceptionHandling>false</ExceptionHandling>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>-fPIC -fvisibility=hidden -Wno-invalid-offsetof %(AdditionalOptions)</AdditionalOptions>
+      <UseMultiToolTask>true</UseMultiToolTask>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>AKSOUNDENGINE_EXPORTS;NDEBUG;AK_ENABLE_ASSERTS;USEALLBUTTERFLIES;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..;.;..\..\..\..\..\..\include;..\..\Common\GGP;..\..\Common;..\..\..\Common;..\..\..\..\AkAudiolib\Common;..\..\..\..\AkAudiolib\Common\ak_fft;..\..\..\..\AkAudiolib\Common\ak_fft\tools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)libAkHarmonizerFX.a</OutputFile>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|GGP'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>AKSOUNDENGINE_EXPORTS;NDEBUG;AK_OPTIMIZED;USEALLBUTTERFLIES;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..;.;..\..\..\..\..\..\include;..\..\Common\GGP;..\..\Common;..\..\..\Common;..\..\..\..\AkAudiolib\Common;..\..\..\..\AkAudiolib\Common\ak_fft;..\..\..\..\AkAudiolib\Common\ak_fft\tools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <ExceptionHandling>false</ExceptionHandling>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>-fPIC -fvisibility=hidden -Wno-invalid-offsetof %(AdditionalOptions)</AdditionalOptions>
+      <UseMultiToolTask>true</UseMultiToolTask>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>AKSOUNDENGINE_EXPORTS;NDEBUG;AK_OPTIMIZED;USEALLBUTTERFLIES;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..;.;..\..\..\..\..\..\include;..\..\Common\GGP;..\..\Common;..\..\..\Common;..\..\..\..\AkAudiolib\Common;..\..\..\..\AkAudiolib\Common\ak_fft;..\..\..\..\AkAudiolib\Common\ak_fft\tools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)libAkHarmonizerFX.a</OutputFile>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\AkAudiolib\Common\ak_fft\_ak_fft_guts.h" />
+    <ClInclude Include="..\..\..\..\AkAudiolib\Common\ak_fft\ak_fft.h" />
+    <ClInclude Include="..\..\..\..\AkAudiolib\Common\ak_fft\tools\ak_fftr.h" />
+    <ClInclude Include="..\..\..\Common\AkPhaseVocoder.h" />
+    <ClInclude Include="..\..\..\Common\AkResamplingPhaseVocoder.h" />
+    <ClInclude Include="..\..\..\Common\AkSIMDMath.h" />
+    <ClInclude Include="..\..\..\Common\CircularBuffer.h" />
+    <ClInclude Include="..\..\..\Common\FreqWindow.h" />
+    <ClInclude Include="..\..\..\Common\OLACircularBuffer.h" />
+    <ClInclude Include="..\..\..\Common\ResamplingCircularBuffer.h" />
+    <ClInclude Include="..\..\..\Common\TimeWindow.h" />
+    <ClInclude Include="..\..\Common\DelayLineLight.h" />
+    <ClInclude Include="..\..\Common\Mix2Interp.h" />
+    <ClInclude Include="..\AkHarmonizerDSPProcess.h" />
+    <ClInclude Include="..\AkHarmonizerFX.h" />
+    <ClInclude Include="..\AkHarmonizerFXInfo.h" />
+    <ClInclude Include="..\AkHarmonizerFXParams.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\AkAudiolib\Common\ak_fft\ak_fft.cpp" />
+    <ClCompile Include="..\..\..\..\AkAudiolib\Common\ak_fft\tools\ak_fftr.cpp" />
+    <ClCompile Include="..\..\..\Common\AkPhaseVocoder.cpp" />
+    <ClCompile Include="..\..\..\Common\AkResamplingPhaseVocoder.cpp" />
+    <ClCompile Include="..\..\..\Common\CircularBuffer.cpp" />
+    <ClCompile Include="..\..\..\Common\FreqWindow.cpp" />
+    <ClCompile Include="..\..\..\Common\OLACircularBuffer.cpp" />
+    <ClCompile Include="..\..\..\Common\ResamplingCircularBuffer.cpp" />
+    <ClCompile Include="..\..\..\Common\TimeWindow.cpp" />
+    <ClCompile Include="..\..\Common\DelayLineLight.cpp" />
+    <ClCompile Include="..\..\Common\Mix2Interp.cpp" />
+    <ClCompile Include="..\AkHarmonizerDSPProcess.cpp" />
+    <ClCompile Include="..\AkHarmonizerFX.cpp" />
+    <ClCompile Include="..\AkHarmonizerFXParams.cpp" />
+    <ClCompile Include="..\InitAkHarmonizerFX.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

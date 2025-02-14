@@ -1,0 +1,1195 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0226D5CC286279AD57CE843B /* TimeWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 799AD7A128EEE7338ED3AD93 /* TimeWindow.cpp */; };
+		0BB51B821B3364671460D0E6 /* AkHarmonizerFX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 233B299B214A6A42CD824D6F /* AkHarmonizerFX.cpp */; };
+		2515C1E1C54570BD3F924BF4 /* ak_fftr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3DC71A704F2D0DC7BBD134FA /* ak_fftr.cpp */; };
+		292A0B129D2A23597F5E5DE5 /* InitAkHarmonizerFX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F3B0A675584A7002113DEA5 /* InitAkHarmonizerFX.cpp */; };
+		2F41BE2390682114F0CA42BE /* FreqWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DBF6E2F1F6C433CEE16874B /* FreqWindow.cpp */; };
+		6F40B13B14B5464B873F5E68 /* ak_fft.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66C1BD367970064EEF164BF8 /* ak_fft.cpp */; };
+		7700CC34FADE474E877F5B00 /* AkHarmonizerFXParams.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 021D1B264B0B26D82607219F /* AkHarmonizerFXParams.cpp */; };
+		838C420C0212607D9FCE8EFF /* CircularBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 823B2C20AE9B73338F908F3A /* CircularBuffer.cpp */; };
+		92E4D4A6A9D6AE605DC05280 /* DelayLineLight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F3EB6A9418A4479F3EDD0 /* DelayLineLight.cpp */; };
+		95EF1A74966BAA43691DCFE6 /* ResamplingCircularBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39B21196DF3A755247A4F643 /* ResamplingCircularBuffer.cpp */; };
+		A2F209E53FB0BC078510F195 /* AkPhaseVocoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7B47517DF33004358611A55 /* AkPhaseVocoder.cpp */; };
+		A6EFBA63BF14D26245047A21 /* OLACircularBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3886E7DB9C8A27718746D4C8 /* OLACircularBuffer.cpp */; };
+		B82E3F31885DBF91C1029CAB /* AkHarmonizerDSPProcess.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8724A22EA584114B6CCE8A08 /* AkHarmonizerDSPProcess.cpp */; };
+		D5E18660FF10B69769BBA833 /* Mix2Interp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2E6D7134941149E776567793 /* Mix2Interp.cpp */; };
+		E22426EDB88CF0E78992A59D /* AkResamplingPhaseVocoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 633EE331D3D5B6586C33725C /* AkResamplingPhaseVocoder.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		021D1B264B0B26D82607219F /* AkHarmonizerFXParams.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AkHarmonizerFXParams.cpp; path = ../AkHarmonizerFXParams.cpp; sourceTree = "<group>"; };
+		08BF86C53DC159B4909884A8 /* AkHarmonizerFXInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AkHarmonizerFXInfo.h; path = ../AkHarmonizerFXInfo.h; sourceTree = "<group>"; };
+		12D6F60D61BBC7F0F4E4F8A6 /* AkHarmonizerDSPProcess.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AkHarmonizerDSPProcess.h; path = ../AkHarmonizerDSPProcess.h; sourceTree = "<group>"; };
+		1E7AEFD896E4BCD9E1AC9CD4 /* ak_fftr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ak_fftr.h; path = ../../../../AkAudiolib/Common/ak_fft/tools/ak_fftr.h; sourceTree = "<group>"; };
+		233B299B214A6A42CD824D6F /* AkHarmonizerFX.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AkHarmonizerFX.cpp; path = ../AkHarmonizerFX.cpp; sourceTree = "<group>"; };
+		2B37CBC92000FBBC06CA17D5 /* ak_fft.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ak_fft.h; path = ../../../../AkAudiolib/Common/ak_fft/ak_fft.h; sourceTree = "<group>"; };
+		2E6D7134941149E776567793 /* Mix2Interp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Mix2Interp.cpp; path = ../../Common/Mix2Interp.cpp; sourceTree = "<group>"; };
+		2F61200FEED7E6A92D9AFB7C /* AkResamplingPhaseVocoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AkResamplingPhaseVocoder.h; path = ../../../Common/AkResamplingPhaseVocoder.h; sourceTree = "<group>"; };
+		3886E7DB9C8A27718746D4C8 /* OLACircularBuffer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = OLACircularBuffer.cpp; path = ../../../Common/OLACircularBuffer.cpp; sourceTree = "<group>"; };
+		39B21196DF3A755247A4F643 /* ResamplingCircularBuffer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ResamplingCircularBuffer.cpp; path = ../../../Common/ResamplingCircularBuffer.cpp; sourceTree = "<group>"; };
+		3ADE30B4A64B220C5F9B721E /* ResamplingCircularBuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ResamplingCircularBuffer.h; path = ../../../Common/ResamplingCircularBuffer.h; sourceTree = "<group>"; };
+		3DC71A704F2D0DC7BBD134FA /* ak_fftr.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ak_fftr.cpp; path = ../../../../AkAudiolib/Common/ak_fft/tools/ak_fftr.cpp; sourceTree = "<group>"; };
+		43DF934CAE6DC9F5796C0D0D /* OLACircularBuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OLACircularBuffer.h; path = ../../../Common/OLACircularBuffer.h; sourceTree = "<group>"; };
+		4A0F3EB6A9418A4479F3EDD0 /* DelayLineLight.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = DelayLineLight.cpp; path = ../../Common/DelayLineLight.cpp; sourceTree = "<group>"; };
+		4DBF6E2F1F6C433CEE16874B /* FreqWindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = FreqWindow.cpp; path = ../../../Common/FreqWindow.cpp; sourceTree = "<group>"; };
+		50A33702A3802919172FCA80 /* AkSIMDMath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AkSIMDMath.h; path = ../../../Common/AkSIMDMath.h; sourceTree = "<group>"; };
+		5638337434A09A2D2B88CEDF /* CircularBuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CircularBuffer.h; path = ../../../Common/CircularBuffer.h; sourceTree = "<group>"; };
+		633EE331D3D5B6586C33725C /* AkResamplingPhaseVocoder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AkResamplingPhaseVocoder.cpp; path = ../../../Common/AkResamplingPhaseVocoder.cpp; sourceTree = "<group>"; };
+		66C1BD367970064EEF164BF8 /* ak_fft.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ak_fft.cpp; path = ../../../../AkAudiolib/Common/ak_fft/ak_fft.cpp; sourceTree = "<group>"; };
+		7799E6037F32FFFADA19EEB4 /* FreqWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FreqWindow.h; path = ../../../Common/FreqWindow.h; sourceTree = "<group>"; };
+		799AD7A128EEE7338ED3AD93 /* TimeWindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = TimeWindow.cpp; path = ../../../Common/TimeWindow.cpp; sourceTree = "<group>"; };
+		80EFF55A49F5865200A72464 /* AkPhaseVocoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AkPhaseVocoder.h; path = ../../../Common/AkPhaseVocoder.h; sourceTree = "<group>"; };
+		823B2C20AE9B73338F908F3A /* CircularBuffer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = CircularBuffer.cpp; path = ../../../Common/CircularBuffer.cpp; sourceTree = "<group>"; };
+		8724A22EA584114B6CCE8A08 /* AkHarmonizerDSPProcess.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AkHarmonizerDSPProcess.cpp; path = ../AkHarmonizerDSPProcess.cpp; sourceTree = "<group>"; };
+		8F3B0A675584A7002113DEA5 /* InitAkHarmonizerFX.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = InitAkHarmonizerFX.cpp; path = ../InitAkHarmonizerFX.cpp; sourceTree = "<group>"; };
+		90EE832BDB4D9D807B277591 /* AkHarmonizerFX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AkHarmonizerFX.h; path = ../AkHarmonizerFX.h; sourceTree = "<group>"; };
+		96E20B3C6A1DC8FC0B8E1D79 /* Mix2Interp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Mix2Interp.h; path = ../../Common/Mix2Interp.h; sourceTree = "<group>"; };
+		98A4B82B257804612EDF067C /* DelayLineLight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DelayLineLight.h; path = ../../Common/DelayLineLight.h; sourceTree = "<group>"; };
+		B820AFC1692241CFA485005B /* TimeWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TimeWindow.h; path = ../../../Common/TimeWindow.h; sourceTree = "<group>"; };
+		BD16B029074F7776538A48A0 /* AkHarmonizerFXParams.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AkHarmonizerFXParams.h; path = ../AkHarmonizerFXParams.h; sourceTree = "<group>"; };
+		C7B47517DF33004358611A55 /* AkPhaseVocoder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AkPhaseVocoder.cpp; path = ../../../Common/AkPhaseVocoder.cpp; sourceTree = "<group>"; };
+		DE5592E33A9A94F706D39FDA /* libAkHarmonizerFX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAkHarmonizerFX.a; path = libAkHarmonizerFX.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5A96EBA49A2B982CB8E8222 /* _ak_fft_guts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = _ak_fft_guts.h; path = ../../../../AkAudiolib/Common/ak_fft/_ak_fft_guts.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0293AE8C402FE804FB4F4731 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C9FFA62804A8D7D4F18C366 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1FF0A082AEEF6FF5A27CDDC0 /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				322A895A3FD6E23A1FE6A8A2 /* .. */,
+				284CF1922248B5464C817346 /* Common */,
+			);
+			name = ..;
+			sourceTree = "<group>";
+		};
+		284CF1922248B5464C817346 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4A0F3EB6A9418A4479F3EDD0 /* DelayLineLight.cpp */,
+				98A4B82B257804612EDF067C /* DelayLineLight.h */,
+				2E6D7134941149E776567793 /* Mix2Interp.cpp */,
+				96E20B3C6A1DC8FC0B8E1D79 /* Mix2Interp.h */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		322A895A3FD6E23A1FE6A8A2 /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				CEF144EDE01B6F9915E38099 /* .. */,
+				DA45AF897B1873FD610851AE /* Common */,
+			);
+			name = ..;
+			sourceTree = "<group>";
+		};
+		513A816680F80250E4127D77 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				3DC71A704F2D0DC7BBD134FA /* ak_fftr.cpp */,
+				1E7AEFD896E4BCD9E1AC9CD4 /* ak_fftr.h */,
+			);
+			name = tools;
+			sourceTree = "<group>";
+		};
+		990A9E97AA7ABFD9D0C572FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE5592E33A9A94F706D39FDA /* libAkHarmonizerFX.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ABA1556D95128686394072A1 /* ak_fft */ = {
+			isa = PBXGroup;
+			children = (
+				E5A96EBA49A2B982CB8E8222 /* _ak_fft_guts.h */,
+				66C1BD367970064EEF164BF8 /* ak_fft.cpp */,
+				2B37CBC92000FBBC06CA17D5 /* ak_fft.h */,
+				513A816680F80250E4127D77 /* tools */,
+			);
+			name = ak_fft;
+			sourceTree = "<group>";
+		};
+		CEF144EDE01B6F9915E38099 /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				D70CD5B90EDEED6B14FA07B5 /* AkAudiolib */,
+			);
+			name = ..;
+			sourceTree = "<group>";
+		};
+		D65C7300032CE4B3731EA343 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				ABA1556D95128686394072A1 /* ak_fft */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		D70CD5B90EDEED6B14FA07B5 /* AkAudiolib */ = {
+			isa = PBXGroup;
+			children = (
+				D65C7300032CE4B3731EA343 /* Common */,
+			);
+			name = AkAudiolib;
+			sourceTree = "<group>";
+		};
+		DA45AF897B1873FD610851AE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C7B47517DF33004358611A55 /* AkPhaseVocoder.cpp */,
+				80EFF55A49F5865200A72464 /* AkPhaseVocoder.h */,
+				633EE331D3D5B6586C33725C /* AkResamplingPhaseVocoder.cpp */,
+				2F61200FEED7E6A92D9AFB7C /* AkResamplingPhaseVocoder.h */,
+				50A33702A3802919172FCA80 /* AkSIMDMath.h */,
+				823B2C20AE9B73338F908F3A /* CircularBuffer.cpp */,
+				5638337434A09A2D2B88CEDF /* CircularBuffer.h */,
+				4DBF6E2F1F6C433CEE16874B /* FreqWindow.cpp */,
+				7799E6037F32FFFADA19EEB4 /* FreqWindow.h */,
+				3886E7DB9C8A27718746D4C8 /* OLACircularBuffer.cpp */,
+				43DF934CAE6DC9F5796C0D0D /* OLACircularBuffer.h */,
+				39B21196DF3A755247A4F643 /* ResamplingCircularBuffer.cpp */,
+				3ADE30B4A64B220C5F9B721E /* ResamplingCircularBuffer.h */,
+				799AD7A128EEE7338ED3AD93 /* TimeWindow.cpp */,
+				B820AFC1692241CFA485005B /* TimeWindow.h */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		F493C9A14C234BC0D451457E /* AkHarmonizerFX */ = {
+			isa = PBXGroup;
+			children = (
+				1FF0A082AEEF6FF5A27CDDC0 /* .. */,
+				8724A22EA584114B6CCE8A08 /* AkHarmonizerDSPProcess.cpp */,
+				12D6F60D61BBC7F0F4E4F8A6 /* AkHarmonizerDSPProcess.h */,
+				233B299B214A6A42CD824D6F /* AkHarmonizerFX.cpp */,
+				90EE832BDB4D9D807B277591 /* AkHarmonizerFX.h */,
+				08BF86C53DC159B4909884A8 /* AkHarmonizerFXInfo.h */,
+				021D1B264B0B26D82607219F /* AkHarmonizerFXParams.cpp */,
+				BD16B029074F7776538A48A0 /* AkHarmonizerFXParams.h */,
+				8F3B0A675584A7002113DEA5 /* InitAkHarmonizerFX.cpp */,
+				1C9FFA62804A8D7D4F18C366 /* Resources */,
+				990A9E97AA7ABFD9D0C572FA /* Products */,
+			);
+			name = AkHarmonizerFX;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		068E92ED724714DB126753FD /* AkHarmonizerFX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5387156D7FD5BB8424E850D /* Build configuration list for PBXNativeTarget "AkHarmonizerFX" */;
+			buildPhases = (
+				B1F060FF00867BBDEA70E6ED /* Resources */,
+				DC476F4F2FF40E42740DCA78 /* Sources */,
+				0293AE8C402FE804FB4F4731 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AkHarmonizerFX;
+			productName = AkHarmonizerFX;
+			productReference = DE5592E33A9A94F706D39FDA /* libAkHarmonizerFX.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "AkHarmonizerFX" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 1;
+			mainGroup = F493C9A14C234BC0D451457E /* AkHarmonizerFX */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				068E92ED724714DB126753FD /* libAkHarmonizerFX.a */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B1F060FF00867BBDEA70E6ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC476F4F2FF40E42740DCA78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F40B13B14B5464B873F5E68 /* ak_fft.cpp in Sources */,
+				2515C1E1C54570BD3F924BF4 /* ak_fftr.cpp in Sources */,
+				A2F209E53FB0BC078510F195 /* AkPhaseVocoder.cpp in Sources */,
+				E22426EDB88CF0E78992A59D /* AkResamplingPhaseVocoder.cpp in Sources */,
+				838C420C0212607D9FCE8EFF /* CircularBuffer.cpp in Sources */,
+				2F41BE2390682114F0CA42BE /* FreqWindow.cpp in Sources */,
+				A6EFBA63BF14D26245047A21 /* OLACircularBuffer.cpp in Sources */,
+				95EF1A74966BAA43691DCFE6 /* ResamplingCircularBuffer.cpp in Sources */,
+				0226D5CC286279AD57CE843B /* TimeWindow.cpp in Sources */,
+				92E4D4A6A9D6AE605DC05280 /* DelayLineLight.cpp in Sources */,
+				D5E18660FF10B69769BBA833 /* Mix2Interp.cpp in Sources */,
+				B82E3F31885DBF91C1029CAB /* AkHarmonizerDSPProcess.cpp in Sources */,
+				0BB51B821B3364671460D0E6 /* AkHarmonizerFX.cpp in Sources */,
+				7700CC34FADE474E877F5B00 /* AkHarmonizerFXParams.cpp in Sources */,
+				292A0B129D2A23597F5E5DE5 /* InitAkHarmonizerFX.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		11C3033C21FEF00F08C620F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COMPRESS_PNG_FILES = NO;
+				CONFIGURATION_BUILD_DIR = "../../../../../../iOS/Debug$(EFFECTIVE_PLATFORM_NAME)/lib";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = BCB4VLKTK5;
+				ENABLE_BITCODE = NO;
+				ENABLE_OPENMP_SUPPORT = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_ALTIVEC_EXTENSIONS = NO;
+				GCC_AUTO_VECTORIZATION = NO;
+				GCC_CHAR_IS_UNSIGNED_CHAR = NO;
+				GCC_CHECK_RETURN_VALUE_OF_OPERATOR_NEW = NO;
+				GCC_CW_ASM_SYNTAX = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DEBUGGING_SYMBOLS = default;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_ASM_KEYWORD = YES;
+				GCC_ENABLE_BUILTIN_FUNCTIONS = YES;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FLOATING_POINT_LIBRARY_CALLS = NO;
+				GCC_ENABLE_KERNEL_DEVELOPMENT = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_ENABLE_PASCAL_STRINGS = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = NO;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = NO;
+				GCC_ENABLE_SYMBOL_SEPARATION = YES;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_FAST_MATH = YES;
+				GCC_FAST_OBJC_DISPATCH = YES;
+				GCC_FEEDBACK_DIRECTED_OPTIMIZATION = Off;
+				GCC_FORCE_CPU_SUBTYPE_ALL = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
+				GCC_LINK_WITH_DYNAMIC_LIBRARIES = YES;
+				GCC_MODEL_PPC64 = NO;
+				GCC_MODEL_TUNING = G4;
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_OBJC_CALL_CXX_CDTORS = NO;
+				GCC_ONE_BYTE_BOOL = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_REUSE_STRINGS = YES;
+				GCC_SHORT_ENUMS = NO;
+				GCC_STRICT_ALIASING = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THREADSAFE_STATICS = YES;
+				GCC_THUMB_SUPPORT = NO;
+				"GCC_THUMB_SUPPORT[arch=armv7]" = YES;
+				GCC_UNROLL_LOOPS = NO;
+				GCC_USE_GCC3_PFE_SUPPORT = YES;
+				GCC_USE_INDIRECT_FUNCTION_CALLS = NO;
+				GCC_USE_REGISTER_FUNCTION_CALLS = NO;
+				GCC_USE_STANDARD_INCLUDE_SEARCHING = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ABOUT_POINTER_SIGNEDNESS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SIGN_COMPARE = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-fembed-bitcode";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-Wno-write-strings",
+					"-fvisibility-inlines-hidden",
+				);
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
+				PRODUCT_NAME = AkHarmonizerFX;
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		330156D9EA22EF7B3FDBE9EA /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COMPRESS_PNG_FILES = NO;
+				CONFIGURATION_BUILD_DIR = "../../../../../../iOS/Profile$(EFFECTIVE_PLATFORM_NAME)/lib";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = BCB4VLKTK5;
+				ENABLE_BITCODE = NO;
+				ENABLE_OPENMP_SUPPORT = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_ALTIVEC_EXTENSIONS = NO;
+				GCC_AUTO_VECTORIZATION = NO;
+				GCC_CHAR_IS_UNSIGNED_CHAR = NO;
+				GCC_CHECK_RETURN_VALUE_OF_OPERATOR_NEW = NO;
+				GCC_CW_ASM_SYNTAX = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DEBUGGING_SYMBOLS = default;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_ASM_KEYWORD = YES;
+				GCC_ENABLE_BUILTIN_FUNCTIONS = YES;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FLOATING_POINT_LIBRARY_CALLS = NO;
+				GCC_ENABLE_KERNEL_DEVELOPMENT = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_ENABLE_PASCAL_STRINGS = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = NO;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = NO;
+				GCC_ENABLE_SYMBOL_SEPARATION = YES;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_FAST_MATH = YES;
+				GCC_FAST_OBJC_DISPATCH = YES;
+				GCC_FEEDBACK_DIRECTED_OPTIMIZATION = Off;
+				GCC_FORCE_CPU_SUBTYPE_ALL = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
+				GCC_LINK_WITH_DYNAMIC_LIBRARIES = YES;
+				GCC_MODEL_PPC64 = NO;
+				GCC_MODEL_TUNING = G4;
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_OBJC_CALL_CXX_CDTORS = NO;
+				GCC_ONE_BYTE_BOOL = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_REUSE_STRINGS = YES;
+				GCC_SHORT_ENUMS = NO;
+				GCC_STRICT_ALIASING = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THREADSAFE_STATICS = YES;
+				GCC_THUMB_SUPPORT = NO;
+				"GCC_THUMB_SUPPORT[arch=armv7]" = YES;
+				GCC_UNROLL_LOOPS = NO;
+				GCC_USE_GCC3_PFE_SUPPORT = YES;
+				GCC_USE_INDIRECT_FUNCTION_CALLS = NO;
+				GCC_USE_REGISTER_FUNCTION_CALLS = NO;
+				GCC_USE_STANDARD_INCLUDE_SEARCHING = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ABOUT_POINTER_SIGNEDNESS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SIGN_COMPARE = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-fembed-bitcode";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-Wno-write-strings",
+					"-fvisibility-inlines-hidden",
+				);
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
+				PRODUCT_NAME = AkHarmonizerFX;
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Profile;
+		};
+		3F42E64CB3007949384B7D54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMPRESS_PNG_FILES = NO;
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				DEVELOPMENT_TEAM = BCB4VLKTK5;
+				ENABLE_BITCODE = NO;
+				ENABLE_OPENMP_SUPPORT = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_ALTIVEC_EXTENSIONS = NO;
+				GCC_AUTO_VECTORIZATION = NO;
+				GCC_CHAR_IS_UNSIGNED_CHAR = NO;
+				GCC_CHECK_RETURN_VALUE_OF_OPERATOR_NEW = NO;
+				GCC_CW_ASM_SYNTAX = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DEBUGGING_SYMBOLS = default;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_ASM_KEYWORD = YES;
+				GCC_ENABLE_BUILTIN_FUNCTIONS = YES;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_FLOATING_POINT_LIBRARY_CALLS = NO;
+				GCC_ENABLE_KERNEL_DEVELOPMENT = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_ENABLE_PASCAL_STRINGS = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = NO;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = NO;
+				GCC_ENABLE_SYMBOL_SEPARATION = YES;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_FAST_MATH = YES;
+				GCC_FAST_OBJC_DISPATCH = YES;
+				GCC_FEEDBACK_DIRECTED_OPTIMIZATION = Off;
+				GCC_FORCE_CPU_SUBTYPE_ALL = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
+				GCC_LINK_WITH_DYNAMIC_LIBRARIES = YES;
+				GCC_MODEL_PPC64 = NO;
+				GCC_MODEL_TUNING = G4;
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_OBJC_CALL_CXX_CDTORS = NO;
+				GCC_ONE_BYTE_BOOL = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_DEBUG,
+					USEALLBUTTERFLIES,
+				);
+				GCC_REUSE_STRINGS = YES;
+				GCC_SHORT_ENUMS = NO;
+				GCC_STRICT_ALIASING = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THREADSAFE_STATICS = YES;
+				GCC_THUMB_SUPPORT = NO;
+				"GCC_THUMB_SUPPORT[arch=armv7]" = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_UNROLL_LOOPS = NO;
+				GCC_USE_GCC3_PFE_SUPPORT = YES;
+				GCC_USE_INDIRECT_FUNCTION_CALLS = NO;
+				GCC_USE_REGISTER_FUNCTION_CALLS = NO;
+				GCC_USE_STANDARD_INCLUDE_SEARCHING = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ABOUT_POINTER_SIGNEDNESS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SIGN_COMPARE = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = ".. ../Mac ../../../../../../include ../../Common/Mac ../../Common ../../../Common ../../../../AkAudiolib/Common ../../../../AkAudiolib/Common/ak_fft ../../../../AkAudiolib/Common/ak_fft/tools $(inherited)";
+				OBJROOT = "../../../../../../iOS/Debug$(EFFECTIVE_PLATFORM_NAME)/obj";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-fembed-bitcode";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-Wno-write-strings",
+					"-fvisibility-inlines-hidden",
+				);
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
+				SYMROOT = "../../../../../../iOS/Debug$(EFFECTIVE_PLATFORM_NAME)/lib";
+			};
+			name = Debug;
+		};
+		46E5E427B0E144FB9EB7A6E9 /* Profile_EnableAsserts */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COMPRESS_PNG_FILES = NO;
+				CONFIGURATION_BUILD_DIR = "../../../../../../iOS/Profile_EnableAsserts$(EFFECTIVE_PLATFORM_NAME)/lib";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = BCB4VLKTK5;
+				ENABLE_BITCODE = NO;
+				ENABLE_OPENMP_SUPPORT = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_ALTIVEC_EXTENSIONS = NO;
+				GCC_AUTO_VECTORIZATION = NO;
+				GCC_CHAR_IS_UNSIGNED_CHAR = NO;
+				GCC_CHECK_RETURN_VALUE_OF_OPERATOR_NEW = NO;
+				GCC_CW_ASM_SYNTAX = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DEBUGGING_SYMBOLS = default;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_ASM_KEYWORD = YES;
+				GCC_ENABLE_BUILTIN_FUNCTIONS = YES;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FLOATING_POINT_LIBRARY_CALLS = NO;
+				GCC_ENABLE_KERNEL_DEVELOPMENT = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_ENABLE_PASCAL_STRINGS = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = NO;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = NO;
+				GCC_ENABLE_SYMBOL_SEPARATION = YES;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_FAST_MATH = YES;
+				GCC_FAST_OBJC_DISPATCH = YES;
+				GCC_FEEDBACK_DIRECTED_OPTIMIZATION = Off;
+				GCC_FORCE_CPU_SUBTYPE_ALL = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
+				GCC_LINK_WITH_DYNAMIC_LIBRARIES = YES;
+				GCC_MODEL_PPC64 = NO;
+				GCC_MODEL_TUNING = G4;
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_OBJC_CALL_CXX_CDTORS = NO;
+				GCC_ONE_BYTE_BOOL = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_REUSE_STRINGS = YES;
+				GCC_SHORT_ENUMS = NO;
+				GCC_STRICT_ALIASING = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THREADSAFE_STATICS = YES;
+				GCC_THUMB_SUPPORT = NO;
+				"GCC_THUMB_SUPPORT[arch=armv7]" = YES;
+				GCC_UNROLL_LOOPS = NO;
+				GCC_USE_GCC3_PFE_SUPPORT = YES;
+				GCC_USE_INDIRECT_FUNCTION_CALLS = NO;
+				GCC_USE_REGISTER_FUNCTION_CALLS = NO;
+				GCC_USE_STANDARD_INCLUDE_SEARCHING = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ABOUT_POINTER_SIGNEDNESS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SIGN_COMPARE = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-fembed-bitcode";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-Wno-write-strings",
+					"-fvisibility-inlines-hidden",
+				);
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
+				PRODUCT_NAME = AkHarmonizerFX;
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Profile_EnableAsserts;
+		};
+		9B04385B91842F9CD033DC30 /* Profile_EnableAsserts */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMPRESS_PNG_FILES = NO;
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				DEVELOPMENT_TEAM = BCB4VLKTK5;
+				ENABLE_BITCODE = NO;
+				ENABLE_OPENMP_SUPPORT = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_ALTIVEC_EXTENSIONS = NO;
+				GCC_AUTO_VECTORIZATION = NO;
+				GCC_CHAR_IS_UNSIGNED_CHAR = NO;
+				GCC_CHECK_RETURN_VALUE_OF_OPERATOR_NEW = NO;
+				GCC_CW_ASM_SYNTAX = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DEBUGGING_SYMBOLS = default;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_ASM_KEYWORD = YES;
+				GCC_ENABLE_BUILTIN_FUNCTIONS = YES;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_FLOATING_POINT_LIBRARY_CALLS = NO;
+				GCC_ENABLE_KERNEL_DEVELOPMENT = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_ENABLE_PASCAL_STRINGS = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = NO;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = NO;
+				GCC_ENABLE_SYMBOL_SEPARATION = YES;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_FAST_MATH = YES;
+				GCC_FAST_OBJC_DISPATCH = YES;
+				GCC_FEEDBACK_DIRECTED_OPTIMIZATION = Off;
+				GCC_FORCE_CPU_SUBTYPE_ALL = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
+				GCC_LINK_WITH_DYNAMIC_LIBRARIES = YES;
+				GCC_MODEL_PPC64 = NO;
+				GCC_MODEL_TUNING = G4;
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_OBJC_CALL_CXX_CDTORS = NO;
+				GCC_ONE_BYTE_BOOL = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					NDEBUG,
+					AK_ENABLE_ASSERTS,
+					USEALLBUTTERFLIES,
+				);
+				GCC_REUSE_STRINGS = YES;
+				GCC_SHORT_ENUMS = NO;
+				GCC_STRICT_ALIASING = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THREADSAFE_STATICS = YES;
+				GCC_THUMB_SUPPORT = NO;
+				"GCC_THUMB_SUPPORT[arch=armv7]" = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_UNROLL_LOOPS = NO;
+				GCC_USE_GCC3_PFE_SUPPORT = YES;
+				GCC_USE_INDIRECT_FUNCTION_CALLS = NO;
+				GCC_USE_REGISTER_FUNCTION_CALLS = NO;
+				GCC_USE_STANDARD_INCLUDE_SEARCHING = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ABOUT_POINTER_SIGNEDNESS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SIGN_COMPARE = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = ".. ../Mac ../../../../../../include ../../Common/Mac ../../Common ../../../Common ../../../../AkAudiolib/Common ../../../../AkAudiolib/Common/ak_fft ../../../../AkAudiolib/Common/ak_fft/tools $(inherited)";
+				OBJROOT = "../../../../../../iOS/Profile_EnableAsserts$(EFFECTIVE_PLATFORM_NAME)/obj";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-fembed-bitcode";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-Wno-write-strings",
+					"-fvisibility-inlines-hidden",
+				);
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
+				SYMROOT = "../../../../../../iOS/Profile_EnableAsserts$(EFFECTIVE_PLATFORM_NAME)/lib";
+			};
+			name = Profile_EnableAsserts;
+		};
+		9EBE154EA410A8CA09B8E3CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COMPRESS_PNG_FILES = NO;
+				CONFIGURATION_BUILD_DIR = "../../../../../../iOS/Release$(EFFECTIVE_PLATFORM_NAME)/lib";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = BCB4VLKTK5;
+				ENABLE_BITCODE = NO;
+				ENABLE_OPENMP_SUPPORT = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_ALTIVEC_EXTENSIONS = NO;
+				GCC_AUTO_VECTORIZATION = NO;
+				GCC_CHAR_IS_UNSIGNED_CHAR = NO;
+				GCC_CHECK_RETURN_VALUE_OF_OPERATOR_NEW = NO;
+				GCC_CW_ASM_SYNTAX = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DEBUGGING_SYMBOLS = default;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_ASM_KEYWORD = YES;
+				GCC_ENABLE_BUILTIN_FUNCTIONS = YES;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FLOATING_POINT_LIBRARY_CALLS = NO;
+				GCC_ENABLE_KERNEL_DEVELOPMENT = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_ENABLE_PASCAL_STRINGS = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = NO;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = NO;
+				GCC_ENABLE_SYMBOL_SEPARATION = YES;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_FAST_MATH = YES;
+				GCC_FAST_OBJC_DISPATCH = YES;
+				GCC_FEEDBACK_DIRECTED_OPTIMIZATION = Off;
+				GCC_FORCE_CPU_SUBTYPE_ALL = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
+				GCC_LINK_WITH_DYNAMIC_LIBRARIES = YES;
+				GCC_MODEL_PPC64 = NO;
+				GCC_MODEL_TUNING = G4;
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_OBJC_CALL_CXX_CDTORS = NO;
+				GCC_ONE_BYTE_BOOL = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_REUSE_STRINGS = YES;
+				GCC_SHORT_ENUMS = NO;
+				GCC_STRICT_ALIASING = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THREADSAFE_STATICS = YES;
+				GCC_THUMB_SUPPORT = NO;
+				"GCC_THUMB_SUPPORT[arch=armv7]" = YES;
+				GCC_UNROLL_LOOPS = NO;
+				GCC_USE_GCC3_PFE_SUPPORT = YES;
+				GCC_USE_INDIRECT_FUNCTION_CALLS = NO;
+				GCC_USE_REGISTER_FUNCTION_CALLS = NO;
+				GCC_USE_STANDARD_INCLUDE_SEARCHING = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ABOUT_POINTER_SIGNEDNESS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SIGN_COMPARE = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-fembed-bitcode";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-Wno-write-strings",
+					"-fvisibility-inlines-hidden",
+				);
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
+				PRODUCT_NAME = AkHarmonizerFX;
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B915C6629784B4F875BE9EE3 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMPRESS_PNG_FILES = NO;
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				DEVELOPMENT_TEAM = BCB4VLKTK5;
+				ENABLE_BITCODE = NO;
+				ENABLE_OPENMP_SUPPORT = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_ALTIVEC_EXTENSIONS = NO;
+				GCC_AUTO_VECTORIZATION = NO;
+				GCC_CHAR_IS_UNSIGNED_CHAR = NO;
+				GCC_CHECK_RETURN_VALUE_OF_OPERATOR_NEW = NO;
+				GCC_CW_ASM_SYNTAX = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DEBUGGING_SYMBOLS = default;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_ASM_KEYWORD = YES;
+				GCC_ENABLE_BUILTIN_FUNCTIONS = YES;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_FLOATING_POINT_LIBRARY_CALLS = NO;
+				GCC_ENABLE_KERNEL_DEVELOPMENT = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_ENABLE_PASCAL_STRINGS = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = NO;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = NO;
+				GCC_ENABLE_SYMBOL_SEPARATION = YES;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_FAST_MATH = YES;
+				GCC_FAST_OBJC_DISPATCH = YES;
+				GCC_FEEDBACK_DIRECTED_OPTIMIZATION = Off;
+				GCC_FORCE_CPU_SUBTYPE_ALL = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
+				GCC_LINK_WITH_DYNAMIC_LIBRARIES = YES;
+				GCC_MODEL_PPC64 = NO;
+				GCC_MODEL_TUNING = G4;
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_OBJC_CALL_CXX_CDTORS = NO;
+				GCC_ONE_BYTE_BOOL = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					NDEBUG,
+					USEALLBUTTERFLIES,
+				);
+				GCC_REUSE_STRINGS = YES;
+				GCC_SHORT_ENUMS = NO;
+				GCC_STRICT_ALIASING = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THREADSAFE_STATICS = YES;
+				GCC_THUMB_SUPPORT = NO;
+				"GCC_THUMB_SUPPORT[arch=armv7]" = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_UNROLL_LOOPS = NO;
+				GCC_USE_GCC3_PFE_SUPPORT = YES;
+				GCC_USE_INDIRECT_FUNCTION_CALLS = NO;
+				GCC_USE_REGISTER_FUNCTION_CALLS = NO;
+				GCC_USE_STANDARD_INCLUDE_SEARCHING = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ABOUT_POINTER_SIGNEDNESS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SIGN_COMPARE = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = ".. ../Mac ../../../../../../include ../../Common/Mac ../../Common ../../../Common ../../../../AkAudiolib/Common ../../../../AkAudiolib/Common/ak_fft ../../../../AkAudiolib/Common/ak_fft/tools $(inherited)";
+				OBJROOT = "../../../../../../iOS/Profile$(EFFECTIVE_PLATFORM_NAME)/obj";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-fembed-bitcode";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-Wno-write-strings",
+					"-fvisibility-inlines-hidden",
+				);
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
+				SYMROOT = "../../../../../../iOS/Profile$(EFFECTIVE_PLATFORM_NAME)/lib";
+			};
+			name = Profile;
+		};
+		CDF3F9ED6295FDE77EFC9432 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMPRESS_PNG_FILES = NO;
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				DEVELOPMENT_TEAM = BCB4VLKTK5;
+				ENABLE_BITCODE = NO;
+				ENABLE_OPENMP_SUPPORT = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_ALTIVEC_EXTENSIONS = NO;
+				GCC_AUTO_VECTORIZATION = NO;
+				GCC_CHAR_IS_UNSIGNED_CHAR = NO;
+				GCC_CHECK_RETURN_VALUE_OF_OPERATOR_NEW = NO;
+				GCC_CW_ASM_SYNTAX = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DEBUGGING_SYMBOLS = default;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_ASM_KEYWORD = YES;
+				GCC_ENABLE_BUILTIN_FUNCTIONS = YES;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_FLOATING_POINT_LIBRARY_CALLS = NO;
+				GCC_ENABLE_KERNEL_DEVELOPMENT = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_ENABLE_PASCAL_STRINGS = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = NO;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = NO;
+				GCC_ENABLE_SYMBOL_SEPARATION = YES;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_FAST_MATH = YES;
+				GCC_FAST_OBJC_DISPATCH = YES;
+				GCC_FEEDBACK_DIRECTED_OPTIMIZATION = Off;
+				GCC_FORCE_CPU_SUBTYPE_ALL = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
+				GCC_LINK_WITH_DYNAMIC_LIBRARIES = YES;
+				GCC_MODEL_PPC64 = NO;
+				GCC_MODEL_TUNING = G4;
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_OBJC_CALL_CXX_CDTORS = NO;
+				GCC_ONE_BYTE_BOOL = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					NDEBUG,
+					AK_OPTIMIZED,
+					USEALLBUTTERFLIES,
+				);
+				GCC_REUSE_STRINGS = YES;
+				GCC_SHORT_ENUMS = NO;
+				GCC_STRICT_ALIASING = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THREADSAFE_STATICS = YES;
+				GCC_THUMB_SUPPORT = NO;
+				"GCC_THUMB_SUPPORT[arch=armv7]" = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_UNROLL_LOOPS = NO;
+				GCC_USE_GCC3_PFE_SUPPORT = YES;
+				GCC_USE_INDIRECT_FUNCTION_CALLS = NO;
+				GCC_USE_REGISTER_FUNCTION_CALLS = NO;
+				GCC_USE_STANDARD_INCLUDE_SEARCHING = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ABOUT_POINTER_SIGNEDNESS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SIGN_COMPARE = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = ".. ../Mac ../../../../../../include ../../Common/Mac ../../Common ../../../Common ../../../../AkAudiolib/Common ../../../../AkAudiolib/Common/ak_fft ../../../../AkAudiolib/Common/ak_fft/tools $(inherited)";
+				OBJROOT = "../../../../../../iOS/Release$(EFFECTIVE_PLATFORM_NAME)/obj";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-fembed-bitcode";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-Wno-write-strings",
+					"-fvisibility-inlines-hidden",
+				);
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
+				SYMROOT = "../../../../../../iOS/Release$(EFFECTIVE_PLATFORM_NAME)/lib";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "AkHarmonizerFX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F42E64CB3007949384B7D54 /* Debug */,
+				B915C6629784B4F875BE9EE3 /* Profile */,
+				9B04385B91842F9CD033DC30 /* Profile_EnableAsserts */,
+				CDF3F9ED6295FDE77EFC9432 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D5387156D7FD5BB8424E850D /* Build configuration list for PBXNativeTarget "libAkHarmonizerFX.a" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11C3033C21FEF00F08C620F1 /* Debug */,
+				330156D9EA22EF7B3FDBE9EA /* Profile */,
+				46E5E427B0E144FB9EB7A6E9 /* Profile_EnableAsserts */,
+				9EBE154EA410A8CA09B8E3CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

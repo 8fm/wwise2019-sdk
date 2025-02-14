@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Durango">
+      <Configuration>Debug</Configuration>
+      <Platform>Durango</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_NoIteratorDebugging|Durango">
+      <Configuration>Debug_NoIteratorDebugging</Configuration>
+      <Platform>Durango</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|Durango">
+      <Configuration>Profile</Configuration>
+      <Platform>Durango</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile_EnableAsserts|Durango">
+      <Configuration>Profile_EnableAsserts</Configuration>
+      <Platform>Durango</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Durango">
+      <Configuration>Release</Configuration>
+      <Platform>Durango</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7B994C3F-6FC1-3EA8-CBE2-E729760FB145}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>AkMusicEngine</RootNamespace>
+    <ProjectName>AkMusicEngine</ProjectName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <VcpkgEnabled Condition="'$(Configuration)|$(Platform)'=='Debug|Durango'">false</VcpkgEnabled>
+    <VcpkgEnabled Condition="'$(Configuration)|$(Platform)'=='Debug_NoIteratorDebugging|Durango'">false</VcpkgEnabled>
+    <VcpkgEnabled Condition="'$(Configuration)|$(Platform)'=='Profile|Durango'">false</VcpkgEnabled>
+    <VcpkgEnabled Condition="'$(Configuration)|$(Platform)'=='Profile_EnableAsserts|Durango'">false</VcpkgEnabled>
+    <VcpkgEnabled Condition="'$(Configuration)|$(Platform)'=='Release|Durango'">false</VcpkgEnabled>
+    <ApplicationEnvironment>title</ApplicationEnvironment>
+    <PlatformToolset>v140</PlatformToolset>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <TargetRuntime>Native</TargetRuntime>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Durango'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_NoIteratorDebugging|Durango'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Durango'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile_EnableAsserts|Durango'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Durango'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Durango'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="../../../Build/PropertySheets/XboxOne/Debug_vc140.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug_NoIteratorDebugging|Durango'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="../../../Build/PropertySheets/XboxOne/Debug_vc140.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Profile|Durango'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="../../../Build/PropertySheets/XboxOne/NDebug_vc140.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Profile_EnableAsserts|Durango'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="../../../Build/PropertySheets/XboxOne/NDebug_vc140.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Durango'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="../../../Build/PropertySheets/XboxOne/NDebug_vc140.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Durango'">
+    <OutDir>..\..\..\..\XboxOne_vc140\$(Configuration)\lib\</OutDir>
+    <IntDir>..\..\..\..\XboxOne_vc140\$(Configuration)\obj\$(ProjectName)\</IntDir>
+    <TargetName>AkMusicEngine</TargetName>
+    <IncludePath>$(Console_SdkIncludeRoot)\um;$(Console_SdkIncludeRoot)\shared;$(Console_SdkIncludeRoot)\winrt;$(IncludePath)</IncludePath>
+    <LibraryPath>$(Console_SdkLibPath);$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(Console_SdkRoot)\bin;$(VCInstallDir)bin\x86_amd64;$(VCInstallDir)bin;$(WindowsSDK_ExecutablePath_x86);$(VSInstallDir)Common7\Tools\bin;$(VSInstallDir)Common7\tools;$(VSInstallDir)Common7\ide;$(ProgramFiles)\HTML Help Workshop;$(MSBuildToolsPath32);$(FxCopDir);$(PATH);;$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_NoIteratorDebugging|Durango'">
+    <OutDir>..\..\..\..\XboxOne_vc140\$(Configuration)\lib\</OutDir>
+    <IntDir>..\..\..\..\XboxOne_vc140\$(Configuration)\obj\$(ProjectName)\</IntDir>
+    <TargetName>AkMusicEngine</TargetName>
+    <IncludePath>$(Console_SdkIncludeRoot)\um;$(Console_SdkIncludeRoot)\shared;$(Console_SdkIncludeRoot)\winrt;$(IncludePath)</IncludePath>
+    <LibraryPath>$(Console_SdkLibPath);$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(Console_SdkRoot)\bin;$(VCInstallDir)bin\x86_amd64;$(VCInstallDir)bin;$(WindowsSDK_ExecutablePath_x86);$(VSInstallDir)Common7\Tools\bin;$(VSInstallDir)Common7\tools;$(VSInstallDir)Common7\ide;$(ProgramFiles)\HTML Help Workshop;$(MSBuildToolsPath32);$(FxCopDir);$(PATH);;$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Durango'">
+    <OutDir>..\..\..\..\XboxOne_vc140\$(Configuration)\lib\</OutDir>
+    <IntDir>..\..\..\..\XboxOne_vc140\$(Configuration)\obj\$(ProjectName)\</IntDir>
+    <TargetName>AkMusicEngine</TargetName>
+    <IncludePath>$(Console_SdkIncludeRoot)\um;$(Console_SdkIncludeRoot)\shared;$(Console_SdkIncludeRoot)\winrt;$(IncludePath)</IncludePath>
+    <LibraryPath>$(Console_SdkLibPath);$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(Console_SdkRoot)\bin;$(VCInstallDir)bin\x86_amd64;$(VCInstallDir)bin;$(WindowsSDK_ExecutablePath_x86);$(VSInstallDir)Common7\Tools\bin;$(VSInstallDir)Common7\tools;$(VSInstallDir)Common7\ide;$(ProgramFiles)\HTML Help Workshop;$(MSBuildToolsPath32);$(FxCopDir);$(PATH);;$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile_EnableAsserts|Durango'">
+    <OutDir>..\..\..\..\XboxOne_vc140\$(Configuration)\lib\</OutDir>
+    <IntDir>..\..\..\..\XboxOne_vc140\$(Configuration)\obj\$(ProjectName)\</IntDir>
+    <TargetName>AkMusicEngine</TargetName>
+    <IncludePath>$(Console_SdkIncludeRoot)\um;$(Console_SdkIncludeRoot)\shared;$(Console_SdkIncludeRoot)\winrt;$(IncludePath)</IncludePath>
+    <LibraryPath>$(Console_SdkLibPath);$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(Console_SdkRoot)\bin;$(VCInstallDir)bin\x86_amd64;$(VCInstallDir)bin;$(WindowsSDK_ExecutablePath_x86);$(VSInstallDir)Common7\Tools\bin;$(VSInstallDir)Common7\tools;$(VSInstallDir)Common7\ide;$(ProgramFiles)\HTML Help Workshop;$(MSBuildToolsPath32);$(FxCopDir);$(PATH);;$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Durango'">
+    <OutDir>..\..\..\..\XboxOne_vc140\$(Configuration)\lib\</OutDir>
+    <IntDir>..\..\..\..\XboxOne_vc140\$(Configuration)\obj\$(ProjectName)\</IntDir>
+    <TargetName>AkMusicEngine</TargetName>
+    <IncludePath>$(Console_SdkIncludeRoot)\um;$(Console_SdkIncludeRoot)\shared;$(Console_SdkIncludeRoot)\winrt;$(IncludePath)</IncludePath>
+    <LibraryPath>$(Console_SdkLibPath);$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(Console_SdkRoot)\bin;$(VCInstallDir)bin\x86_amd64;$(VCInstallDir)bin;$(WindowsSDK_ExecutablePath_x86);$(VSInstallDir)Common7\Tools\bin;$(VSInstallDir)Common7\tools;$(VSInstallDir)Common7\ide;$(ProgramFiles)\HTML Help Workshop;$(MSBuildToolsPath32);$(FxCopDir);$(PATH);;$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Durango'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <PreprocessorDefinitions>_DEBUG;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;PROXYCENTRAL_CONNECTED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Common;..\..\AkAudiolib\Win32;..\..\AkAudiolib\Common;..\..\..\..\include;..\..\SoundEngineProxy\Remote\CodeBase;..\..\SoundEngineProxy\Common;..\..\Communication\Remote\CodeBase;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <AdditionalOptions>/wd4250 /wd4355 %(AdditionalOptions)</AdditionalOptions>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;PROXYCENTRAL_CONNECTED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Common;..\..\AkAudiolib\Win32;..\..\AkAudiolib\Common;..\..\..\..\include;..\..\SoundEngineProxy\Remote\CodeBase;..\..\SoundEngineProxy\Common;..\..\Communication\Remote\CodeBase;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <TreatLibWarningAsErrors>true</TreatLibWarningAsErrors>
+      <OutputFile>$(OutDir)AkMusicEngine.lib</OutputFile>
+      <AdditionalOptions>/ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_NoIteratorDebugging|Durango'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <PreprocessorDefinitions>_DEBUG;_HAS_ITERATOR_DEBUGGING=0;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;PROXYCENTRAL_CONNECTED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Common;..\..\AkAudiolib\Win32;..\..\AkAudiolib\Common;..\..\..\..\include;..\..\SoundEngineProxy\Remote\CodeBase;..\..\SoundEngineProxy\Common;..\..\Communication\Remote\CodeBase;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <AdditionalOptions>/wd4250 /wd4355 %(AdditionalOptions)</AdditionalOptions>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;_HAS_ITERATOR_DEBUGGING=0;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;PROXYCENTRAL_CONNECTED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Common;..\..\AkAudiolib\Win32;..\..\AkAudiolib\Common;..\..\..\..\include;..\..\SoundEngineProxy\Remote\CodeBase;..\..\SoundEngineProxy\Common;..\..\Communication\Remote\CodeBase;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <TreatLibWarningAsErrors>true</TreatLibWarningAsErrors>
+      <OutputFile>$(OutDir)AkMusicEngine.lib</OutputFile>
+      <AdditionalOptions>/ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Durango'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <PreprocessorDefinitions>NDEBUG;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;PROXYCENTRAL_CONNECTED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Common;..\..\AkAudiolib\Win32;..\..\AkAudiolib\Common;..\..\..\..\include;..\..\SoundEngineProxy\Remote\CodeBase;..\..\SoundEngineProxy\Common;..\..\Communication\Remote\CodeBase;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalOptions>/wd4250 /wd4355 %(AdditionalOptions)</AdditionalOptions>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;PROXYCENTRAL_CONNECTED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Common;..\..\AkAudiolib\Win32;..\..\AkAudiolib\Common;..\..\..\..\include;..\..\SoundEngineProxy\Remote\CodeBase;..\..\SoundEngineProxy\Common;..\..\Communication\Remote\CodeBase;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <TreatLibWarningAsErrors>true</TreatLibWarningAsErrors>
+      <OutputFile>$(OutDir)AkMusicEngine.lib</OutputFile>
+      <AdditionalOptions>/ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile_EnableAsserts|Durango'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <PreprocessorDefinitions>NDEBUG;AK_ENABLE_ASSERTS;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;PROXYCENTRAL_CONNECTED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Common;..\..\AkAudiolib\Win32;..\..\AkAudiolib\Common;..\..\..\..\include;..\..\SoundEngineProxy\Remote\CodeBase;..\..\SoundEngineProxy\Common;..\..\Communication\Remote\CodeBase;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalOptions>/wd4250 /wd4355 %(AdditionalOptions)</AdditionalOptions>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;AK_ENABLE_ASSERTS;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;PROXYCENTRAL_CONNECTED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Common;..\..\AkAudiolib\Win32;..\..\AkAudiolib\Common;..\..\..\..\include;..\..\SoundEngineProxy\Remote\CodeBase;..\..\SoundEngineProxy\Common;..\..\Communication\Remote\CodeBase;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <TreatLibWarningAsErrors>true</TreatLibWarningAsErrors>
+      <OutputFile>$(OutDir)AkMusicEngine.lib</OutputFile>
+      <AdditionalOptions>/ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Durango'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <PreprocessorDefinitions>NDEBUG;AK_OPTIMIZED;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;PROXYCENTRAL_CONNECTED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Common;..\..\AkAudiolib\Win32;..\..\AkAudiolib\Common;..\..\..\..\include;..\..\SoundEngineProxy\Remote\CodeBase;..\..\SoundEngineProxy\Common;..\..\Communication\Remote\CodeBase;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalOptions>/wd4250 /wd4355 %(AdditionalOptions)</AdditionalOptions>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;AK_OPTIMIZED;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;PROXYCENTRAL_CONNECTED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Common;..\..\AkAudiolib\Win32;..\..\AkAudiolib\Common;..\..\..\..\include;..\..\SoundEngineProxy\Remote\CodeBase;..\..\SoundEngineProxy\Common;..\..\Communication\Remote\CodeBase;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <TreatLibWarningAsErrors>true</TreatLibWarningAsErrors>
+      <OutputFile>$(OutDir)AkMusicEngine.lib</OutputFile>
+      <AdditionalOptions>/ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\include\AK\MusicEngine\Common\AkMusicEngine.h" />
+    <ClInclude Include="..\..\AkAudiolib\XboxOne\stdafx.h" />
+    <ClInclude Include="..\..\SoundEngineProxy\Common\IMusicNodeProxy.h" />
+    <ClInclude Include="..\..\SoundEngineProxy\Common\IMusicRanSeqProxy.h" />
+    <ClInclude Include="..\..\SoundEngineProxy\Common\IMusicSwitchProxy.h" />
+    <ClInclude Include="..\..\SoundEngineProxy\Common\IMusicTransAwareProxy.h" />
+    <ClInclude Include="..\..\SoundEngineProxy\Common\ISegmentProxy.h" />
+    <ClInclude Include="..\..\SoundEngineProxy\Common\ITrackProxy.h" />
+    <ClInclude Include="..\..\SoundEngineProxy\Common\MusicNodeProxyLocal.h" />
+    <ClInclude Include="..\..\SoundEngineProxy\Common\MusicRanSeqProxyLocal.h" />
+    <ClInclude Include="..\..\SoundEngineProxy\Common\MusicSwitchProxyLocal.h" />
+    <ClInclude Include="..\..\SoundEngineProxy\Common\MusicTransAwareProxyLocal.h" />
+    <ClInclude Include="..\..\SoundEngineProxy\Common\SegmentProxyLocal.h" />
+    <ClInclude Include="..\..\SoundEngineProxy\Common\TrackProxyLocal.h" />
+    <ClInclude Include="..\..\SoundEngineProxy\Remote\CodeBase\MusicNodeProxyConnected.h" />
+    <ClInclude Include="..\..\SoundEngineProxy\Remote\CodeBase\MusicRanSeqProxyConnected.h" />
+    <ClInclude Include="..\..\SoundEngineProxy\Remote\CodeBase\MusicSwitchProxyConnected.h" />
+    <ClInclude Include="..\..\SoundEngineProxy\Remote\CodeBase\MusicTransAwareProxyConnected.h" />
+    <ClInclude Include="..\..\SoundEngineProxy\Remote\CodeBase\ProxyMusic.h" />
+    <ClInclude Include="..\..\SoundEngineProxy\Remote\CodeBase\SegmentProxyConnected.h" />
+    <ClInclude Include="..\..\SoundEngineProxy\Remote\CodeBase\TrackProxyConnected.h" />
+    <ClInclude Include="..\Common\AkChildCtx.h" />
+    <ClInclude Include="..\Common\AkContextualMusicSequencer.h" />
+    <ClInclude Include="..\Common\AkMatrixAwareCtx.h" />
+    <ClInclude Include="..\Common\AkMatrixSequencer.h" />
+    <ClInclude Include="..\Common\AkMusicBank.h" />
+    <ClInclude Include="..\Common\AkMusicCtx.h" />
+    <ClInclude Include="..\Common\AkMusicNode.h" />
+    <ClInclude Include="..\Common\AkMusicPBI.h" />
+    <ClInclude Include="..\Common\AkMusicPlaybackHistory.h" />
+    <ClInclude Include="..\Common\AkMusicRanSeqCntr.h" />
+    <ClInclude Include="..\Common\AkMusicRenderer.h" />
+    <ClInclude Include="..\Common\AkMusicSegment.h" />
+    <ClInclude Include="..\Common\AkMusicStructs.h" />
+    <ClInclude Include="..\Common\AkMusicSwitchCntr.h" />
+    <ClInclude Include="..\Common\AkMusicSwitchCtx.h" />
+    <ClInclude Include="..\Common\AkMusicTrack.h" />
+    <ClInclude Include="..\Common\AkMusicTransAware.h" />
+    <ClInclude Include="..\Common\AkRSIterator.h" />
+    <ClInclude Include="..\Common\AkScheduleWindow.h" />
+    <ClInclude Include="..\Common\AkSegmentChain.h" />
+    <ClInclude Include="..\Common\AkSegmentCtx.h" />
+    <ClInclude Include="..\Common\AkSegmentInfoRepository.h" />
+    <ClInclude Include="..\Common\AkSequencableSegmentCtx.h" />
+    <ClInclude Include="..\Common\AkSequenceCtx.h" />
+    <ClInclude Include="..\Common\AkSubTrackCtx.h" />
+    <ClInclude Include="..\Common\AkSwitchTrackInfo.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\AkAudiolib\XboxOne\stdafx.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\SoundEngineProxy\Common\MusicNodeProxyLocal.cpp" />
+    <ClCompile Include="..\..\SoundEngineProxy\Common\MusicRanSeqProxyLocal.cpp" />
+    <ClCompile Include="..\..\SoundEngineProxy\Common\MusicSwitchProxyLocal.cpp" />
+    <ClCompile Include="..\..\SoundEngineProxy\Common\MusicTransAwareProxyLocal.cpp" />
+    <ClCompile Include="..\..\SoundEngineProxy\Common\SegmentProxyLocal.cpp" />
+    <ClCompile Include="..\..\SoundEngineProxy\Common\TrackProxyLocal.cpp" />
+    <ClCompile Include="..\..\SoundEngineProxy\Remote\CodeBase\MusicNodeProxyConnected.cpp" />
+    <ClCompile Include="..\..\SoundEngineProxy\Remote\CodeBase\MusicRanSeqProxyConnected.cpp" />
+    <ClCompile Include="..\..\SoundEngineProxy\Remote\CodeBase\MusicSwitchProxyConnected.cpp" />
+    <ClCompile Include="..\..\SoundEngineProxy\Remote\CodeBase\MusicTransAwareProxyConnected.cpp" />
+    <ClCompile Include="..\..\SoundEngineProxy\Remote\CodeBase\ProxyMusic.cpp" />
+    <ClCompile Include="..\..\SoundEngineProxy\Remote\CodeBase\SegmentProxyConnected.cpp" />
+    <ClCompile Include="..\..\SoundEngineProxy\Remote\CodeBase\TrackProxyConnected.cpp" />
+    <ClCompile Include="..\Common\AkChildCtx.cpp" />
+    <ClCompile Include="..\Common\AkContextualMusicSequencer.cpp" />
+    <ClCompile Include="..\Common\AkMatrixAwareCtx.cpp" />
+    <ClCompile Include="..\Common\AkMatrixSequencer.cpp" />
+    <ClCompile Include="..\Common\AkMusicBank.cpp" />
+    <ClCompile Include="..\Common\AkMusicCtx.cpp" />
+    <ClCompile Include="..\Common\AkMusicNode.cpp" />
+    <ClCompile Include="..\Common\AkMusicPBI.cpp" />
+    <ClCompile Include="..\Common\AkMusicPlaybackHistory.cpp" />
+    <ClCompile Include="..\Common\AkMusicRanSeqCntr.cpp" />
+    <ClCompile Include="..\Common\AkMusicRenderer.cpp" />
+    <ClCompile Include="..\Common\AkMusicSegment.cpp" />
+    <ClCompile Include="..\Common\AkMusicSwitchCntr.cpp" />
+    <ClCompile Include="..\Common\AkMusicSwitchCtx.cpp" />
+    <ClCompile Include="..\Common\AkMusicTrack.cpp" />
+    <ClCompile Include="..\Common\AkMusicTransAware.cpp" />
+    <ClCompile Include="..\Common\AkRSIterator.cpp" />
+    <ClCompile Include="..\Common\AkScheduleWindow.cpp" />
+    <ClCompile Include="..\Common\AkSegmentChain.cpp" />
+    <ClCompile Include="..\Common\AkSegmentCtx.cpp" />
+    <ClCompile Include="..\Common\AkSegmentInfoRepository.cpp" />
+    <ClCompile Include="..\Common\AkSequencableSegmentCtx.cpp" />
+    <ClCompile Include="..\Common\AkSequenceCtx.cpp" />
+    <ClCompile Include="..\Common\AkSubTrackCtx.cpp" />
+    <ClCompile Include="..\Common\AkSwitchTrackInfo.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Durango'">
+    <ReferencePath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</ReferencePath>
+    <LibraryWPath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</LibraryWPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_NoIteratorDebugging|Durango'">
+    <ReferencePath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</ReferencePath>
+    <LibraryWPath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</LibraryWPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Durango'">
+    <ReferencePath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</ReferencePath>
+    <LibraryWPath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</LibraryWPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile_EnableAsserts|Durango'">
+    <ReferencePath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</ReferencePath>
+    <LibraryWPath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</LibraryWPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Durango'">
+    <ReferencePath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</ReferencePath>
+    <LibraryWPath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</LibraryWPath>
+  </PropertyGroup>
+</Project>

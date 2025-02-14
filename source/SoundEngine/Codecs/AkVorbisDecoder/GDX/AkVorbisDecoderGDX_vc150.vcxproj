@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Gaming.Desktop.x64">
+      <Configuration>Debug</Configuration>
+      <Platform>Gaming.Desktop.x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_NoIteratorDebugging|Gaming.Desktop.x64">
+      <Configuration>Debug_NoIteratorDebugging</Configuration>
+      <Platform>Gaming.Desktop.x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|Gaming.Desktop.x64">
+      <Configuration>Profile</Configuration>
+      <Platform>Gaming.Desktop.x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile_EnableAsserts|Gaming.Desktop.x64">
+      <Configuration>Profile_EnableAsserts</Configuration>
+      <Platform>Gaming.Desktop.x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Gaming.Desktop.x64">
+      <Configuration>Release</Configuration>
+      <Platform>Gaming.Desktop.x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E2F77B78-81F6-0DD4-3280-625DBB400A5E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>AkVorbisDecoder</RootNamespace>
+    <ProjectName>AkVorbisDecoder</ProjectName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <VcpkgEnabled Condition="'$(Configuration)|$(Platform)'=='Debug|Gaming.Desktop.x64'">false</VcpkgEnabled>
+    <VcpkgEnabled Condition="'$(Configuration)|$(Platform)'=='Debug_NoIteratorDebugging|Gaming.Desktop.x64'">false</VcpkgEnabled>
+    <VcpkgEnabled Condition="'$(Configuration)|$(Platform)'=='Profile|Gaming.Desktop.x64'">false</VcpkgEnabled>
+    <VcpkgEnabled Condition="'$(Configuration)|$(Platform)'=='Profile_EnableAsserts|Gaming.Desktop.x64'">false</VcpkgEnabled>
+    <VcpkgEnabled Condition="'$(Configuration)|$(Platform)'=='Release|Gaming.Desktop.x64'">false</VcpkgEnabled>
+    <ApplicationEnvironment>title</ApplicationEnvironment>
+    <PlatformToolset>v140</PlatformToolset>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <TargetRuntime>Native</TargetRuntime>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Gaming.Desktop.x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_NoIteratorDebugging|Gaming.Desktop.x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Gaming.Desktop.x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile_EnableAsserts|Gaming.Desktop.x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Gaming.Desktop.x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Gaming.Desktop.x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="../../../../Build/PropertySheets/Win32/Debug_vc150.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug_NoIteratorDebugging|Gaming.Desktop.x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="../../../../Build/PropertySheets/Win32/Debug_vc150.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Profile|Gaming.Desktop.x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="../../../../Build/PropertySheets/Win32/NDebug_vc150.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Profile_EnableAsserts|Gaming.Desktop.x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="../../../../Build/PropertySheets/Win32/NDebug_vc150.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Gaming.Desktop.x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="../../../../Build/PropertySheets/Win32/NDebug_vc150.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Gaming.Desktop.x64'">
+    <OutDir>..\..\..\..\..\GDX_vc150\$(Configuration)\lib\</OutDir>
+    <IntDir>..\..\..\..\..\GDX_vc150\$(Configuration)\obj\$(ProjectName)\</IntDir>
+    <TargetName>AkVorbisDecoder</TargetName>
+    <IncludePath>$(Console_SdkIncludeRoot);$(IncludePath)</IncludePath>
+    <LibraryPath>$(Console_SdkLibPath);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_NoIteratorDebugging|Gaming.Desktop.x64'">
+    <OutDir>..\..\..\..\..\GDX_vc150\$(Configuration)\lib\</OutDir>
+    <IntDir>..\..\..\..\..\GDX_vc150\$(Configuration)\obj\$(ProjectName)\</IntDir>
+    <TargetName>AkVorbisDecoder</TargetName>
+    <IncludePath>$(Console_SdkIncludeRoot);$(IncludePath)</IncludePath>
+    <LibraryPath>$(Console_SdkLibPath);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Gaming.Desktop.x64'">
+    <OutDir>..\..\..\..\..\GDX_vc150\$(Configuration)\lib\</OutDir>
+    <IntDir>..\..\..\..\..\GDX_vc150\$(Configuration)\obj\$(ProjectName)\</IntDir>
+    <TargetName>AkVorbisDecoder</TargetName>
+    <IncludePath>$(Console_SdkIncludeRoot);$(IncludePath)</IncludePath>
+    <LibraryPath>$(Console_SdkLibPath);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile_EnableAsserts|Gaming.Desktop.x64'">
+    <OutDir>..\..\..\..\..\GDX_vc150\$(Configuration)\lib\</OutDir>
+    <IntDir>..\..\..\..\..\GDX_vc150\$(Configuration)\obj\$(ProjectName)\</IntDir>
+    <TargetName>AkVorbisDecoder</TargetName>
+    <IncludePath>$(Console_SdkIncludeRoot);$(IncludePath)</IncludePath>
+    <LibraryPath>$(Console_SdkLibPath);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Gaming.Desktop.x64'">
+    <OutDir>..\..\..\..\..\GDX_vc150\$(Configuration)\lib\</OutDir>
+    <IntDir>..\..\..\..\..\GDX_vc150\$(Configuration)\obj\$(ProjectName)\</IntDir>
+    <TargetName>AkVorbisDecoder</TargetName>
+    <IncludePath>$(Console_SdkIncludeRoot);$(IncludePath)</IncludePath>
+    <LibraryPath>$(Console_SdkLibPath);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Gaming.Desktop.x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <PreprocessorDefinitions>WINAPI_FAMILY=WINAPI_FAMILY_GAMES;_CRT_SECURE_NO_WARNINGS;__WRL_NO_DEFAULT_LIB__;_DEBUG;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Common;..\Tremor;..\..\..\AkAudiolib\Win32;..\..\..\AkAudiolib\SoftwarePipeline;..\..\..\AkAudiolib\Common;..\..\..\..\..\include;..\SIMD;..\Tremor\SIMD;..\..\..\Plugins\Effects\Common;..\Tremor\FloatingPoint;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalOptions>/wd4244 /wd4305 /wd4267 %(AdditionalOptions)</AdditionalOptions>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WINAPI_FAMILY=WINAPI_FAMILY_GAMES;_CRT_SECURE_NO_WARNINGS;__WRL_NO_DEFAULT_LIB__;_DEBUG;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Common;..\Tremor;..\..\..\AkAudiolib\Win32;..\..\..\AkAudiolib\SoftwarePipeline;..\..\..\AkAudiolib\Common;..\..\..\..\..\include;..\SIMD;..\Tremor\SIMD;..\..\..\Plugins\Effects\Common;..\Tremor\FloatingPoint;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)AkVorbisDecoder.lib</OutputFile>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_NoIteratorDebugging|Gaming.Desktop.x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <PreprocessorDefinitions>WINAPI_FAMILY=WINAPI_FAMILY_GAMES;_CRT_SECURE_NO_WARNINGS;__WRL_NO_DEFAULT_LIB__;_DEBUG;_HAS_ITERATOR_DEBUGGING=0;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Common;..\Tremor;..\..\..\AkAudiolib\Win32;..\..\..\AkAudiolib\SoftwarePipeline;..\..\..\AkAudiolib\Common;..\..\..\..\..\include;..\SIMD;..\Tremor\SIMD;..\..\..\Plugins\Effects\Common;..\Tremor\FloatingPoint;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalOptions>/wd4244 /wd4305 /wd4267 %(AdditionalOptions)</AdditionalOptions>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WINAPI_FAMILY=WINAPI_FAMILY_GAMES;_CRT_SECURE_NO_WARNINGS;__WRL_NO_DEFAULT_LIB__;_DEBUG;_HAS_ITERATOR_DEBUGGING=0;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Common;..\Tremor;..\..\..\AkAudiolib\Win32;..\..\..\AkAudiolib\SoftwarePipeline;..\..\..\AkAudiolib\Common;..\..\..\..\..\include;..\SIMD;..\Tremor\SIMD;..\..\..\Plugins\Effects\Common;..\Tremor\FloatingPoint;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)AkVorbisDecoder.lib</OutputFile>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Gaming.Desktop.x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>WINAPI_FAMILY=WINAPI_FAMILY_GAMES;_CRT_SECURE_NO_WARNINGS;__WRL_NO_DEFAULT_LIB__;NDEBUG;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Common;..\Tremor;..\..\..\AkAudiolib\Win32;..\..\..\AkAudiolib\SoftwarePipeline;..\..\..\AkAudiolib\Common;..\..\..\..\..\include;..\SIMD;..\Tremor\SIMD;..\..\..\Plugins\Effects\Common;..\Tremor\FloatingPoint;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalOptions>/wd4244 /wd4305 /wd4267 %(AdditionalOptions)</AdditionalOptions>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WINAPI_FAMILY=WINAPI_FAMILY_GAMES;_CRT_SECURE_NO_WARNINGS;__WRL_NO_DEFAULT_LIB__;NDEBUG;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Common;..\Tremor;..\..\..\AkAudiolib\Win32;..\..\..\AkAudiolib\SoftwarePipeline;..\..\..\AkAudiolib\Common;..\..\..\..\..\include;..\SIMD;..\Tremor\SIMD;..\..\..\Plugins\Effects\Common;..\Tremor\FloatingPoint;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)AkVorbisDecoder.lib</OutputFile>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile_EnableAsserts|Gaming.Desktop.x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>WINAPI_FAMILY=WINAPI_FAMILY_GAMES;_CRT_SECURE_NO_WARNINGS;__WRL_NO_DEFAULT_LIB__;NDEBUG;AK_ENABLE_ASSERTS;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Common;..\Tremor;..\..\..\AkAudiolib\Win32;..\..\..\AkAudiolib\SoftwarePipeline;..\..\..\AkAudiolib\Common;..\..\..\..\..\include;..\SIMD;..\Tremor\SIMD;..\..\..\Plugins\Effects\Common;..\Tremor\FloatingPoint;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalOptions>/wd4244 /wd4305 /wd4267 %(AdditionalOptions)</AdditionalOptions>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WINAPI_FAMILY=WINAPI_FAMILY_GAMES;_CRT_SECURE_NO_WARNINGS;__WRL_NO_DEFAULT_LIB__;NDEBUG;AK_ENABLE_ASSERTS;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Common;..\Tremor;..\..\..\AkAudiolib\Win32;..\..\..\AkAudiolib\SoftwarePipeline;..\..\..\AkAudiolib\Common;..\..\..\..\..\include;..\SIMD;..\Tremor\SIMD;..\..\..\Plugins\Effects\Common;..\Tremor\FloatingPoint;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)AkVorbisDecoder.lib</OutputFile>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Gaming.Desktop.x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>WINAPI_FAMILY=WINAPI_FAMILY_GAMES;_CRT_SECURE_NO_WARNINGS;__WRL_NO_DEFAULT_LIB__;NDEBUG;AK_OPTIMIZED;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Common;..\Tremor;..\..\..\AkAudiolib\Win32;..\..\..\AkAudiolib\SoftwarePipeline;..\..\..\AkAudiolib\Common;..\..\..\..\..\include;..\SIMD;..\Tremor\SIMD;..\..\..\Plugins\Effects\Common;..\Tremor\FloatingPoint;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalOptions>/wd4244 /wd4305 /wd4267 %(AdditionalOptions)</AdditionalOptions>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WINAPI_FAMILY=WINAPI_FAMILY_GAMES;_CRT_SECURE_NO_WARNINGS;__WRL_NO_DEFAULT_LIB__;NDEBUG;AK_OPTIMIZED;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Common;..\Tremor;..\..\..\AkAudiolib\Win32;..\..\..\AkAudiolib\SoftwarePipeline;..\..\..\AkAudiolib\Common;..\..\..\..\..\include;..\SIMD;..\Tremor\SIMD;..\..\..\Plugins\Effects\Common;..\Tremor\FloatingPoint;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)AkVorbisDecoder.lib</OutputFile>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\AkSrcBankVorbis.h" />
+    <ClInclude Include="..\Common\AkSrcFileVorbis.h" />
+    <ClInclude Include="..\Common\AkSrcVorbis.h" />
+    <ClInclude Include="..\Common\AkVorbisCodebookMgr.h" />
+    <ClInclude Include="..\Common\AkVorbisInfo.h" />
+    <ClInclude Include="..\Tremor\FloatingPoint\AkVorbisCodec.h" />
+    <ClInclude Include="..\Tremor\SIMD\SinCosGen.h" />
+    <ClInclude Include="..\Tremor\SIMD\mdct.h" />
+    <ClInclude Include="..\Tremor\codebook.h" />
+    <ClInclude Include="..\Tremor\ivorbiscodec.h" />
+    <ClInclude Include="..\Tremor\lsp_lookup.h" />
+    <ClInclude Include="..\Tremor\ogg.h" />
+    <ClInclude Include="..\Tremor\os.h" />
+    <ClInclude Include="..\Tremor\os_types.h" />
+    <ClInclude Include="..\Tremor\packed_codebooks.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Common\AkSrcBankVorbis.cpp" />
+    <ClCompile Include="..\Common\AkSrcFileVorbis.cpp" />
+    <ClCompile Include="..\Common\AkVorbisCodebookMgr.cpp" />
+    <ClCompile Include="..\Common\AkVorbisLib.cpp" />
+    <ClCompile Include="..\Tremor\FloatingPoint\AkVorbisCodec.cpp" />
+    <ClCompile Include="..\Tremor\FloatingPoint\codebook.cpp" />
+    <ClCompile Include="..\Tremor\FloatingPoint\floor1.cpp" />
+    <ClCompile Include="..\Tremor\SIMD\AVX\floor1_avx.cpp">
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <ClCompile Include="..\Tremor\SIMD\SinCosGen.cpp" />
+    <ClCompile Include="..\Tremor\SIMD\dsp.cpp" />
+    <ClCompile Include="..\Tremor\SIMD\mdct_SIMD.cpp" />
+    <ClCompile Include="..\Tremor\akvorbis_bitwise.cpp" />
+    <ClCompile Include="..\Tremor\akvorbis_info.cpp" />
+    <ClCompile Include="..\Tremor\mapping0.cpp" />
+    <ClCompile Include="..\Tremor\packed_codebooks.cpp" />
+    <ClCompile Include="..\Tremor\res012.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Gaming.Desktop.x64'">
+    <ReferencePath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</ReferencePath>
+    <LibraryWPath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</LibraryWPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_NoIteratorDebugging|Gaming.Desktop.x64'">
+    <ReferencePath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</ReferencePath>
+    <LibraryWPath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</LibraryWPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Gaming.Desktop.x64'">
+    <ReferencePath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</ReferencePath>
+    <LibraryWPath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</LibraryWPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile_EnableAsserts|Gaming.Desktop.x64'">
+    <ReferencePath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</ReferencePath>
+    <LibraryWPath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</LibraryWPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Gaming.Desktop.x64'">
+    <ReferencePath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</ReferencePath>
+    <LibraryWPath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</LibraryWPath>
+  </PropertyGroup>
+</Project>

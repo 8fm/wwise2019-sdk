@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkStreamMgr", "AkStreamMgr.vcxproj", "{82124C0B-D109-B6F8-2978-5791B294C739}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|GGP = Debug|GGP
+		Profile_EnableAsserts|GGP = Profile_EnableAsserts|GGP
+		Profile|GGP = Profile|GGP
+		Release|GGP = Release|GGP
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82124C0B-D109-B6F8-2978-5791B294C739}.Debug|GGP.ActiveCfg = Debug|GGP
+		{82124C0B-D109-B6F8-2978-5791B294C739}.Debug|GGP.Build.0 = Debug|GGP
+		{82124C0B-D109-B6F8-2978-5791B294C739}.Profile_EnableAsserts|GGP.ActiveCfg = Profile_EnableAsserts|GGP
+		{82124C0B-D109-B6F8-2978-5791B294C739}.Profile_EnableAsserts|GGP.Build.0 = Profile_EnableAsserts|GGP
+		{82124C0B-D109-B6F8-2978-5791B294C739}.Profile|GGP.ActiveCfg = Profile|GGP
+		{82124C0B-D109-B6F8-2978-5791B294C739}.Profile|GGP.Build.0 = Profile|GGP
+		{82124C0B-D109-B6F8-2978-5791B294C739}.Release|GGP.ActiveCfg = Release|GGP
+		{82124C0B-D109-B6F8-2978-5791B294C739}.Release|GGP.Build.0 = Release|GGP
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

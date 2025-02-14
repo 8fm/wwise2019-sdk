@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="AkAudiolib">
+      <UniqueIdentifier>{3B45817F-A7A6-5E8D-3014-A53F9C74954C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AkAudiolib\Common">
+      <UniqueIdentifier>{13C23EDC-FFD1-EAAC-688B-4FCB54BAD945}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AkAudiolib\Common\ak_fft">
+      <UniqueIdentifier>{8DF0AE62-F95E-04E2-4248-BFE1AEF5F97D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AkAudiolib\Common\ak_fft\tools">
+      <UniqueIdentifier>{EDBA0AA2-594A-CC8C-6246-ADA4CE540799}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{845E7801-70C1-07A6-1947-405C0589D328}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{79269E1A-E590-5291-2ECF-03379A7830E6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\AkAudiolib\Common\ak_fft\_ak_fft_guts.h">
+      <Filter>AkAudiolib\Common\ak_fft</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AkAudiolib\Common\ak_fft\ak_fft.h">
+      <Filter>AkAudiolib\Common\ak_fft</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AkAudiolib\Common\ak_fft\tools\ak_fftr.h">
+      <Filter>AkAudiolib\Common\ak_fft\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Common\AkPhaseVocoder.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Common\AkResamplingPhaseVocoder.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Common\AkSIMDMath.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Common\CircularBuffer.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Common\FreqWindow.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Common\OLACircularBuffer.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Common\ResamplingCircularBuffer.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Common\TimeWindow.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\DelayLineLight.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Mix2Interp.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AkHarmonizerDSPProcess.h" />
+    <ClInclude Include="..\AkHarmonizerFX.h" />
+    <ClInclude Include="..\AkHarmonizerFXInfo.h" />
+    <ClInclude Include="..\AkHarmonizerFXParams.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\AkAudiolib\Common\ak_fft\ak_fft.cpp">
+      <Filter>AkAudiolib\Common\ak_fft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AkAudiolib\Common\ak_fft\tools\ak_fftr.cpp">
+      <Filter>AkAudiolib\Common\ak_fft\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Common\AkPhaseVocoder.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Common\AkResamplingPhaseVocoder.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Common\CircularBuffer.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Common\FreqWindow.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Common\OLACircularBuffer.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Common\ResamplingCircularBuffer.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Common\TimeWindow.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\DelayLineLight.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Mix2Interp.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AkHarmonizerDSPProcess.cpp" />
+    <ClCompile Include="..\AkHarmonizerFX.cpp" />
+    <ClCompile Include="..\AkHarmonizerFXParams.cpp" />
+    <ClCompile Include="..\InitAkHarmonizerFX.cpp" />
+  </ItemGroup>
+</Project>

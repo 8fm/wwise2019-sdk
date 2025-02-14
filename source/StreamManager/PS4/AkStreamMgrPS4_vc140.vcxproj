@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ORBIS">
+      <Configuration>Debug</Configuration>
+      <Platform>ORBIS</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|ORBIS">
+      <Configuration>Profile</Configuration>
+      <Platform>ORBIS</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile_EnableAsserts|ORBIS">
+      <Configuration>Profile_EnableAsserts</Configuration>
+      <Platform>ORBIS</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ORBIS">
+      <Configuration>Release</Configuration>
+      <Platform>ORBIS</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8F3DCC8E-B509-CA62-77A7-C01A99D1801D}</ProjectGuid>
+    <ProjectName>AkStreamMgr</ProjectName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <VcpkgEnabled Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">false</VcpkgEnabled>
+    <VcpkgEnabled Condition="'$(Configuration)|$(Platform)'=='Profile|ORBIS'">false</VcpkgEnabled>
+    <VcpkgEnabled Condition="'$(Configuration)|$(Platform)'=='Profile_EnableAsserts|ORBIS'">false</VcpkgEnabled>
+    <VcpkgEnabled Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">false</VcpkgEnabled>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|ORBIS'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile_EnableAsserts|ORBIS'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="../../Build/PropertySheets/PS4/PS4.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Profile|ORBIS'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="../../Build/PropertySheets/PS4/PS4.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Profile_EnableAsserts|ORBIS'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="../../Build/PropertySheets/PS4/PS4.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="../../Build/PropertySheets/PS4/PS4.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">
+    <OutDir>..\..\..\PS4\Debug\lib\</OutDir>
+    <IntDir>..\..\..\PS4\Debug\obj\$(ProjectName)\</IntDir>
+    <TargetName>libAkStreamMgr</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|ORBIS'">
+    <OutDir>..\..\..\PS4\Profile\lib\</OutDir>
+    <IntDir>..\..\..\PS4\Profile\obj\$(ProjectName)\</IntDir>
+    <TargetName>libAkStreamMgr</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile_EnableAsserts|ORBIS'">
+    <OutDir>..\..\..\PS4\Profile_EnableAsserts\lib\</OutDir>
+    <IntDir>..\..\..\PS4\Profile_EnableAsserts\obj\$(ProjectName)\</IntDir>
+    <TargetName>libAkStreamMgr</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">
+    <OutDir>..\..\..\PS4\Release\lib\</OutDir>
+    <IntDir>..\..\..\PS4\Release\obj\$(ProjectName)\</IntDir>
+    <TargetName>libAkStreamMgr</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <PreprocessorDefinitions>SN_TARGET_ORBIS;__SCE__;AUDIOKINETIC;_DEBUG;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SCE_ORBIS_SDK_DIR)\target\include;$(SCE_ORBIS_SDK_DIR)\target\include_common;$(SCE_ORBIS_SDK_DIR)\host_tools\lib\clang\3.1\include;..\..\..\include;.;..\Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalOptions>-Wno-invalid-offsetof -Wno-switch -Wno-unused-variable -Wno-unused-function -Wno-missing-braces -Wno-unused-value -Werror %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>SN_TARGET_ORBIS;__SCE__;AUDIOKINETIC;_DEBUG;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SCE_ORBIS_SDK_DIR)\target\include;$(SCE_ORBIS_SDK_DIR)\target\include_common;$(SCE_ORBIS_SDK_DIR)\host_tools\lib\clang\3.1\include;..\..\..\include;.;..\Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <TreatLibWarningAsErrors>true</TreatLibWarningAsErrors>
+      <OutputFile>$(OutDir)libAkStreamMgr.a</OutputFile>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|ORBIS'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <PreprocessorDefinitions>SN_TARGET_ORBIS;__SCE__;AUDIOKINETIC;NDEBUG;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SCE_ORBIS_SDK_DIR)\target\include;$(SCE_ORBIS_SDK_DIR)\target\include_common;$(SCE_ORBIS_SDK_DIR)\host_tools\lib\clang\3.1\include;..\..\..\include;.;..\Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>MaxSpeed</Optimization>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizationLevel>Level3</OptimizationLevel>
+      <FastMath>true</FastMath>
+      <AdditionalOptions>-Wno-invalid-offsetof -Wno-switch -Wno-unused-variable -Wno-unused-function -Wno-missing-braces -Wno-unused-value -Werror %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>SN_TARGET_ORBIS;__SCE__;AUDIOKINETIC;NDEBUG;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SCE_ORBIS_SDK_DIR)\target\include;$(SCE_ORBIS_SDK_DIR)\target\include_common;$(SCE_ORBIS_SDK_DIR)\host_tools\lib\clang\3.1\include;..\..\..\include;.;..\Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <TreatLibWarningAsErrors>true</TreatLibWarningAsErrors>
+      <OutputFile>$(OutDir)libAkStreamMgr.a</OutputFile>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile_EnableAsserts|ORBIS'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <PreprocessorDefinitions>SN_TARGET_ORBIS;__SCE__;AUDIOKINETIC;NDEBUG;AK_ENABLE_ASSERTS;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SCE_ORBIS_SDK_DIR)\target\include;$(SCE_ORBIS_SDK_DIR)\target\include_common;$(SCE_ORBIS_SDK_DIR)\host_tools\lib\clang\3.1\include;..\..\..\include;.;..\Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>MaxSpeed</Optimization>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizationLevel>Level3</OptimizationLevel>
+      <FastMath>true</FastMath>
+      <AdditionalOptions>-Wno-invalid-offsetof -Wno-switch -Wno-unused-variable -Wno-unused-function -Wno-missing-braces -Wno-unused-value -Werror %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>SN_TARGET_ORBIS;__SCE__;AUDIOKINETIC;NDEBUG;AK_ENABLE_ASSERTS;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SCE_ORBIS_SDK_DIR)\target\include;$(SCE_ORBIS_SDK_DIR)\target\include_common;$(SCE_ORBIS_SDK_DIR)\host_tools\lib\clang\3.1\include;..\..\..\include;.;..\Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <TreatLibWarningAsErrors>true</TreatLibWarningAsErrors>
+      <OutputFile>$(OutDir)libAkStreamMgr.a</OutputFile>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <PreprocessorDefinitions>SN_TARGET_ORBIS;__SCE__;AUDIOKINETIC;NDEBUG;AK_OPTIMIZED;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SCE_ORBIS_SDK_DIR)\target\include;$(SCE_ORBIS_SDK_DIR)\target\include_common;$(SCE_ORBIS_SDK_DIR)\host_tools\lib\clang\3.1\include;..\..\..\include;.;..\Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>MaxSpeed</Optimization>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizationLevel>Level3</OptimizationLevel>
+      <FastMath>true</FastMath>
+      <AdditionalOptions>-Wno-invalid-offsetof -Wno-switch -Wno-unused-variable -Wno-unused-function -Wno-missing-braces -Wno-unused-value -Werror %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>SN_TARGET_ORBIS;__SCE__;AUDIOKINETIC;NDEBUG;AK_OPTIMIZED;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SCE_ORBIS_SDK_DIR)\target\include;$(SCE_ORBIS_SDK_DIR)\target\include_common;$(SCE_ORBIS_SDK_DIR)\host_tools\lib\clang\3.1\include;..\..\..\include;.;..\Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <TreatLibWarningAsErrors>true</TreatLibWarningAsErrors>
+      <OutputFile>$(OutDir)libAkStreamMgr.a</OutputFile>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\AkBuddyBlockPool.h" />
+    <ClInclude Include="..\Common\AkDeviceBase.h" />
+    <ClInclude Include="..\Common\AkDeviceBlocking.h" />
+    <ClInclude Include="..\Common\AkDeviceDeferredLinedUp.h" />
+    <ClInclude Include="..\Common\AkIOMemMgr.h" />
+    <ClInclude Include="..\Common\AkStmDeferredLinedUpBase.h" />
+    <ClInclude Include="..\Common\AkStmMemView.h" />
+    <ClInclude Include="..\Common\AkStreamMgr.h" />
+    <ClInclude Include="..\Common\AkStreamingDefaults.h" />
+    <ClInclude Include="..\Common\AkTransferDeferred.h" />
+    <ClInclude Include="AkIOThread.h" />
+    <ClInclude Include="AkPlatformStreamingDefaults.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Common\AkDeviceBase.cpp" />
+    <ClCompile Include="..\Common\AkDeviceBlocking.cpp" />
+    <ClCompile Include="..\Common\AkDeviceDeferredLinedUp.cpp" />
+    <ClCompile Include="..\Common\AkIOMemMgr.cpp" />
+    <ClCompile Include="..\Common\AkStreamMgr.cpp" />
+    <ClCompile Include="..\Common\AkTransferDeferred.cpp" />
+    <ClCompile Include="AkIOThread.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

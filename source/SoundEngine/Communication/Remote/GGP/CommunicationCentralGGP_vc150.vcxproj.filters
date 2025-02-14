@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{845E7801-70C1-07A6-1947-405C0589D328}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CodeBase">
+      <UniqueIdentifier>{E6A11925-5257-921A-DB4B-8CF14700891E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PC">
+      <UniqueIdentifier>{4373590B-AF87-81BC-7809-251CE4DC7DED}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="POSIX">
+      <UniqueIdentifier>{C34FF537-AF1C-5043-D835-3EEBC46185D1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Common\ChannelSerializer.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\CommunicationDefines.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ConsoleDiscoveryMessage.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\MonitorDeserializer.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\MonitorSerializer.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Serializer.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CodeBase\BaseChannel.h">
+      <Filter>CodeBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CodeBase\CommandChannel.h">
+      <Filter>CodeBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CodeBase\CommunicationCentral.h">
+      <Filter>CodeBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CodeBase\DiscoveryChannel.h">
+      <Filter>CodeBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CodeBase\GameSocket.h">
+      <Filter>CodeBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CodeBase\GameSocketAddr.h">
+      <Filter>CodeBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CodeBase\IChannelsHolder.h">
+      <Filter>CodeBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CodeBase\ICommandChannelHandler.h">
+      <Filter>CodeBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CodeBase\ICommunicationCentral.h">
+      <Filter>CodeBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CodeBase\ICommunicationCentralNotifyHandler.h">
+      <Filter>CodeBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CodeBase\INotificationChannel.h">
+      <Filter>CodeBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CodeBase\IncomingChannel.h">
+      <Filter>CodeBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CodeBase\Network.h">
+      <Filter>CodeBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CodeBase\NetworkTypes.h">
+      <Filter>CodeBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CodeBase\NotificationChannel.h">
+      <Filter>CodeBase</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Common\ConsoleDiscoveryMessage.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Serializer.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CodeBase\BaseChannel.cpp">
+      <Filter>CodeBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CodeBase\CommandChannel.cpp">
+      <Filter>CodeBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CodeBase\Communication.cpp">
+      <Filter>CodeBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CodeBase\CommunicationCentral.cpp">
+      <Filter>CodeBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CodeBase\DiscoveryChannel.cpp">
+      <Filter>CodeBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CodeBase\IncomingChannel.cpp">
+      <Filter>CodeBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CodeBase\NotificationChannel.cpp">
+      <Filter>CodeBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PC\GameSocketAddr.cpp">
+      <Filter>PC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\POSIX\GameSocket.cpp">
+      <Filter>POSIX</Filter>
+    </ClCompile>
+    <ClCompile Include="..\POSIX\Network.cpp">
+      <Filter>POSIX</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

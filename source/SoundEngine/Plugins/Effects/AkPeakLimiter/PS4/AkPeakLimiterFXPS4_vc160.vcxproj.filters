@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="..\AkPeakLimiterFX.h" />
+    <ClInclude Include="..\AkPeakLimiterFXParams.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\AkPeakLimiterFX.cpp" />
+    <ClCompile Include="..\AkPeakLimiterFXParams.cpp" />
+    <ClCompile Include="..\InitAkPeakLimiterFX.cpp" />
+  </ItemGroup>
+</Project>

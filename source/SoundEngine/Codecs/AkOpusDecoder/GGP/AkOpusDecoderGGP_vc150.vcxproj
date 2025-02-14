@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|GGP">
+      <Configuration>Debug</Configuration>
+      <Platform>GGP</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|GGP">
+      <Configuration>Profile</Configuration>
+      <Platform>GGP</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile_EnableAsserts|GGP">
+      <Configuration>Profile_EnableAsserts</Configuration>
+      <Platform>GGP</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|GGP">
+      <Configuration>Release</Configuration>
+      <Platform>GGP</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3B283EA1-502C-475C-7CBE-D4439489E843}</ProjectGuid>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <ProjectName>AkOpusDecoder</ProjectName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <VcpkgEnabled Condition="'$(Configuration)|$(Platform)'=='Debug|GGP'">false</VcpkgEnabled>
+    <VcpkgEnabled Condition="'$(Configuration)|$(Platform)'=='Profile|GGP'">false</VcpkgEnabled>
+    <VcpkgEnabled Condition="'$(Configuration)|$(Platform)'=='Profile_EnableAsserts|GGP'">false</VcpkgEnabled>
+    <VcpkgEnabled Condition="'$(Configuration)|$(Platform)'=='Release|GGP'">false</VcpkgEnabled>
+    <GgpToolchainPath>$(GGP_SDK_PATH)\BaseSDK\LLVM\7.0.1</GgpToolchainPath>
+    <GgpHeaderPath>$(GGP_SDK_PATH)\BaseSDK\ggp\include\ggp_latest</GgpHeaderPath>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|GGP'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|GGP'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile_EnableAsserts|GGP'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|GGP'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|GGP'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Profile|GGP'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Profile_EnableAsserts|GGP'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|GGP'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|GGP'">
+    <OutDir>..\..\..\..\..\$(Platform)\$(Configuration)\lib\</OutDir>
+    <IntDir>..\..\..\..\..\$(Platform)\$(Configuration)\obj\$(ProjectName)\</IntDir>
+    <TargetName>libAkOpusDecoder</TargetName>
+    <TargetExt>.a</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|GGP'">
+    <OutDir>..\..\..\..\..\$(Platform)\$(Configuration)\lib\</OutDir>
+    <IntDir>..\..\..\..\..\$(Platform)\$(Configuration)\obj\$(ProjectName)\</IntDir>
+    <TargetName>libAkOpusDecoder</TargetName>
+    <TargetExt>.a</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile_EnableAsserts|GGP'">
+    <OutDir>..\..\..\..\..\$(Platform)\$(Configuration)\lib\</OutDir>
+    <IntDir>..\..\..\..\..\$(Platform)\$(Configuration)\obj\$(ProjectName)\</IntDir>
+    <TargetName>libAkOpusDecoder</TargetName>
+    <TargetExt>.a</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|GGP'">
+    <OutDir>..\..\..\..\..\$(Platform)\$(Configuration)\lib\</OutDir>
+    <IntDir>..\..\..\..\..\$(Platform)\$(Configuration)\obj\$(ProjectName)\</IntDir>
+    <TargetName>libAkOpusDecoder</TargetName>
+    <TargetExt>.a</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|GGP'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <PreprocessorDefinitions>_DEBUG;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;FLOAT_APPROX;HAVE_CONFIG_H;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\opus;..\opus\include;..\opus\celt;..\opus\silk;..\opus\silk\float;..\..\..\..\..\include;..\..\..\AkAudiolib\SoftwarePipeline;..\..\..\AkAudiolib\Common;..\..\..\AkAudiolib\GGP;..\opusfile\include;..\libogg\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ExceptionHandling>false</ExceptionHandling>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>-fPIC -fvisibility=hidden -Wno-invalid-offsetof %(AdditionalOptions)</AdditionalOptions>
+      <UseMultiToolTask>true</UseMultiToolTask>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;FLOAT_APPROX;HAVE_CONFIG_H;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\opus;..\opus\include;..\opus\celt;..\opus\silk;..\opus\silk\float;..\..\..\..\..\include;..\..\..\AkAudiolib\SoftwarePipeline;..\..\..\AkAudiolib\Common;..\..\..\AkAudiolib\GGP;..\opusfile\include;..\libogg\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)libAkOpusDecoder.a</OutputFile>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|GGP'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>NDEBUG;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;FLOAT_APPROX;HAVE_CONFIG_H;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\opus;..\opus\include;..\opus\celt;..\opus\silk;..\opus\silk\float;..\..\..\..\..\include;..\..\..\AkAudiolib\SoftwarePipeline;..\..\..\AkAudiolib\Common;..\..\..\AkAudiolib\GGP;..\opusfile\include;..\libogg\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <ExceptionHandling>false</ExceptionHandling>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>-fPIC -fvisibility=hidden -Wno-invalid-offsetof %(AdditionalOptions)</AdditionalOptions>
+      <UseMultiToolTask>true</UseMultiToolTask>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;FLOAT_APPROX;HAVE_CONFIG_H;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\opus;..\opus\include;..\opus\celt;..\opus\silk;..\opus\silk\float;..\..\..\..\..\include;..\..\..\AkAudiolib\SoftwarePipeline;..\..\..\AkAudiolib\Common;..\..\..\AkAudiolib\GGP;..\opusfile\include;..\libogg\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)libAkOpusDecoder.a</OutputFile>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile_EnableAsserts|GGP'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>NDEBUG;AK_ENABLE_ASSERTS;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;FLOAT_APPROX;HAVE_CONFIG_H;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\opus;..\opus\include;..\opus\celt;..\opus\silk;..\opus\silk\float;..\..\..\..\..\include;..\..\..\AkAudiolib\SoftwarePipeline;..\..\..\AkAudiolib\Common;..\..\..\AkAudiolib\GGP;..\opusfile\include;..\libogg\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <ExceptionHandling>false</ExceptionHandling>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>-fPIC -fvisibility=hidden -Wno-invalid-offsetof %(AdditionalOptions)</AdditionalOptions>
+      <UseMultiToolTask>true</UseMultiToolTask>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;AK_ENABLE_ASSERTS;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;FLOAT_APPROX;HAVE_CONFIG_H;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\opus;..\opus\include;..\opus\celt;..\opus\silk;..\opus\silk\float;..\..\..\..\..\include;..\..\..\AkAudiolib\SoftwarePipeline;..\..\..\AkAudiolib\Common;..\..\..\AkAudiolib\GGP;..\opusfile\include;..\libogg\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)libAkOpusDecoder.a</OutputFile>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|GGP'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>NDEBUG;AK_OPTIMIZED;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;FLOAT_APPROX;HAVE_CONFIG_H;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\opus;..\opus\include;..\opus\celt;..\opus\silk;..\opus\silk\float;..\..\..\..\..\include;..\..\..\AkAudiolib\SoftwarePipeline;..\..\..\AkAudiolib\Common;..\..\..\AkAudiolib\GGP;..\opusfile\include;..\libogg\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <ExceptionHandling>false</ExceptionHandling>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>-fPIC -fvisibility=hidden -Wno-invalid-offsetof %(AdditionalOptions)</AdditionalOptions>
+      <UseMultiToolTask>true</UseMultiToolTask>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;AK_OPTIMIZED;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;FLOAT_APPROX;HAVE_CONFIG_H;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\opus;..\opus\include;..\opus\celt;..\opus\silk;..\opus\silk\float;..\..\..\..\..\include;..\..\..\AkAudiolib\SoftwarePipeline;..\..\..\AkAudiolib\Common;..\..\..\AkAudiolib\GGP;..\opusfile\include;..\libogg\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)libAkOpusDecoder.a</OutputFile>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\opus\silk\float\SigProc_FLP.h" />
+    <ClInclude Include="..\opus\silk\float\main_FLP.h" />
+    <ClInclude Include="..\opus\silk\float\structs_FLP.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\AkCodecWemOpus.cpp" />
+    <ClCompile Include="..\AkOpusLib.cpp" />
+    <ClCompile Include="..\AkSrcFileOpus.cpp" />
+    <ClCompile Include="..\OpusCommon.cpp" />
+    <ClCompile Include="..\libogg\src\bitwise.c" />
+    <ClCompile Include="..\libogg\src\framing.c" />
+    <ClCompile Include="..\opus\celt\SIMDCode_CELT.c" />
+    <ClCompile Include="..\opus\celt\bands.c" />
+    <ClCompile Include="..\opus\celt\celt.c" />
+    <ClCompile Include="..\opus\celt\celt_decoder.c" />
+    <ClCompile Include="..\opus\celt\celt_lpc.c" />
+    <ClCompile Include="..\opus\celt\cwrs.c" />
+    <ClCompile Include="..\opus\celt\entcode.c" />
+    <ClCompile Include="..\opus\celt\entdec.c" />
+    <ClCompile Include="..\opus\celt\entenc.c" />
+    <ClCompile Include="..\opus\celt\kiss_fft.c" />
+    <ClCompile Include="..\opus\celt\laplace.c" />
+    <ClCompile Include="..\opus\celt\mathops.c" />
+    <ClCompile Include="..\opus\celt\mdct.c" />
+    <ClCompile Include="..\opus\celt\modes.c" />
+    <ClCompile Include="..\opus\celt\pitch.c" />
+    <ClCompile Include="..\opus\celt\quant_bands.c" />
+    <ClCompile Include="..\opus\celt\rate.c" />
+    <ClCompile Include="..\opus\celt\vq.c" />
+    <ClCompile Include="..\opus\silk\A2NLSF.c" />
+    <ClCompile Include="..\opus\silk\CNG.c" />
+    <ClCompile Include="..\opus\silk\HP_variable_cutoff.c" />
+    <ClCompile Include="..\opus\silk\LPC_analysis_filter.c" />
+    <ClCompile Include="..\opus\silk\LPC_fit.c" />
+    <ClCompile Include="..\opus\silk\LPC_inv_pred_gain.c" />
+    <ClCompile Include="..\opus\silk\LP_variable_cutoff.c" />
+    <ClCompile Include="..\opus\silk\NLSF2A.c" />
+    <ClCompile Include="..\opus\silk\NLSF_VQ.c" />
+    <ClCompile Include="..\opus\silk\NLSF_VQ_weights_laroia.c" />
+    <ClCompile Include="..\opus\silk\NLSF_decode.c" />
+    <ClCompile Include="..\opus\silk\NLSF_del_dec_quant.c" />
+    <ClCompile Include="..\opus\silk\NLSF_encode.c" />
+    <ClCompile Include="..\opus\silk\NLSF_stabilize.c" />
+    <ClCompile Include="..\opus\silk\NLSF_unpack.c" />
+    <ClCompile Include="..\opus\silk\NSQ.c" />
+    <ClCompile Include="..\opus\silk\NSQ_del_dec.c" />
+    <ClCompile Include="..\opus\silk\PLC.c" />
+    <ClCompile Include="..\opus\silk\SIMDCode_SILK.c" />
+    <ClCompile Include="..\opus\silk\VAD.c" />
+    <ClCompile Include="..\opus\silk\VQ_WMat_EC.c" />
+    <ClCompile Include="..\opus\silk\ana_filt_bank_1.c" />
+    <ClCompile Include="..\opus\silk\biquad_alt.c" />
+    <ClCompile Include="..\opus\silk\bwexpander.c" />
+    <ClCompile Include="..\opus\silk\bwexpander_32.c" />
+    <ClCompile Include="..\opus\silk\check_control_input.c" />
+    <ClCompile Include="..\opus\silk\code_signs.c" />
+    <ClCompile Include="..\opus\silk\control_SNR.c" />
+    <ClCompile Include="..\opus\silk\control_audio_bandwidth.c" />
+    <ClCompile Include="..\opus\silk\control_codec.c" />
+    <ClCompile Include="..\opus\silk\debug.c" />
+    <ClCompile Include="..\opus\silk\dec_API.c" />
+    <ClCompile Include="..\opus\silk\decode_core.c" />
+    <ClCompile Include="..\opus\silk\decode_frame.c" />
+    <ClCompile Include="..\opus\silk\decode_indices.c" />
+    <ClCompile Include="..\opus\silk\decode_parameters.c" />
+    <ClCompile Include="..\opus\silk\decode_pitch.c" />
+    <ClCompile Include="..\opus\silk\decode_pulses.c" />
+    <ClCompile Include="..\opus\silk\decoder_set_fs.c" />
+    <ClCompile Include="..\opus\silk\float\LPC_analysis_filter_FLP.c" />
+    <ClCompile Include="..\opus\silk\float\LPC_inv_pred_gain_FLP.c" />
+    <ClCompile Include="..\opus\silk\float\LTP_analysis_filter_FLP.c" />
+    <ClCompile Include="..\opus\silk\float\LTP_scale_ctrl_FLP.c" />
+    <ClCompile Include="..\opus\silk\float\apply_sine_window_FLP.c" />
+    <ClCompile Include="..\opus\silk\float\autocorrelation_FLP.c" />
+    <ClCompile Include="..\opus\silk\float\burg_modified_FLP.c" />
+    <ClCompile Include="..\opus\silk\float\bwexpander_FLP.c" />
+    <ClCompile Include="..\opus\silk\float\corrMatrix_FLP.c" />
+    <ClCompile Include="..\opus\silk\float\encode_frame_FLP.c" />
+    <ClCompile Include="..\opus\silk\float\energy_FLP.c" />
+    <ClCompile Include="..\opus\silk\float\find_LPC_FLP.c" />
+    <ClCompile Include="..\opus\silk\float\find_LTP_FLP.c" />
+    <ClCompile Include="..\opus\silk\float\find_pitch_lags_FLP.c" />
+    <ClCompile Include="..\opus\silk\float\find_pred_coefs_FLP.c" />
+    <ClCompile Include="..\opus\silk\float\inner_product_FLP.c" />
+    <ClCompile Include="..\opus\silk\float\k2a_FLP.c" />
+    <ClCompile Include="..\opus\silk\float\noise_shape_analysis_FLP.c" />
+    <ClCompile Include="..\opus\silk\float\pitch_analysis_core_FLP.c" />
+    <ClCompile Include="..\opus\silk\float\process_gains_FLP.c" />
+    <ClCompile Include="..\opus\silk\float\regularize_correlations_FLP.c" />
+    <ClCompile Include="..\opus\silk\float\residual_energy_FLP.c" />
+    <ClCompile Include="..\opus\silk\float\scale_copy_vector_FLP.c" />
+    <ClCompile Include="..\opus\silk\float\scale_vector_FLP.c" />
+    <ClCompile Include="..\opus\silk\float\schur_FLP.c" />
+    <ClCompile Include="..\opus\silk\float\sort_FLP.c" />
+    <ClCompile Include="..\opus\silk\float\warped_autocorrelation_FLP.c" />
+    <ClCompile Include="..\opus\silk\float\wrappers_FLP.c" />
+    <ClCompile Include="..\opus\silk\gain_quant.c" />
+    <ClCompile Include="..\opus\silk\init_decoder.c" />
+    <ClCompile Include="..\opus\silk\inner_prod_aligned.c" />
+    <ClCompile Include="..\opus\silk\interpolate.c" />
+    <ClCompile Include="..\opus\silk\lin2log.c" />
+    <ClCompile Include="..\opus\silk\log2lin.c" />
+    <ClCompile Include="..\opus\silk\pitch_est_tables.c" />
+    <ClCompile Include="..\opus\silk\process_NLSFs.c" />
+    <ClCompile Include="..\opus\silk\quant_LTP_gains.c" />
+    <ClCompile Include="..\opus\silk\resampler.c" />
+    <ClCompile Include="..\opus\silk\resampler_down2.c" />
+    <ClCompile Include="..\opus\silk\resampler_down2_3.c" />
+    <ClCompile Include="..\opus\silk\resampler_private_AR2.c" />
+    <ClCompile Include="..\opus\silk\resampler_private_IIR_FIR.c" />
+    <ClCompile Include="..\opus\silk\resampler_private_down_FIR.c" />
+    <ClCompile Include="..\opus\silk\resampler_private_up2_HQ.c" />
+    <ClCompile Include="..\opus\silk\resampler_rom.c" />
+    <ClCompile Include="..\opus\silk\shell_coder.c" />
+    <ClCompile Include="..\opus\silk\sigm_Q15.c" />
+    <ClCompile Include="..\opus\silk\sort.c" />
+    <ClCompile Include="..\opus\silk\stereo_LR_to_MS.c" />
+    <ClCompile Include="..\opus\silk\stereo_MS_to_LR.c" />
+    <ClCompile Include="..\opus\silk\stereo_decode_pred.c" />
+    <ClCompile Include="..\opus\silk\stereo_encode_pred.c" />
+    <ClCompile Include="..\opus\silk\stereo_find_predictor.c" />
+    <ClCompile Include="..\opus\silk\stereo_quant_pred.c" />
+    <ClCompile Include="..\opus\silk\sum_sqr_shift.c" />
+    <ClCompile Include="..\opus\silk\table_LSF_cos.c" />
+    <ClCompile Include="..\opus\silk\tables_LTP.c" />
+    <ClCompile Include="..\opus\silk\tables_NLSF_CB_NB_MB.c" />
+    <ClCompile Include="..\opus\silk\tables_NLSF_CB_WB.c" />
+    <ClCompile Include="..\opus\silk\tables_gain.c" />
+    <ClCompile Include="..\opus\silk\tables_other.c" />
+    <ClCompile Include="..\opus\silk\tables_pitch_lag.c" />
+    <ClCompile Include="..\opus\silk\tables_pulses_per_block.c" />
+    <ClCompile Include="..\opus\src\opus.c" />
+    <ClCompile Include="..\opus\src\opus_decoder.c" />
+    <ClCompile Include="..\opus\src\opus_multistream.c" />
+    <ClCompile Include="..\opus\src\opus_multistream_decoder.c" />
+    <ClCompile Include="..\opusfile\src\http.c" />
+    <ClCompile Include="..\opusfile\src\info.c" />
+    <ClCompile Include="..\opusfile\src\internal.c" />
+    <ClCompile Include="..\opusfile\src\opusfile.c" />
+    <ClCompile Include="..\opusfile\src\stream.c" />
+    <ClCompile Include="..\opusfile\src\wincerts.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

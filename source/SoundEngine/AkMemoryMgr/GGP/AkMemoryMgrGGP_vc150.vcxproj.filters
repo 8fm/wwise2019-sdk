@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="3rdParty">
+      <UniqueIdentifier>{1E6D62C3-0A3A-BDCE-3353-AB761F7FF25C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rdParty\Common">
+      <UniqueIdentifier>{96CCCD5E-0258-3B23-0B69-BE1777739723}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rdParty\Common\rpmalloc">
+      <UniqueIdentifier>{9F1D436A-8B42-92EA-B48D-777AA0119108}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{8EEA3EAC-7A8C-6982-6347-7DD64F88F0D2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\3rdParty\Common\rpmalloc\rpmalloc.h">
+      <Filter>3rdParty\Common\rpmalloc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\Common\rpmalloc\rpmalloc_rename.h">
+      <Filter>3rdParty\Common\rpmalloc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\AkMemoryMgrBase.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\3rdParty\Common\rpmalloc\rpmalloc.c">
+      <Filter>3rdParty\Common\rpmalloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\AkMemoryMgr.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\AkMemoryMgrBase.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

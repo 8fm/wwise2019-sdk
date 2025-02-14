@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Prospero">
+      <Configuration>Debug</Configuration>
+      <Platform>Prospero</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|Prospero">
+      <Configuration>Profile</Configuration>
+      <Platform>Prospero</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile_EnableAsserts|Prospero">
+      <Configuration>Profile_EnableAsserts</Configuration>
+      <Platform>Prospero</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Prospero">
+      <Configuration>Release</Configuration>
+      <Platform>Prospero</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6DB88901-5157-D9CD-FFDB-4573F90D5EC8}</ProjectGuid>
+    <ProjectName>AkVorbisDecoder</ProjectName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <VcpkgEnabled Condition="'$(Configuration)|$(Platform)'=='Debug|Prospero'">false</VcpkgEnabled>
+    <VcpkgEnabled Condition="'$(Configuration)|$(Platform)'=='Profile|Prospero'">false</VcpkgEnabled>
+    <VcpkgEnabled Condition="'$(Configuration)|$(Platform)'=='Profile_EnableAsserts|Prospero'">false</VcpkgEnabled>
+    <VcpkgEnabled Condition="'$(Configuration)|$(Platform)'=='Release|Prospero'">false</VcpkgEnabled>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Prospero'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Prospero'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile_EnableAsserts|Prospero'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Prospero'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Prospero'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="../../../../Build/PropertySheets/Pellegrino/Pellegrino.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Profile|Prospero'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="../../../../Build/PropertySheets/Pellegrino/Pellegrino.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Profile_EnableAsserts|Prospero'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="../../../../Build/PropertySheets/Pellegrino/Pellegrino.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Prospero'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="../../../../Build/PropertySheets/Pellegrino/Pellegrino.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Prospero'">
+    <OutDir>..\..\..\..\..\Pellegrino\Debug\lib\</OutDir>
+    <IntDir>..\..\..\..\..\Pellegrino\Debug\obj\$(ProjectName)\</IntDir>
+    <TargetName>libAkVorbisDecoder</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Prospero'">
+    <OutDir>..\..\..\..\..\Pellegrino\Profile\lib\</OutDir>
+    <IntDir>..\..\..\..\..\Pellegrino\Profile\obj\$(ProjectName)\</IntDir>
+    <TargetName>libAkVorbisDecoder</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile_EnableAsserts|Prospero'">
+    <OutDir>..\..\..\..\..\Pellegrino\Profile_EnableAsserts\lib\</OutDir>
+    <IntDir>..\..\..\..\..\Pellegrino\Profile_EnableAsserts\obj\$(ProjectName)\</IntDir>
+    <TargetName>libAkVorbisDecoder</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Prospero'">
+    <OutDir>..\..\..\..\..\Pellegrino\Release\lib\</OutDir>
+    <IntDir>..\..\..\..\..\Pellegrino\Release\obj\$(ProjectName)\</IntDir>
+    <TargetName>libAkVorbisDecoder</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Prospero'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <PreprocessorDefinitions>_DEBUG;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Common;..\Tremor;..\..\..\AkAudiolib\Pellegrino;..\..\..\AkAudiolib\SoftwarePipeline;..\..\..\AkAudiolib\Common;..\..\..\..\..\include;..\SIMD;..\Tremor\SIMD;..\..\..\Plugins\Effects\Common;..\Tremor\FloatingPoint;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>MaxSpeed</Optimization>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizationLevel>Level3</OptimizationLevel>
+      <FastMath>true</FastMath>
+      <AdditionalOptions>-Wno-invalid-offsetof -Wno-switch -Wno-unused-variable -Wno-unused-function -Wno-missing-braces -Wno-unused-value -Wno-char-subscripts %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Common;..\Tremor;..\..\..\AkAudiolib\Pellegrino;..\..\..\AkAudiolib\SoftwarePipeline;..\..\..\AkAudiolib\Common;..\..\..\..\..\include;..\SIMD;..\Tremor\SIMD;..\..\..\Plugins\Effects\Common;..\Tremor\FloatingPoint;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)libAkVorbisDecoder.a</OutputFile>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Prospero'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>NDEBUG;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Common;..\Tremor;..\..\..\AkAudiolib\Pellegrino;..\..\..\AkAudiolib\SoftwarePipeline;..\..\..\AkAudiolib\Common;..\..\..\..\..\include;..\SIMD;..\Tremor\SIMD;..\..\..\Plugins\Effects\Common;..\Tremor\FloatingPoint;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>MaxSpeed</Optimization>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizationLevel>Level3</OptimizationLevel>
+      <FastMath>true</FastMath>
+      <AdditionalOptions>-Wno-invalid-offsetof -Wno-switch -Wno-unused-variable -Wno-unused-function -Wno-missing-braces -Wno-unused-value -Wno-char-subscripts %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Common;..\Tremor;..\..\..\AkAudiolib\Pellegrino;..\..\..\AkAudiolib\SoftwarePipeline;..\..\..\AkAudiolib\Common;..\..\..\..\..\include;..\SIMD;..\Tremor\SIMD;..\..\..\Plugins\Effects\Common;..\Tremor\FloatingPoint;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)libAkVorbisDecoder.a</OutputFile>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile_EnableAsserts|Prospero'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>NDEBUG;AK_ENABLE_ASSERTS;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Common;..\Tremor;..\..\..\AkAudiolib\Pellegrino;..\..\..\AkAudiolib\SoftwarePipeline;..\..\..\AkAudiolib\Common;..\..\..\..\..\include;..\SIMD;..\Tremor\SIMD;..\..\..\Plugins\Effects\Common;..\Tremor\FloatingPoint;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>MaxSpeed</Optimization>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizationLevel>Level3</OptimizationLevel>
+      <FastMath>true</FastMath>
+      <AdditionalOptions>-Wno-invalid-offsetof -Wno-switch -Wno-unused-variable -Wno-unused-function -Wno-missing-braces -Wno-unused-value -Wno-char-subscripts %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;AK_ENABLE_ASSERTS;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Common;..\Tremor;..\..\..\AkAudiolib\Pellegrino;..\..\..\AkAudiolib\SoftwarePipeline;..\..\..\AkAudiolib\Common;..\..\..\..\..\include;..\SIMD;..\Tremor\SIMD;..\..\..\Plugins\Effects\Common;..\Tremor\FloatingPoint;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)libAkVorbisDecoder.a</OutputFile>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Prospero'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>NDEBUG;AK_OPTIMIZED;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Common;..\Tremor;..\..\..\AkAudiolib\Pellegrino;..\..\..\AkAudiolib\SoftwarePipeline;..\..\..\AkAudiolib\Common;..\..\..\..\..\include;..\SIMD;..\Tremor\SIMD;..\..\..\Plugins\Effects\Common;..\Tremor\FloatingPoint;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>MaxSpeed</Optimization>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizationLevel>Level3</OptimizationLevel>
+      <FastMath>true</FastMath>
+      <AdditionalOptions>-Wno-invalid-offsetof -Wno-switch -Wno-unused-variable -Wno-unused-function -Wno-missing-braces -Wno-unused-value -Wno-char-subscripts %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;AK_OPTIMIZED;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Common;..\Tremor;..\..\..\AkAudiolib\Pellegrino;..\..\..\AkAudiolib\SoftwarePipeline;..\..\..\AkAudiolib\Common;..\..\..\..\..\include;..\SIMD;..\Tremor\SIMD;..\..\..\Plugins\Effects\Common;..\Tremor\FloatingPoint;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)libAkVorbisDecoder.a</OutputFile>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\AkSrcBankVorbis.h" />
+    <ClInclude Include="..\Common\AkSrcFileVorbis.h" />
+    <ClInclude Include="..\Common\AkSrcVorbis.h" />
+    <ClInclude Include="..\Common\AkVorbisCodebookMgr.h" />
+    <ClInclude Include="..\Common\AkVorbisInfo.h" />
+    <ClInclude Include="..\Tremor\FloatingPoint\AkVorbisCodec.h" />
+    <ClInclude Include="..\Tremor\SIMD\SinCosGen.h" />
+    <ClInclude Include="..\Tremor\SIMD\mdct.h" />
+    <ClInclude Include="..\Tremor\codebook.h" />
+    <ClInclude Include="..\Tremor\ivorbiscodec.h" />
+    <ClInclude Include="..\Tremor\lsp_lookup.h" />
+    <ClInclude Include="..\Tremor\ogg.h" />
+    <ClInclude Include="..\Tremor\os.h" />
+    <ClInclude Include="..\Tremor\os_types.h" />
+    <ClInclude Include="..\Tremor\packed_codebooks.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Common\AkSrcBankVorbis.cpp" />
+    <ClCompile Include="..\Common\AkSrcFileVorbis.cpp" />
+    <ClCompile Include="..\Common\AkVorbisCodebookMgr.cpp" />
+    <ClCompile Include="..\Common\AkVorbisLib.cpp" />
+    <ClCompile Include="..\Tremor\FloatingPoint\AkVorbisCodec.cpp" />
+    <ClCompile Include="..\Tremor\FloatingPoint\codebook.cpp" />
+    <ClCompile Include="..\Tremor\FloatingPoint\floor1.cpp" />
+    <ClCompile Include="..\Tremor\SIMD\AVX\floor1_avx.cpp">
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <ClCompile Include="..\Tremor\SIMD\SinCosGen.cpp" />
+    <ClCompile Include="..\Tremor\SIMD\dsp.cpp" />
+    <ClCompile Include="..\Tremor\SIMD\mdct_SIMD.cpp" />
+    <ClCompile Include="..\Tremor\akvorbis_bitwise.cpp" />
+    <ClCompile Include="..\Tremor\akvorbis_info.cpp" />
+    <ClCompile Include="..\Tremor\mapping0.cpp" />
+    <ClCompile Include="..\Tremor\packed_codebooks.cpp" />
+    <ClCompile Include="..\Tremor\res012.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

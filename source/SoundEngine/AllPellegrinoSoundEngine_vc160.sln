@@ -1,0 +1,356 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 16
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkMemoryMgr", "AkMemoryMgr\Pellegrino\AkMemoryMgrPellegrino_vc160.vcxproj", "{895922C5-88F8-01D4-63DC-A6FB43B4A69F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkMusicEngine", "AkMusicEngine\Pellegrino\AkMusicEnginePellegrino_vc160.vcxproj", "{EB4EC11C-73F9-04BF-A6D5-AC851ECAFE91}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkSoundEngine", "AkAudiolib\Pellegrino\AkSoundEnginePellegrino_vc160.vcxproj", "{2C80881B-BF37-043A-D2A5-1F2F191EA3A1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkSpatialAudio", "..\SpatialAudio\Pellegrino\AkSpatialAudioPellegrino_vc160.vcxproj", "{75143254-7028-C80C-3CB8-E57E5965B523}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkStreamMgr", "..\StreamManager\Pellegrino\AkStreamMgrPellegrino_vc160.vcxproj", "{89A1A1FC-943C-CEE9-45D0-1CD146883A81}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Communication - Proxy", "Communication - Proxy", "{118C63B7-7D99-919D-0680-8D88728C5D54}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CommunicationCentral", "Communication\Remote\Pellegrino\CommunicationCentralPellegrino_vc160.vcxproj", "{97914A5A-7B8F-CF72-4B4F-FA183934DFB7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Opus", "Opus", "{5339CA5D-3FF1-0BAB-A8F8-E40694CFA69B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkOpusDecoder", "Codecs\AkOpusDecoder\Pellegrino\AkOpusDecoderPellegrino_vc160.vcxproj", "{4E5E6512-E1CB-4F57-62C4-CEDB4F7B5473}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugins", "Plugins", "{6EEF9964-DAAF-159B-A3EA-5E180F6A5A77}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Effects", "Effects", "{1DFD763D-8969-3238-525D-CA95BE8854A0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkCompressorFX", "Plugins\Effects\AkCompressor\Pellegrino\AkCompressorFXPellegrino_vc160.vcxproj", "{87E23BAA-7465-CCF4-5888-460B5B08C744}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkDelayFX", "..\..\samples\Plugins\AkDelay\Sources\AudioEngineFX\Pellegrino\AkDelayFXPellegrino_vc160.vcxproj", "{93394986-04AA-1BED-2E64-11EB6731C2C1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkExpanderFX", "Plugins\Effects\AkExpander\Pellegrino\AkExpanderFXPellegrino_vc160.vcxproj", "{31C0E692-A375-C819-07FB-D03086F04595}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkFlangerFX", "Plugins\Effects\AkFlanger\Pellegrino\AkFlangerFXPellegrino_vc160.vcxproj", "{7E4A38DB-A6AA-1F07-BA05-5908F5451B29}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkGainFX", "Plugins\Effects\AkGain\Pellegrino\AkGainFXPellegrino_vc160.vcxproj", "{42014A36-C0F8-973B-510E-0D38F4F10530}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkGuitarDistortionFX", "Plugins\Effects\AkGuitarDistortion\Pellegrino\AkGuitarDistortionFXPellegrino_vc160.vcxproj", "{CBA8743F-18FE-4A32-CFED-9C5CB1E86540}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkHarmonizerFX", "Plugins\Effects\AkHarmonizer\Pellegrino\AkHarmonizerFXPellegrino_vc160.vcxproj", "{11DDF7DF-E4AE-5805-411B-C7FD69ECE5E2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkMatrixReverbFX", "Plugins\Effects\AkFDNReverb\Pellegrino\AkMatrixReverbFXPellegrino_vc160.vcxproj", "{4A71EFCB-9F7A-5C93-EA69-16BFDF7332FD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkMeterFX", "Plugins\Effects\AkMeter\Pellegrino\AkMeterFXPellegrino_vc160.vcxproj", "{8DCE44F9-B17C-8835-1435-01C422B17162}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkParametricEQFX", "Plugins\Effects\AkParametricEQ\Pellegrino\AkParametricEQFXPellegrino_vc160.vcxproj", "{58872DC4-9219-F42C-3ECE-DD2A4FCF750C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkPeakLimiterFX", "Plugins\Effects\AkPeakLimiter\Pellegrino\AkPeakLimiterFXPellegrino_vc160.vcxproj", "{F5B77F22-DF8E-F022-7568-FCF180AD885B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkPitchShifterFX", "Plugins\Effects\AkPitchShifter\Pellegrino\AkPitchShifterFXPellegrino_vc160.vcxproj", "{EB2906B8-592A-3D28-CDA3-22339D8855A8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkRecorderFX", "Plugins\Effects\AkRecorder\Pellegrino\AkRecorderFXPellegrino_vc160.vcxproj", "{08E70591-FD5E-D009-D361-CF3819B714AC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkRoomVerbFX", "Plugins\Effects\AkRoomVerb\Pellegrino\AkRoomVerbFXPellegrino_vc160.vcxproj", "{D7CC9F7E-303E-D447-4931-B01AFDF14CEA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkStereoDelayFX", "Plugins\Effects\AkStereoDelay\Pellegrino\AkStereoDelayFXPellegrino_vc160.vcxproj", "{6E40ABE7-AFC7-F2F9-DC9C-1A7A4817DAA8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkTimeStretchFX", "Plugins\Effects\AkTimeStretch\Pellegrino\AkTimeStretchFXPellegrino_vc160.vcxproj", "{738D3D57-D783-09B0-3B5C-D2918ACCB632}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkTremoloFX", "Plugins\Effects\AkTremolo\Pellegrino\AkTremoloFXPellegrino_vc160.vcxproj", "{C6440745-995A-7011-9B15-609CCA4D589C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sources", "Sources", "{E14B3B89-4DB8-F683-16AC-8EE182D718EC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkAudioInputSource", "..\..\samples\Plugins\AkAudioInput\Sources\AudioEngineFX\Pellegrino\AkAudioInputSourcePellegrino_vc160.vcxproj", "{18F84B01-0B0B-4019-3D18-D525870EA238}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkSilenceSource", "Plugins\Sources\AkSilenceSource\Pellegrino\AkSilenceSourcePellegrino_vc160.vcxproj", "{E8F0B122-A4EF-33E8-E4A1-4048A99027A0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkSineSource", "..\..\samples\Plugins\AkSineTone\Sources\AudioEngineFX\Pellegrino\AkSineSourcePellegrino_vc160.vcxproj", "{C4DF591A-9B5D-19EA-3ECA-8EC0ED4A0186}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkSynthOneSource", "Plugins\Sources\AkSynthOne\Pellegrino\AkSynthOneSourcePellegrino_vc160.vcxproj", "{ED73B3FD-3DF9-3DB4-16D5-87C12FF62131}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkToneSource", "..\..\samples\Plugins\AkToneGenerator\Sources\AudioEngineFX\Pellegrino\AkToneSourcePellegrino_vc160.vcxproj", "{37B9950A-E782-A2C5-4DFC-D8F3DEA6E7D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Vorbis", "Vorbis", "{81FE7D09-6D61-0DAE-16E7-45640229D930}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkVorbisDecoder", "Codecs\AkVorbisDecoder\Pellegrino\AkVorbisDecoderPellegrino_vc160.vcxproj", "{3A7EE24F-9632-42C2-7860-F7AD37E68C4F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Prospero = Debug|Prospero
+		Profile_EnableAsserts|Prospero = Profile_EnableAsserts|Prospero
+		Profile|Prospero = Profile|Prospero
+		Release|Prospero = Release|Prospero
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{895922C5-88F8-01D4-63DC-A6FB43B4A69F}.Debug|Prospero.ActiveCfg = Debug|Prospero
+		{895922C5-88F8-01D4-63DC-A6FB43B4A69F}.Debug|Prospero.Build.0 = Debug|Prospero
+		{895922C5-88F8-01D4-63DC-A6FB43B4A69F}.Profile_EnableAsserts|Prospero.ActiveCfg = Profile_EnableAsserts|Prospero
+		{895922C5-88F8-01D4-63DC-A6FB43B4A69F}.Profile_EnableAsserts|Prospero.Build.0 = Profile_EnableAsserts|Prospero
+		{895922C5-88F8-01D4-63DC-A6FB43B4A69F}.Profile|Prospero.ActiveCfg = Profile|Prospero
+		{895922C5-88F8-01D4-63DC-A6FB43B4A69F}.Profile|Prospero.Build.0 = Profile|Prospero
+		{895922C5-88F8-01D4-63DC-A6FB43B4A69F}.Release|Prospero.ActiveCfg = Release|Prospero
+		{895922C5-88F8-01D4-63DC-A6FB43B4A69F}.Release|Prospero.Build.0 = Release|Prospero
+		{EB4EC11C-73F9-04BF-A6D5-AC851ECAFE91}.Debug|Prospero.ActiveCfg = Debug|Prospero
+		{EB4EC11C-73F9-04BF-A6D5-AC851ECAFE91}.Debug|Prospero.Build.0 = Debug|Prospero
+		{EB4EC11C-73F9-04BF-A6D5-AC851ECAFE91}.Profile_EnableAsserts|Prospero.ActiveCfg = Profile_EnableAsserts|Prospero
+		{EB4EC11C-73F9-04BF-A6D5-AC851ECAFE91}.Profile_EnableAsserts|Prospero.Build.0 = Profile_EnableAsserts|Prospero
+		{EB4EC11C-73F9-04BF-A6D5-AC851ECAFE91}.Profile|Prospero.ActiveCfg = Profile|Prospero
+		{EB4EC11C-73F9-04BF-A6D5-AC851ECAFE91}.Profile|Prospero.Build.0 = Profile|Prospero
+		{EB4EC11C-73F9-04BF-A6D5-AC851ECAFE91}.Release|Prospero.ActiveCfg = Release|Prospero
+		{EB4EC11C-73F9-04BF-A6D5-AC851ECAFE91}.Release|Prospero.Build.0 = Release|Prospero
+		{2C80881B-BF37-043A-D2A5-1F2F191EA3A1}.Debug|Prospero.ActiveCfg = Debug|Prospero
+		{2C80881B-BF37-043A-D2A5-1F2F191EA3A1}.Debug|Prospero.Build.0 = Debug|Prospero
+		{2C80881B-BF37-043A-D2A5-1F2F191EA3A1}.Profile_EnableAsserts|Prospero.ActiveCfg = Profile_EnableAsserts|Prospero
+		{2C80881B-BF37-043A-D2A5-1F2F191EA3A1}.Profile_EnableAsserts|Prospero.Build.0 = Profile_EnableAsserts|Prospero
+		{2C80881B-BF37-043A-D2A5-1F2F191EA3A1}.Profile|Prospero.ActiveCfg = Profile|Prospero
+		{2C80881B-BF37-043A-D2A5-1F2F191EA3A1}.Profile|Prospero.Build.0 = Profile|Prospero
+		{2C80881B-BF37-043A-D2A5-1F2F191EA3A1}.Release|Prospero.ActiveCfg = Release|Prospero
+		{2C80881B-BF37-043A-D2A5-1F2F191EA3A1}.Release|Prospero.Build.0 = Release|Prospero
+		{75143254-7028-C80C-3CB8-E57E5965B523}.Debug|Prospero.ActiveCfg = Debug|Prospero
+		{75143254-7028-C80C-3CB8-E57E5965B523}.Debug|Prospero.Build.0 = Debug|Prospero
+		{75143254-7028-C80C-3CB8-E57E5965B523}.Profile_EnableAsserts|Prospero.ActiveCfg = Profile_EnableAsserts|Prospero
+		{75143254-7028-C80C-3CB8-E57E5965B523}.Profile_EnableAsserts|Prospero.Build.0 = Profile_EnableAsserts|Prospero
+		{75143254-7028-C80C-3CB8-E57E5965B523}.Profile|Prospero.ActiveCfg = Profile|Prospero
+		{75143254-7028-C80C-3CB8-E57E5965B523}.Profile|Prospero.Build.0 = Profile|Prospero
+		{75143254-7028-C80C-3CB8-E57E5965B523}.Release|Prospero.ActiveCfg = Release|Prospero
+		{75143254-7028-C80C-3CB8-E57E5965B523}.Release|Prospero.Build.0 = Release|Prospero
+		{89A1A1FC-943C-CEE9-45D0-1CD146883A81}.Debug|Prospero.ActiveCfg = Debug|Prospero
+		{89A1A1FC-943C-CEE9-45D0-1CD146883A81}.Debug|Prospero.Build.0 = Debug|Prospero
+		{89A1A1FC-943C-CEE9-45D0-1CD146883A81}.Profile_EnableAsserts|Prospero.ActiveCfg = Profile_EnableAsserts|Prospero
+		{89A1A1FC-943C-CEE9-45D0-1CD146883A81}.Profile_EnableAsserts|Prospero.Build.0 = Profile_EnableAsserts|Prospero
+		{89A1A1FC-943C-CEE9-45D0-1CD146883A81}.Profile|Prospero.ActiveCfg = Profile|Prospero
+		{89A1A1FC-943C-CEE9-45D0-1CD146883A81}.Profile|Prospero.Build.0 = Profile|Prospero
+		{89A1A1FC-943C-CEE9-45D0-1CD146883A81}.Release|Prospero.ActiveCfg = Release|Prospero
+		{89A1A1FC-943C-CEE9-45D0-1CD146883A81}.Release|Prospero.Build.0 = Release|Prospero
+		{97914A5A-7B8F-CF72-4B4F-FA183934DFB7}.Debug|Prospero.ActiveCfg = Debug|Prospero
+		{97914A5A-7B8F-CF72-4B4F-FA183934DFB7}.Debug|Prospero.Build.0 = Debug|Prospero
+		{97914A5A-7B8F-CF72-4B4F-FA183934DFB7}.Profile_EnableAsserts|Prospero.ActiveCfg = Profile_EnableAsserts|Prospero
+		{97914A5A-7B8F-CF72-4B4F-FA183934DFB7}.Profile_EnableAsserts|Prospero.Build.0 = Profile_EnableAsserts|Prospero
+		{97914A5A-7B8F-CF72-4B4F-FA183934DFB7}.Profile|Prospero.ActiveCfg = Profile|Prospero
+		{97914A5A-7B8F-CF72-4B4F-FA183934DFB7}.Profile|Prospero.Build.0 = Profile|Prospero
+		{97914A5A-7B8F-CF72-4B4F-FA183934DFB7}.Release|Prospero.ActiveCfg = Release|Prospero
+		{4E5E6512-E1CB-4F57-62C4-CEDB4F7B5473}.Debug|Prospero.ActiveCfg = Debug|Prospero
+		{4E5E6512-E1CB-4F57-62C4-CEDB4F7B5473}.Debug|Prospero.Build.0 = Debug|Prospero
+		{4E5E6512-E1CB-4F57-62C4-CEDB4F7B5473}.Profile_EnableAsserts|Prospero.ActiveCfg = Profile_EnableAsserts|Prospero
+		{4E5E6512-E1CB-4F57-62C4-CEDB4F7B5473}.Profile_EnableAsserts|Prospero.Build.0 = Profile_EnableAsserts|Prospero
+		{4E5E6512-E1CB-4F57-62C4-CEDB4F7B5473}.Profile|Prospero.ActiveCfg = Profile|Prospero
+		{4E5E6512-E1CB-4F57-62C4-CEDB4F7B5473}.Profile|Prospero.Build.0 = Profile|Prospero
+		{4E5E6512-E1CB-4F57-62C4-CEDB4F7B5473}.Release|Prospero.ActiveCfg = Release|Prospero
+		{4E5E6512-E1CB-4F57-62C4-CEDB4F7B5473}.Release|Prospero.Build.0 = Release|Prospero
+		{87E23BAA-7465-CCF4-5888-460B5B08C744}.Debug|Prospero.ActiveCfg = Debug|Prospero
+		{87E23BAA-7465-CCF4-5888-460B5B08C744}.Debug|Prospero.Build.0 = Debug|Prospero
+		{87E23BAA-7465-CCF4-5888-460B5B08C744}.Profile_EnableAsserts|Prospero.ActiveCfg = Profile_EnableAsserts|Prospero
+		{87E23BAA-7465-CCF4-5888-460B5B08C744}.Profile_EnableAsserts|Prospero.Build.0 = Profile_EnableAsserts|Prospero
+		{87E23BAA-7465-CCF4-5888-460B5B08C744}.Profile|Prospero.ActiveCfg = Profile|Prospero
+		{87E23BAA-7465-CCF4-5888-460B5B08C744}.Profile|Prospero.Build.0 = Profile|Prospero
+		{87E23BAA-7465-CCF4-5888-460B5B08C744}.Release|Prospero.ActiveCfg = Release|Prospero
+		{87E23BAA-7465-CCF4-5888-460B5B08C744}.Release|Prospero.Build.0 = Release|Prospero
+		{93394986-04AA-1BED-2E64-11EB6731C2C1}.Debug|Prospero.ActiveCfg = Debug|Prospero
+		{93394986-04AA-1BED-2E64-11EB6731C2C1}.Debug|Prospero.Build.0 = Debug|Prospero
+		{93394986-04AA-1BED-2E64-11EB6731C2C1}.Profile_EnableAsserts|Prospero.ActiveCfg = Profile_EnableAsserts|Prospero
+		{93394986-04AA-1BED-2E64-11EB6731C2C1}.Profile_EnableAsserts|Prospero.Build.0 = Profile_EnableAsserts|Prospero
+		{93394986-04AA-1BED-2E64-11EB6731C2C1}.Profile|Prospero.ActiveCfg = Profile|Prospero
+		{93394986-04AA-1BED-2E64-11EB6731C2C1}.Profile|Prospero.Build.0 = Profile|Prospero
+		{93394986-04AA-1BED-2E64-11EB6731C2C1}.Release|Prospero.ActiveCfg = Release|Prospero
+		{93394986-04AA-1BED-2E64-11EB6731C2C1}.Release|Prospero.Build.0 = Release|Prospero
+		{31C0E692-A375-C819-07FB-D03086F04595}.Debug|Prospero.ActiveCfg = Debug|Prospero
+		{31C0E692-A375-C819-07FB-D03086F04595}.Debug|Prospero.Build.0 = Debug|Prospero
+		{31C0E692-A375-C819-07FB-D03086F04595}.Profile_EnableAsserts|Prospero.ActiveCfg = Profile_EnableAsserts|Prospero
+		{31C0E692-A375-C819-07FB-D03086F04595}.Profile_EnableAsserts|Prospero.Build.0 = Profile_EnableAsserts|Prospero
+		{31C0E692-A375-C819-07FB-D03086F04595}.Profile|Prospero.ActiveCfg = Profile|Prospero
+		{31C0E692-A375-C819-07FB-D03086F04595}.Profile|Prospero.Build.0 = Profile|Prospero
+		{31C0E692-A375-C819-07FB-D03086F04595}.Release|Prospero.ActiveCfg = Release|Prospero
+		{31C0E692-A375-C819-07FB-D03086F04595}.Release|Prospero.Build.0 = Release|Prospero
+		{7E4A38DB-A6AA-1F07-BA05-5908F5451B29}.Debug|Prospero.ActiveCfg = Debug|Prospero
+		{7E4A38DB-A6AA-1F07-BA05-5908F5451B29}.Debug|Prospero.Build.0 = Debug|Prospero
+		{7E4A38DB-A6AA-1F07-BA05-5908F5451B29}.Profile_EnableAsserts|Prospero.ActiveCfg = Profile_EnableAsserts|Prospero
+		{7E4A38DB-A6AA-1F07-BA05-5908F5451B29}.Profile_EnableAsserts|Prospero.Build.0 = Profile_EnableAsserts|Prospero
+		{7E4A38DB-A6AA-1F07-BA05-5908F5451B29}.Profile|Prospero.ActiveCfg = Profile|Prospero
+		{7E4A38DB-A6AA-1F07-BA05-5908F5451B29}.Profile|Prospero.Build.0 = Profile|Prospero
+		{7E4A38DB-A6AA-1F07-BA05-5908F5451B29}.Release|Prospero.ActiveCfg = Release|Prospero
+		{7E4A38DB-A6AA-1F07-BA05-5908F5451B29}.Release|Prospero.Build.0 = Release|Prospero
+		{42014A36-C0F8-973B-510E-0D38F4F10530}.Debug|Prospero.ActiveCfg = Debug|Prospero
+		{42014A36-C0F8-973B-510E-0D38F4F10530}.Debug|Prospero.Build.0 = Debug|Prospero
+		{42014A36-C0F8-973B-510E-0D38F4F10530}.Profile_EnableAsserts|Prospero.ActiveCfg = Profile_EnableAsserts|Prospero
+		{42014A36-C0F8-973B-510E-0D38F4F10530}.Profile_EnableAsserts|Prospero.Build.0 = Profile_EnableAsserts|Prospero
+		{42014A36-C0F8-973B-510E-0D38F4F10530}.Profile|Prospero.ActiveCfg = Profile|Prospero
+		{42014A36-C0F8-973B-510E-0D38F4F10530}.Profile|Prospero.Build.0 = Profile|Prospero
+		{42014A36-C0F8-973B-510E-0D38F4F10530}.Release|Prospero.ActiveCfg = Release|Prospero
+		{42014A36-C0F8-973B-510E-0D38F4F10530}.Release|Prospero.Build.0 = Release|Prospero
+		{CBA8743F-18FE-4A32-CFED-9C5CB1E86540}.Debug|Prospero.ActiveCfg = Debug|Prospero
+		{CBA8743F-18FE-4A32-CFED-9C5CB1E86540}.Debug|Prospero.Build.0 = Debug|Prospero
+		{CBA8743F-18FE-4A32-CFED-9C5CB1E86540}.Profile_EnableAsserts|Prospero.ActiveCfg = Profile_EnableAsserts|Prospero
+		{CBA8743F-18FE-4A32-CFED-9C5CB1E86540}.Profile_EnableAsserts|Prospero.Build.0 = Profile_EnableAsserts|Prospero
+		{CBA8743F-18FE-4A32-CFED-9C5CB1E86540}.Profile|Prospero.ActiveCfg = Profile|Prospero
+		{CBA8743F-18FE-4A32-CFED-9C5CB1E86540}.Profile|Prospero.Build.0 = Profile|Prospero
+		{CBA8743F-18FE-4A32-CFED-9C5CB1E86540}.Release|Prospero.ActiveCfg = Release|Prospero
+		{CBA8743F-18FE-4A32-CFED-9C5CB1E86540}.Release|Prospero.Build.0 = Release|Prospero
+		{11DDF7DF-E4AE-5805-411B-C7FD69ECE5E2}.Debug|Prospero.ActiveCfg = Debug|Prospero
+		{11DDF7DF-E4AE-5805-411B-C7FD69ECE5E2}.Debug|Prospero.Build.0 = Debug|Prospero
+		{11DDF7DF-E4AE-5805-411B-C7FD69ECE5E2}.Profile_EnableAsserts|Prospero.ActiveCfg = Profile_EnableAsserts|Prospero
+		{11DDF7DF-E4AE-5805-411B-C7FD69ECE5E2}.Profile_EnableAsserts|Prospero.Build.0 = Profile_EnableAsserts|Prospero
+		{11DDF7DF-E4AE-5805-411B-C7FD69ECE5E2}.Profile|Prospero.ActiveCfg = Profile|Prospero
+		{11DDF7DF-E4AE-5805-411B-C7FD69ECE5E2}.Profile|Prospero.Build.0 = Profile|Prospero
+		{11DDF7DF-E4AE-5805-411B-C7FD69ECE5E2}.Release|Prospero.ActiveCfg = Release|Prospero
+		{11DDF7DF-E4AE-5805-411B-C7FD69ECE5E2}.Release|Prospero.Build.0 = Release|Prospero
+		{4A71EFCB-9F7A-5C93-EA69-16BFDF7332FD}.Debug|Prospero.ActiveCfg = Debug|Prospero
+		{4A71EFCB-9F7A-5C93-EA69-16BFDF7332FD}.Debug|Prospero.Build.0 = Debug|Prospero
+		{4A71EFCB-9F7A-5C93-EA69-16BFDF7332FD}.Profile_EnableAsserts|Prospero.ActiveCfg = Profile_EnableAsserts|Prospero
+		{4A71EFCB-9F7A-5C93-EA69-16BFDF7332FD}.Profile_EnableAsserts|Prospero.Build.0 = Profile_EnableAsserts|Prospero
+		{4A71EFCB-9F7A-5C93-EA69-16BFDF7332FD}.Profile|Prospero.ActiveCfg = Profile|Prospero
+		{4A71EFCB-9F7A-5C93-EA69-16BFDF7332FD}.Profile|Prospero.Build.0 = Profile|Prospero
+		{4A71EFCB-9F7A-5C93-EA69-16BFDF7332FD}.Release|Prospero.ActiveCfg = Release|Prospero
+		{4A71EFCB-9F7A-5C93-EA69-16BFDF7332FD}.Release|Prospero.Build.0 = Release|Prospero
+		{8DCE44F9-B17C-8835-1435-01C422B17162}.Debug|Prospero.ActiveCfg = Debug|Prospero
+		{8DCE44F9-B17C-8835-1435-01C422B17162}.Debug|Prospero.Build.0 = Debug|Prospero
+		{8DCE44F9-B17C-8835-1435-01C422B17162}.Profile_EnableAsserts|Prospero.ActiveCfg = Profile_EnableAsserts|Prospero
+		{8DCE44F9-B17C-8835-1435-01C422B17162}.Profile_EnableAsserts|Prospero.Build.0 = Profile_EnableAsserts|Prospero
+		{8DCE44F9-B17C-8835-1435-01C422B17162}.Profile|Prospero.ActiveCfg = Profile|Prospero
+		{8DCE44F9-B17C-8835-1435-01C422B17162}.Profile|Prospero.Build.0 = Profile|Prospero
+		{8DCE44F9-B17C-8835-1435-01C422B17162}.Release|Prospero.ActiveCfg = Release|Prospero
+		{8DCE44F9-B17C-8835-1435-01C422B17162}.Release|Prospero.Build.0 = Release|Prospero
+		{58872DC4-9219-F42C-3ECE-DD2A4FCF750C}.Debug|Prospero.ActiveCfg = Debug|Prospero
+		{58872DC4-9219-F42C-3ECE-DD2A4FCF750C}.Debug|Prospero.Build.0 = Debug|Prospero
+		{58872DC4-9219-F42C-3ECE-DD2A4FCF750C}.Profile_EnableAsserts|Prospero.ActiveCfg = Profile_EnableAsserts|Prospero
+		{58872DC4-9219-F42C-3ECE-DD2A4FCF750C}.Profile_EnableAsserts|Prospero.Build.0 = Profile_EnableAsserts|Prospero
+		{58872DC4-9219-F42C-3ECE-DD2A4FCF750C}.Profile|Prospero.ActiveCfg = Profile|Prospero
+		{58872DC4-9219-F42C-3ECE-DD2A4FCF750C}.Profile|Prospero.Build.0 = Profile|Prospero
+		{58872DC4-9219-F42C-3ECE-DD2A4FCF750C}.Release|Prospero.ActiveCfg = Release|Prospero
+		{58872DC4-9219-F42C-3ECE-DD2A4FCF750C}.Release|Prospero.Build.0 = Release|Prospero
+		{F5B77F22-DF8E-F022-7568-FCF180AD885B}.Debug|Prospero.ActiveCfg = Debug|Prospero
+		{F5B77F22-DF8E-F022-7568-FCF180AD885B}.Debug|Prospero.Build.0 = Debug|Prospero
+		{F5B77F22-DF8E-F022-7568-FCF180AD885B}.Profile_EnableAsserts|Prospero.ActiveCfg = Profile_EnableAsserts|Prospero
+		{F5B77F22-DF8E-F022-7568-FCF180AD885B}.Profile_EnableAsserts|Prospero.Build.0 = Profile_EnableAsserts|Prospero
+		{F5B77F22-DF8E-F022-7568-FCF180AD885B}.Profile|Prospero.ActiveCfg = Profile|Prospero
+		{F5B77F22-DF8E-F022-7568-FCF180AD885B}.Profile|Prospero.Build.0 = Profile|Prospero
+		{F5B77F22-DF8E-F022-7568-FCF180AD885B}.Release|Prospero.ActiveCfg = Release|Prospero
+		{F5B77F22-DF8E-F022-7568-FCF180AD885B}.Release|Prospero.Build.0 = Release|Prospero
+		{EB2906B8-592A-3D28-CDA3-22339D8855A8}.Debug|Prospero.ActiveCfg = Debug|Prospero
+		{EB2906B8-592A-3D28-CDA3-22339D8855A8}.Debug|Prospero.Build.0 = Debug|Prospero
+		{EB2906B8-592A-3D28-CDA3-22339D8855A8}.Profile_EnableAsserts|Prospero.ActiveCfg = Profile_EnableAsserts|Prospero
+		{EB2906B8-592A-3D28-CDA3-22339D8855A8}.Profile_EnableAsserts|Prospero.Build.0 = Profile_EnableAsserts|Prospero
+		{EB2906B8-592A-3D28-CDA3-22339D8855A8}.Profile|Prospero.ActiveCfg = Profile|Prospero
+		{EB2906B8-592A-3D28-CDA3-22339D8855A8}.Profile|Prospero.Build.0 = Profile|Prospero
+		{EB2906B8-592A-3D28-CDA3-22339D8855A8}.Release|Prospero.ActiveCfg = Release|Prospero
+		{EB2906B8-592A-3D28-CDA3-22339D8855A8}.Release|Prospero.Build.0 = Release|Prospero
+		{08E70591-FD5E-D009-D361-CF3819B714AC}.Debug|Prospero.ActiveCfg = Debug|Prospero
+		{08E70591-FD5E-D009-D361-CF3819B714AC}.Debug|Prospero.Build.0 = Debug|Prospero
+		{08E70591-FD5E-D009-D361-CF3819B714AC}.Profile_EnableAsserts|Prospero.ActiveCfg = Profile_EnableAsserts|Prospero
+		{08E70591-FD5E-D009-D361-CF3819B714AC}.Profile_EnableAsserts|Prospero.Build.0 = Profile_EnableAsserts|Prospero
+		{08E70591-FD5E-D009-D361-CF3819B714AC}.Profile|Prospero.ActiveCfg = Profile|Prospero
+		{08E70591-FD5E-D009-D361-CF3819B714AC}.Profile|Prospero.Build.0 = Profile|Prospero
+		{08E70591-FD5E-D009-D361-CF3819B714AC}.Release|Prospero.ActiveCfg = Release|Prospero
+		{08E70591-FD5E-D009-D361-CF3819B714AC}.Release|Prospero.Build.0 = Release|Prospero
+		{D7CC9F7E-303E-D447-4931-B01AFDF14CEA}.Debug|Prospero.ActiveCfg = Debug|Prospero
+		{D7CC9F7E-303E-D447-4931-B01AFDF14CEA}.Debug|Prospero.Build.0 = Debug|Prospero
+		{D7CC9F7E-303E-D447-4931-B01AFDF14CEA}.Profile_EnableAsserts|Prospero.ActiveCfg = Profile_EnableAsserts|Prospero
+		{D7CC9F7E-303E-D447-4931-B01AFDF14CEA}.Profile_EnableAsserts|Prospero.Build.0 = Profile_EnableAsserts|Prospero
+		{D7CC9F7E-303E-D447-4931-B01AFDF14CEA}.Profile|Prospero.ActiveCfg = Profile|Prospero
+		{D7CC9F7E-303E-D447-4931-B01AFDF14CEA}.Profile|Prospero.Build.0 = Profile|Prospero
+		{D7CC9F7E-303E-D447-4931-B01AFDF14CEA}.Release|Prospero.ActiveCfg = Release|Prospero
+		{D7CC9F7E-303E-D447-4931-B01AFDF14CEA}.Release|Prospero.Build.0 = Release|Prospero
+		{6E40ABE7-AFC7-F2F9-DC9C-1A7A4817DAA8}.Debug|Prospero.ActiveCfg = Debug|Prospero
+		{6E40ABE7-AFC7-F2F9-DC9C-1A7A4817DAA8}.Debug|Prospero.Build.0 = Debug|Prospero
+		{6E40ABE7-AFC7-F2F9-DC9C-1A7A4817DAA8}.Profile_EnableAsserts|Prospero.ActiveCfg = Profile_EnableAsserts|Prospero
+		{6E40ABE7-AFC7-F2F9-DC9C-1A7A4817DAA8}.Profile_EnableAsserts|Prospero.Build.0 = Profile_EnableAsserts|Prospero
+		{6E40ABE7-AFC7-F2F9-DC9C-1A7A4817DAA8}.Profile|Prospero.ActiveCfg = Profile|Prospero
+		{6E40ABE7-AFC7-F2F9-DC9C-1A7A4817DAA8}.Profile|Prospero.Build.0 = Profile|Prospero
+		{6E40ABE7-AFC7-F2F9-DC9C-1A7A4817DAA8}.Release|Prospero.ActiveCfg = Release|Prospero
+		{6E40ABE7-AFC7-F2F9-DC9C-1A7A4817DAA8}.Release|Prospero.Build.0 = Release|Prospero
+		{738D3D57-D783-09B0-3B5C-D2918ACCB632}.Debug|Prospero.ActiveCfg = Debug|Prospero
+		{738D3D57-D783-09B0-3B5C-D2918ACCB632}.Debug|Prospero.Build.0 = Debug|Prospero
+		{738D3D57-D783-09B0-3B5C-D2918ACCB632}.Profile_EnableAsserts|Prospero.ActiveCfg = Profile_EnableAsserts|Prospero
+		{738D3D57-D783-09B0-3B5C-D2918ACCB632}.Profile_EnableAsserts|Prospero.Build.0 = Profile_EnableAsserts|Prospero
+		{738D3D57-D783-09B0-3B5C-D2918ACCB632}.Profile|Prospero.ActiveCfg = Profile|Prospero
+		{738D3D57-D783-09B0-3B5C-D2918ACCB632}.Profile|Prospero.Build.0 = Profile|Prospero
+		{738D3D57-D783-09B0-3B5C-D2918ACCB632}.Release|Prospero.ActiveCfg = Release|Prospero
+		{738D3D57-D783-09B0-3B5C-D2918ACCB632}.Release|Prospero.Build.0 = Release|Prospero
+		{C6440745-995A-7011-9B15-609CCA4D589C}.Debug|Prospero.ActiveCfg = Debug|Prospero
+		{C6440745-995A-7011-9B15-609CCA4D589C}.Debug|Prospero.Build.0 = Debug|Prospero
+		{C6440745-995A-7011-9B15-609CCA4D589C}.Profile_EnableAsserts|Prospero.ActiveCfg = Profile_EnableAsserts|Prospero
+		{C6440745-995A-7011-9B15-609CCA4D589C}.Profile_EnableAsserts|Prospero.Build.0 = Profile_EnableAsserts|Prospero
+		{C6440745-995A-7011-9B15-609CCA4D589C}.Profile|Prospero.ActiveCfg = Profile|Prospero
+		{C6440745-995A-7011-9B15-609CCA4D589C}.Profile|Prospero.Build.0 = Profile|Prospero
+		{C6440745-995A-7011-9B15-609CCA4D589C}.Release|Prospero.ActiveCfg = Release|Prospero
+		{C6440745-995A-7011-9B15-609CCA4D589C}.Release|Prospero.Build.0 = Release|Prospero
+		{18F84B01-0B0B-4019-3D18-D525870EA238}.Debug|Prospero.ActiveCfg = Debug|Prospero
+		{18F84B01-0B0B-4019-3D18-D525870EA238}.Debug|Prospero.Build.0 = Debug|Prospero
+		{18F84B01-0B0B-4019-3D18-D525870EA238}.Profile_EnableAsserts|Prospero.ActiveCfg = Profile_EnableAsserts|Prospero
+		{18F84B01-0B0B-4019-3D18-D525870EA238}.Profile_EnableAsserts|Prospero.Build.0 = Profile_EnableAsserts|Prospero
+		{18F84B01-0B0B-4019-3D18-D525870EA238}.Profile|Prospero.ActiveCfg = Profile|Prospero
+		{18F84B01-0B0B-4019-3D18-D525870EA238}.Profile|Prospero.Build.0 = Profile|Prospero
+		{18F84B01-0B0B-4019-3D18-D525870EA238}.Release|Prospero.ActiveCfg = Release|Prospero
+		{18F84B01-0B0B-4019-3D18-D525870EA238}.Release|Prospero.Build.0 = Release|Prospero
+		{E8F0B122-A4EF-33E8-E4A1-4048A99027A0}.Debug|Prospero.ActiveCfg = Debug|Prospero
+		{E8F0B122-A4EF-33E8-E4A1-4048A99027A0}.Debug|Prospero.Build.0 = Debug|Prospero
+		{E8F0B122-A4EF-33E8-E4A1-4048A99027A0}.Profile_EnableAsserts|Prospero.ActiveCfg = Profile_EnableAsserts|Prospero
+		{E8F0B122-A4EF-33E8-E4A1-4048A99027A0}.Profile_EnableAsserts|Prospero.Build.0 = Profile_EnableAsserts|Prospero
+		{E8F0B122-A4EF-33E8-E4A1-4048A99027A0}.Profile|Prospero.ActiveCfg = Profile|Prospero
+		{E8F0B122-A4EF-33E8-E4A1-4048A99027A0}.Profile|Prospero.Build.0 = Profile|Prospero
+		{E8F0B122-A4EF-33E8-E4A1-4048A99027A0}.Release|Prospero.ActiveCfg = Release|Prospero
+		{E8F0B122-A4EF-33E8-E4A1-4048A99027A0}.Release|Prospero.Build.0 = Release|Prospero
+		{C4DF591A-9B5D-19EA-3ECA-8EC0ED4A0186}.Debug|Prospero.ActiveCfg = Debug|Prospero
+		{C4DF591A-9B5D-19EA-3ECA-8EC0ED4A0186}.Debug|Prospero.Build.0 = Debug|Prospero
+		{C4DF591A-9B5D-19EA-3ECA-8EC0ED4A0186}.Profile_EnableAsserts|Prospero.ActiveCfg = Profile_EnableAsserts|Prospero
+		{C4DF591A-9B5D-19EA-3ECA-8EC0ED4A0186}.Profile_EnableAsserts|Prospero.Build.0 = Profile_EnableAsserts|Prospero
+		{C4DF591A-9B5D-19EA-3ECA-8EC0ED4A0186}.Profile|Prospero.ActiveCfg = Profile|Prospero
+		{C4DF591A-9B5D-19EA-3ECA-8EC0ED4A0186}.Profile|Prospero.Build.0 = Profile|Prospero
+		{C4DF591A-9B5D-19EA-3ECA-8EC0ED4A0186}.Release|Prospero.ActiveCfg = Release|Prospero
+		{C4DF591A-9B5D-19EA-3ECA-8EC0ED4A0186}.Release|Prospero.Build.0 = Release|Prospero
+		{ED73B3FD-3DF9-3DB4-16D5-87C12FF62131}.Debug|Prospero.ActiveCfg = Debug|Prospero
+		{ED73B3FD-3DF9-3DB4-16D5-87C12FF62131}.Debug|Prospero.Build.0 = Debug|Prospero
+		{ED73B3FD-3DF9-3DB4-16D5-87C12FF62131}.Profile_EnableAsserts|Prospero.ActiveCfg = Profile_EnableAsserts|Prospero
+		{ED73B3FD-3DF9-3DB4-16D5-87C12FF62131}.Profile_EnableAsserts|Prospero.Build.0 = Profile_EnableAsserts|Prospero
+		{ED73B3FD-3DF9-3DB4-16D5-87C12FF62131}.Profile|Prospero.ActiveCfg = Profile|Prospero
+		{ED73B3FD-3DF9-3DB4-16D5-87C12FF62131}.Profile|Prospero.Build.0 = Profile|Prospero
+		{ED73B3FD-3DF9-3DB4-16D5-87C12FF62131}.Release|Prospero.ActiveCfg = Release|Prospero
+		{ED73B3FD-3DF9-3DB4-16D5-87C12FF62131}.Release|Prospero.Build.0 = Release|Prospero
+		{37B9950A-E782-A2C5-4DFC-D8F3DEA6E7D7}.Debug|Prospero.ActiveCfg = Debug|Prospero
+		{37B9950A-E782-A2C5-4DFC-D8F3DEA6E7D7}.Debug|Prospero.Build.0 = Debug|Prospero
+		{37B9950A-E782-A2C5-4DFC-D8F3DEA6E7D7}.Profile_EnableAsserts|Prospero.ActiveCfg = Profile_EnableAsserts|Prospero
+		{37B9950A-E782-A2C5-4DFC-D8F3DEA6E7D7}.Profile_EnableAsserts|Prospero.Build.0 = Profile_EnableAsserts|Prospero
+		{37B9950A-E782-A2C5-4DFC-D8F3DEA6E7D7}.Profile|Prospero.ActiveCfg = Profile|Prospero
+		{37B9950A-E782-A2C5-4DFC-D8F3DEA6E7D7}.Profile|Prospero.Build.0 = Profile|Prospero
+		{37B9950A-E782-A2C5-4DFC-D8F3DEA6E7D7}.Release|Prospero.ActiveCfg = Release|Prospero
+		{37B9950A-E782-A2C5-4DFC-D8F3DEA6E7D7}.Release|Prospero.Build.0 = Release|Prospero
+		{3A7EE24F-9632-42C2-7860-F7AD37E68C4F}.Debug|Prospero.ActiveCfg = Debug|Prospero
+		{3A7EE24F-9632-42C2-7860-F7AD37E68C4F}.Debug|Prospero.Build.0 = Debug|Prospero
+		{3A7EE24F-9632-42C2-7860-F7AD37E68C4F}.Profile_EnableAsserts|Prospero.ActiveCfg = Profile_EnableAsserts|Prospero
+		{3A7EE24F-9632-42C2-7860-F7AD37E68C4F}.Profile_EnableAsserts|Prospero.Build.0 = Profile_EnableAsserts|Prospero
+		{3A7EE24F-9632-42C2-7860-F7AD37E68C4F}.Profile|Prospero.ActiveCfg = Profile|Prospero
+		{3A7EE24F-9632-42C2-7860-F7AD37E68C4F}.Profile|Prospero.Build.0 = Profile|Prospero
+		{3A7EE24F-9632-42C2-7860-F7AD37E68C4F}.Release|Prospero.ActiveCfg = Release|Prospero
+		{3A7EE24F-9632-42C2-7860-F7AD37E68C4F}.Release|Prospero.Build.0 = Release|Prospero
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{97914A5A-7B8F-CF72-4B4F-FA183934DFB7} = {118C63B7-7D99-919D-0680-8D88728C5D54}
+		{4E5E6512-E1CB-4F57-62C4-CEDB4F7B5473} = {5339CA5D-3FF1-0BAB-A8F8-E40694CFA69B}
+		{1DFD763D-8969-3238-525D-CA95BE8854A0} = {6EEF9964-DAAF-159B-A3EA-5E180F6A5A77}
+		{87E23BAA-7465-CCF4-5888-460B5B08C744} = {1DFD763D-8969-3238-525D-CA95BE8854A0}
+		{93394986-04AA-1BED-2E64-11EB6731C2C1} = {1DFD763D-8969-3238-525D-CA95BE8854A0}
+		{31C0E692-A375-C819-07FB-D03086F04595} = {1DFD763D-8969-3238-525D-CA95BE8854A0}
+		{7E4A38DB-A6AA-1F07-BA05-5908F5451B29} = {1DFD763D-8969-3238-525D-CA95BE8854A0}
+		{42014A36-C0F8-973B-510E-0D38F4F10530} = {1DFD763D-8969-3238-525D-CA95BE8854A0}
+		{CBA8743F-18FE-4A32-CFED-9C5CB1E86540} = {1DFD763D-8969-3238-525D-CA95BE8854A0}
+		{11DDF7DF-E4AE-5805-411B-C7FD69ECE5E2} = {1DFD763D-8969-3238-525D-CA95BE8854A0}
+		{4A71EFCB-9F7A-5C93-EA69-16BFDF7332FD} = {1DFD763D-8969-3238-525D-CA95BE8854A0}
+		{8DCE44F9-B17C-8835-1435-01C422B17162} = {1DFD763D-8969-3238-525D-CA95BE8854A0}
+		{58872DC4-9219-F42C-3ECE-DD2A4FCF750C} = {1DFD763D-8969-3238-525D-CA95BE8854A0}
+		{F5B77F22-DF8E-F022-7568-FCF180AD885B} = {1DFD763D-8969-3238-525D-CA95BE8854A0}
+		{EB2906B8-592A-3D28-CDA3-22339D8855A8} = {1DFD763D-8969-3238-525D-CA95BE8854A0}
+		{08E70591-FD5E-D009-D361-CF3819B714AC} = {1DFD763D-8969-3238-525D-CA95BE8854A0}
+		{D7CC9F7E-303E-D447-4931-B01AFDF14CEA} = {1DFD763D-8969-3238-525D-CA95BE8854A0}
+		{6E40ABE7-AFC7-F2F9-DC9C-1A7A4817DAA8} = {1DFD763D-8969-3238-525D-CA95BE8854A0}
+		{738D3D57-D783-09B0-3B5C-D2918ACCB632} = {1DFD763D-8969-3238-525D-CA95BE8854A0}
+		{C6440745-995A-7011-9B15-609CCA4D589C} = {1DFD763D-8969-3238-525D-CA95BE8854A0}
+		{E14B3B89-4DB8-F683-16AC-8EE182D718EC} = {6EEF9964-DAAF-159B-A3EA-5E180F6A5A77}
+		{18F84B01-0B0B-4019-3D18-D525870EA238} = {E14B3B89-4DB8-F683-16AC-8EE182D718EC}
+		{E8F0B122-A4EF-33E8-E4A1-4048A99027A0} = {E14B3B89-4DB8-F683-16AC-8EE182D718EC}
+		{C4DF591A-9B5D-19EA-3ECA-8EC0ED4A0186} = {E14B3B89-4DB8-F683-16AC-8EE182D718EC}
+		{ED73B3FD-3DF9-3DB4-16D5-87C12FF62131} = {E14B3B89-4DB8-F683-16AC-8EE182D718EC}
+		{37B9950A-E782-A2C5-4DFC-D8F3DEA6E7D7} = {E14B3B89-4DB8-F683-16AC-8EE182D718EC}
+		{3A7EE24F-9632-42C2-7860-F7AD37E68C4F} = {81FE7D09-6D61-0DAE-16E7-45640229D930}
+	EndGlobalSection
+EndGlobal

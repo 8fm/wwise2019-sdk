@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Prospero">
+      <Configuration>Debug</Configuration>
+      <Platform>Prospero</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|Prospero">
+      <Configuration>Profile</Configuration>
+      <Platform>Prospero</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile_EnableAsserts|Prospero">
+      <Configuration>Profile_EnableAsserts</Configuration>
+      <Platform>Prospero</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Prospero">
+      <Configuration>Release</Configuration>
+      <Platform>Prospero</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2C83FB3D-E445-4CD9-8769-BD5EE96A89DE}</ProjectGuid>
+    <ProjectName>AkSpatialAudio</ProjectName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <VcpkgEnabled Condition="'$(Configuration)|$(Platform)'=='Debug|Prospero'">false</VcpkgEnabled>
+    <VcpkgEnabled Condition="'$(Configuration)|$(Platform)'=='Profile|Prospero'">false</VcpkgEnabled>
+    <VcpkgEnabled Condition="'$(Configuration)|$(Platform)'=='Profile_EnableAsserts|Prospero'">false</VcpkgEnabled>
+    <VcpkgEnabled Condition="'$(Configuration)|$(Platform)'=='Release|Prospero'">false</VcpkgEnabled>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Prospero'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Prospero'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile_EnableAsserts|Prospero'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Prospero'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Prospero'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="../../Build/PropertySheets/Pellegrino/Pellegrino.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Profile|Prospero'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="../../Build/PropertySheets/Pellegrino/Pellegrino.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Profile_EnableAsserts|Prospero'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="../../Build/PropertySheets/Pellegrino/Pellegrino.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Prospero'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="../../Build/PropertySheets/Pellegrino/Pellegrino.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Prospero'">
+    <OutDir>..\..\..\Pellegrino\Debug\lib\</OutDir>
+    <IntDir>..\..\..\Pellegrino\Debug\obj\$(ProjectName)\</IntDir>
+    <TargetName>libAkSpatialAudio</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Prospero'">
+    <OutDir>..\..\..\Pellegrino\Profile\lib\</OutDir>
+    <IntDir>..\..\..\Pellegrino\Profile\obj\$(ProjectName)\</IntDir>
+    <TargetName>libAkSpatialAudio</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile_EnableAsserts|Prospero'">
+    <OutDir>..\..\..\Pellegrino\Profile_EnableAsserts\lib\</OutDir>
+    <IntDir>..\..\..\Pellegrino\Profile_EnableAsserts\obj\$(ProjectName)\</IntDir>
+    <TargetName>libAkSpatialAudio</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Prospero'">
+    <OutDir>..\..\..\Pellegrino\Release\lib\</OutDir>
+    <IntDir>..\..\..\Pellegrino\Release\obj\$(ProjectName)\</IntDir>
+    <TargetName>libAkSpatialAudio</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Prospero'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PreprocessorDefinitions>_DEBUG;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;.;..\Common;..\..\SoundEngine\AkAudiolib\Common;..\..\SoundEngine\AkAudiolib\SoftwarePipeline;..\..\SoundEngine\Plugins\Effects\Common;..\..\SoundEngine\AkAudiolib\Pellegrino;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalOptions>-Wno-invalid-offsetof -Wno-switch -Wno-unused-variable -Wno-unused-function -Wno-missing-braces -Wno-unused-value %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;.;..\Common;..\..\SoundEngine\AkAudiolib\Common;..\..\SoundEngine\AkAudiolib\SoftwarePipeline;..\..\SoundEngine\Plugins\Effects\Common;..\..\SoundEngine\AkAudiolib\Pellegrino;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)libAkSpatialAudio.a</OutputFile>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Prospero'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PreprocessorDefinitions>NDEBUG;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;.;..\Common;..\..\SoundEngine\AkAudiolib\Common;..\..\SoundEngine\AkAudiolib\SoftwarePipeline;..\..\SoundEngine\Plugins\Effects\Common;..\..\SoundEngine\AkAudiolib\Pellegrino;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>MaxSpeed</Optimization>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizationLevel>Level3</OptimizationLevel>
+      <FastMath>true</FastMath>
+      <AdditionalOptions>-Wno-invalid-offsetof -Wno-switch -Wno-unused-variable -Wno-unused-function -Wno-missing-braces -Wno-unused-value %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;.;..\Common;..\..\SoundEngine\AkAudiolib\Common;..\..\SoundEngine\AkAudiolib\SoftwarePipeline;..\..\SoundEngine\Plugins\Effects\Common;..\..\SoundEngine\AkAudiolib\Pellegrino;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)libAkSpatialAudio.a</OutputFile>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile_EnableAsserts|Prospero'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PreprocessorDefinitions>NDEBUG;AK_ENABLE_ASSERTS;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;.;..\Common;..\..\SoundEngine\AkAudiolib\Common;..\..\SoundEngine\AkAudiolib\SoftwarePipeline;..\..\SoundEngine\Plugins\Effects\Common;..\..\SoundEngine\AkAudiolib\Pellegrino;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>MaxSpeed</Optimization>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizationLevel>Level3</OptimizationLevel>
+      <FastMath>true</FastMath>
+      <AdditionalOptions>-Wno-invalid-offsetof -Wno-switch -Wno-unused-variable -Wno-unused-function -Wno-missing-braces -Wno-unused-value %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;AK_ENABLE_ASSERTS;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;.;..\Common;..\..\SoundEngine\AkAudiolib\Common;..\..\SoundEngine\AkAudiolib\SoftwarePipeline;..\..\SoundEngine\Plugins\Effects\Common;..\..\SoundEngine\AkAudiolib\Pellegrino;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)libAkSpatialAudio.a</OutputFile>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Prospero'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PreprocessorDefinitions>NDEBUG;AK_OPTIMIZED;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;.;..\Common;..\..\SoundEngine\AkAudiolib\Common;..\..\SoundEngine\AkAudiolib\SoftwarePipeline;..\..\SoundEngine\Plugins\Effects\Common;..\..\SoundEngine\AkAudiolib\Pellegrino;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>MaxSpeed</Optimization>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizationLevel>Level3</OptimizationLevel>
+      <FastMath>true</FastMath>
+      <AdditionalOptions>-Wno-invalid-offsetof -Wno-switch -Wno-unused-variable -Wno-unused-function -Wno-missing-braces -Wno-unused-value %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;AK_OPTIMIZED;AUDIOKINETIC;AKSOUNDENGINE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;.;..\Common;..\..\SoundEngine\AkAudiolib\Common;..\..\SoundEngine\AkAudiolib\SoftwarePipeline;..\..\SoundEngine\Plugins\Effects\Common;..\..\SoundEngine\AkAudiolib\Pellegrino;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)libAkSpatialAudio.a</OutputFile>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\AK\SpatialAudio\Common\AkSpatialAudio.h" />
+    <ClInclude Include="..\..\..\include\AK\SpatialAudio\Common\AkSpatialAudioTypes.h" />
+    <ClInclude Include="..\Common\AkAcousticNode.h" />
+    <ClInclude Include="..\Common\AkAcousticPortal.h" />
+    <ClInclude Include="..\Common\AkAcousticRoom.h" />
+    <ClInclude Include="..\Common\AkDiffractionEdge.h" />
+    <ClInclude Include="..\Common\AkDiffractionPath.h" />
+    <ClInclude Include="..\Common\AkGeometrySet.h" />
+    <ClInclude Include="..\Common\AkImageSource.h" />
+    <ClInclude Include="..\Common\AkOcclusionChecker.h" />
+    <ClInclude Include="..\Common\AkRTree.h" />
+    <ClInclude Include="..\Common\AkReflectInstance.h" />
+    <ClInclude Include="..\Common\AkScene.h" />
+    <ClInclude Include="..\Common\AkSoundGeometry.h" />
+    <ClInclude Include="..\Common\AkSpatialAudioCompts.h" />
+    <ClInclude Include="..\Common\AkSpatialAudioPrivateTypes.h" />
+    <ClInclude Include="..\Common\AkSpatialAudioTasks.h" />
+    <ClInclude Include="..\Common\AkStochasticPath.h" />
+    <ClInclude Include="..\Common\AkStochasticReflectionEngine.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Common\AkAcousticPortal.cpp" />
+    <ClCompile Include="..\Common\AkAcousticRoom.cpp" />
+    <ClCompile Include="..\Common\AkDiffractionEdge.cpp" />
+    <ClCompile Include="..\Common\AkDiffractionPath.cpp" />
+    <ClCompile Include="..\Common\AkGeometrySet.cpp" />
+    <ClCompile Include="..\Common\AkImageSource.cpp" />
+    <ClCompile Include="..\Common\AkReflectInstance.cpp" />
+    <ClCompile Include="..\Common\AkScene.cpp" />
+    <ClCompile Include="..\Common\AkSoundGeometry.cpp" />
+    <ClCompile Include="..\Common\AkSpatialAudio.cpp" />
+    <ClCompile Include="..\Common\AkSpatialAudioCompts.cpp" />
+    <ClCompile Include="..\Common\AkSpatialAudioTasks.cpp" />
+    <ClCompile Include="..\Common\AkStochasticPath.cpp" />
+    <ClCompile Include="..\Common\AkStochasticReflectionEngine.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

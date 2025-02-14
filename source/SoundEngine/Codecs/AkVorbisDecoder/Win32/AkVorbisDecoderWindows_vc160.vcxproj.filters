@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{8EEA3EAC-7A8C-6982-6347-7DD64F88F0D2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tremor">
+      <UniqueIdentifier>{BE8318D4-AA25-43AA-93E0-56FE7F21CAFA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tremor\FloatingPoint">
+      <UniqueIdentifier>{CBABFE29-B73A-88F3-6059-9CEE4CC79899}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tremor\SIMD">
+      <UniqueIdentifier>{5ACE9775-C683-106B-4F78-0A42BB2C076F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tremor\SIMD\AVX">
+      <UniqueIdentifier>{185146FF-84DC-B3C3-8DED-36B8F9F70FC4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\AkSrcBankVorbis.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\AkSrcFileVorbis.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\AkSrcVorbis.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\AkVorbisCodebookMgr.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\AkVorbisInfo.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Tremor\FloatingPoint\AkVorbisCodec.h">
+      <Filter>Tremor\FloatingPoint</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Tremor\SIMD\SinCosGen.h">
+      <Filter>Tremor\SIMD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Tremor\SIMD\mdct.h">
+      <Filter>Tremor\SIMD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Tremor\codebook.h">
+      <Filter>Tremor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Tremor\ivorbiscodec.h">
+      <Filter>Tremor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Tremor\lsp_lookup.h">
+      <Filter>Tremor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Tremor\ogg.h">
+      <Filter>Tremor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Tremor\os.h">
+      <Filter>Tremor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Tremor\os_types.h">
+      <Filter>Tremor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Tremor\packed_codebooks.h">
+      <Filter>Tremor</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Common\AkSrcBankVorbis.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\AkSrcFileVorbis.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\AkVorbisCodebookMgr.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\AkVorbisLib.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Tremor\FloatingPoint\AkVorbisCodec.cpp">
+      <Filter>Tremor\FloatingPoint</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Tremor\FloatingPoint\codebook.cpp">
+      <Filter>Tremor\FloatingPoint</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Tremor\FloatingPoint\floor1.cpp">
+      <Filter>Tremor\FloatingPoint</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Tremor\SIMD\AVX\floor1_avx.cpp">
+      <Filter>Tremor\SIMD\AVX</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Tremor\SIMD\SinCosGen.cpp">
+      <Filter>Tremor\SIMD</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Tremor\SIMD\dsp.cpp">
+      <Filter>Tremor\SIMD</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Tremor\SIMD\mdct_SIMD.cpp">
+      <Filter>Tremor\SIMD</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Tremor\akvorbis_bitwise.cpp">
+      <Filter>Tremor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Tremor\akvorbis_info.cpp">
+      <Filter>Tremor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Tremor\mapping0.cpp">
+      <Filter>Tremor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Tremor\packed_codebooks.cpp">
+      <Filter>Tremor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Tremor\res012.cpp">
+      <Filter>Tremor</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

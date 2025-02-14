@@ -1,0 +1,417 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkMemoryMgr", "AkMemoryMgr\XboxOne\AkMemoryMgrXboxOne_vc150.vcxproj", "{1AC5F37D-B593-A6FF-596D-5942B2E00E09}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkMusicEngine", "AkMusicEngine\XboxOne\AkMusicEngineXboxOne_vc150.vcxproj", "{C91ECA9C-4FC0-DCD6-4855-CCCC7432232B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkSoundEngine", "AkAudiolib\XboxOne\AkSoundEngineXboxOne_vc150.vcxproj", "{5C4AD358-3A8C-7FA4-3899-CA95ED805143}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkSpatialAudio", "..\SpatialAudio\XboxOne\AkSpatialAudioXboxOne_vc150.vcxproj", "{D35C665F-3B5A-FBF6-734A-BB66034DBE06}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkStreamMgr", "..\StreamManager\XboxOne\AkStreamMgrXboxOne_vc150.vcxproj", "{104A4F8A-B2E6-2C36-7075-F4E94D398463}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Communication - Proxy", "Communication - Proxy", "{118C63B7-7D99-919D-0680-8D88728C5D54}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CommunicationCentral", "Communication\Remote\XboxOne\CommunicationCentralXboxOne_vc150.vcxproj", "{D861CBC8-00D4-462F-F9A8-36F0630D37F3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Opus", "Opus", "{5339CA5D-3FF1-0BAB-A8F8-E40694CFA69B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkOpusDecoder", "Codecs\AkOpusDecoder\XboxOne\AkOpusDecoderXboxOne_vc150.vcxproj", "{82F0808D-DE54-4C2D-4062-49356A247288}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugins", "Plugins", "{6EEF9964-DAAF-159B-A3EA-5E180F6A5A77}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Effects", "Effects", "{1DFD763D-8969-3238-525D-CA95BE8854A0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkCompressorFX", "Plugins\Effects\AkCompressor\XboxOne\AkCompressorFXXboxOne_vc150.vcxproj", "{CCAE8BB4-999A-7E96-B732-6830A717AF97}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkDelayFX", "..\..\samples\Plugins\AkDelay\Sources\AudioEngineFX\XboxOne\AkDelayFXXboxOne_vc150.vcxproj", "{3BBADECD-D415-FE56-364E-F8FC67DBBE14}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkExpanderFX", "Plugins\Effects\AkExpander\XboxOne\AkExpanderFXXboxOne_vc150.vcxproj", "{9A05DB90-AB7E-BA06-70F3-5F87E35D2C20}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkFlangerFX", "Plugins\Effects\AkFlanger\XboxOne\AkFlangerFXXboxOne_vc150.vcxproj", "{93216E13-68AE-9DAB-9D12-D00D4B77D84F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkGainFX", "Plugins\Effects\AkGain\XboxOne\AkGainFXXboxOne_vc150.vcxproj", "{6F507751-C441-177A-EE2C-DA2A46637511}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkGuitarDistortionFX", "Plugins\Effects\AkGuitarDistortion\XboxOne\AkGuitarDistortionFXXboxOne_vc150.vcxproj", "{0E6859F6-F303-372A-975B-CAAF4B95C362}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkHarmonizerFX", "Plugins\Effects\AkHarmonizer\XboxOne\AkHarmonizerFXXboxOne_vc150.vcxproj", "{B6F318DB-C469-3E49-1B6A-DE4AAA16DAFD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkMatrixReverbFX", "Plugins\Effects\AkFDNReverb\XboxOne\AkMatrixReverbFXXboxOne_vc150.vcxproj", "{5548D2D2-70CC-D05D-3358-D3487929D152}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkMeterFX", "Plugins\Effects\AkMeter\XboxOne\AkMeterFXXboxOne_vc150.vcxproj", "{D234FDA9-A578-7164-D487-22F274A28A73}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkParametricEQFX", "Plugins\Effects\AkParametricEQ\XboxOne\AkParametricEQFXXboxOne_vc150.vcxproj", "{65D24E01-FFF9-0433-E559-BBEA5CAA639D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkPeakLimiterFX", "Plugins\Effects\AkPeakLimiter\XboxOne\AkPeakLimiterFXXboxOne_vc150.vcxproj", "{EBA5452C-2C51-6279-091E-A1DC07E87971}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkPitchShifterFX", "Plugins\Effects\AkPitchShifter\XboxOne\AkPitchShifterFXXboxOne_vc150.vcxproj", "{CE75106E-4E4A-519B-9529-92EC841BE51A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkRecorderFX", "Plugins\Effects\AkRecorder\XboxOne\AkRecorderFXXboxOne_vc150.vcxproj", "{3A0519A5-2A48-7F60-951F-28121DBC1130}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkRoomVerbFX", "Plugins\Effects\AkRoomVerb\XboxOne\AkRoomVerbFXXboxOne_vc150.vcxproj", "{0BAFB78F-CF78-4AFC-BB43-3464969A5BFE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkStereoDelayFX", "Plugins\Effects\AkStereoDelay\XboxOne\AkStereoDelayFXXboxOne_vc150.vcxproj", "{EDA11A8B-6CE3-A156-6531-DF92F9C1E3E2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkTimeStretchFX", "Plugins\Effects\AkTimeStretch\XboxOne\AkTimeStretchFXXboxOne_vc150.vcxproj", "{742FA585-2ED8-6F94-BAEB-0CFB8A991ABF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkTremoloFX", "Plugins\Effects\AkTremolo\XboxOne\AkTremoloFXXboxOne_vc150.vcxproj", "{C0FFAA68-1C7F-301B-0EA8-3EF5D29100C6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sources", "Sources", "{E14B3B89-4DB8-F683-16AC-8EE182D718EC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkAudioInputSource", "..\..\samples\Plugins\AkAudioInput\Sources\AudioEngineFX\XboxOne\AkAudioInputSourceXboxOne_vc150.vcxproj", "{30C74FBE-13F4-3275-9D41-DC1880B35D78}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkSilenceSource", "Plugins\Sources\AkSilenceSource\XboxOne\AkSilenceSourceXboxOne_vc150.vcxproj", "{15B9BAA3-3F82-468C-BF84-CD55CE7FC060}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkSineSource", "..\..\samples\Plugins\AkSineTone\Sources\AudioEngineFX\XboxOne\AkSineSourceXboxOne_vc150.vcxproj", "{1EA08CCB-A358-4C67-0B3A-9645157F1ED3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkSynthOneSource", "Plugins\Sources\AkSynthOne\XboxOne\AkSynthOneSourceXboxOne_vc150.vcxproj", "{E8266BA6-46CD-C4B8-2427-57859693459C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkToneSource", "..\..\samples\Plugins\AkToneGenerator\Sources\AudioEngineFX\XboxOne\AkToneSourceXboxOne_vc150.vcxproj", "{940CA7BD-20A7-395C-CE77-8A7F94F6F1EC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Vorbis", "Vorbis", "{81FE7D09-6D61-0DAE-16E7-45640229D930}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkVorbisDecoder", "Codecs\AkVorbisDecoder\XboxOne\AkVorbisDecoderXboxOne_vc150.vcxproj", "{4444F101-BE13-175D-06D8-24719C3A5249}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_NoIteratorDebugging|Durango = Debug_NoIteratorDebugging|Durango
+		Debug|Durango = Debug|Durango
+		Profile_EnableAsserts|Durango = Profile_EnableAsserts|Durango
+		Profile|Durango = Profile|Durango
+		Release|Durango = Release|Durango
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1AC5F37D-B593-A6FF-596D-5942B2E00E09}.Debug_NoIteratorDebugging|Durango.ActiveCfg = Debug_NoIteratorDebugging|Durango
+		{1AC5F37D-B593-A6FF-596D-5942B2E00E09}.Debug_NoIteratorDebugging|Durango.Build.0 = Debug_NoIteratorDebugging|Durango
+		{1AC5F37D-B593-A6FF-596D-5942B2E00E09}.Debug|Durango.ActiveCfg = Debug|Durango
+		{1AC5F37D-B593-A6FF-596D-5942B2E00E09}.Debug|Durango.Build.0 = Debug|Durango
+		{1AC5F37D-B593-A6FF-596D-5942B2E00E09}.Profile_EnableAsserts|Durango.ActiveCfg = Profile_EnableAsserts|Durango
+		{1AC5F37D-B593-A6FF-596D-5942B2E00E09}.Profile_EnableAsserts|Durango.Build.0 = Profile_EnableAsserts|Durango
+		{1AC5F37D-B593-A6FF-596D-5942B2E00E09}.Profile|Durango.ActiveCfg = Profile|Durango
+		{1AC5F37D-B593-A6FF-596D-5942B2E00E09}.Profile|Durango.Build.0 = Profile|Durango
+		{1AC5F37D-B593-A6FF-596D-5942B2E00E09}.Release|Durango.ActiveCfg = Release|Durango
+		{1AC5F37D-B593-A6FF-596D-5942B2E00E09}.Release|Durango.Build.0 = Release|Durango
+		{C91ECA9C-4FC0-DCD6-4855-CCCC7432232B}.Debug_NoIteratorDebugging|Durango.ActiveCfg = Debug_NoIteratorDebugging|Durango
+		{C91ECA9C-4FC0-DCD6-4855-CCCC7432232B}.Debug_NoIteratorDebugging|Durango.Build.0 = Debug_NoIteratorDebugging|Durango
+		{C91ECA9C-4FC0-DCD6-4855-CCCC7432232B}.Debug|Durango.ActiveCfg = Debug|Durango
+		{C91ECA9C-4FC0-DCD6-4855-CCCC7432232B}.Debug|Durango.Build.0 = Debug|Durango
+		{C91ECA9C-4FC0-DCD6-4855-CCCC7432232B}.Profile_EnableAsserts|Durango.ActiveCfg = Profile_EnableAsserts|Durango
+		{C91ECA9C-4FC0-DCD6-4855-CCCC7432232B}.Profile_EnableAsserts|Durango.Build.0 = Profile_EnableAsserts|Durango
+		{C91ECA9C-4FC0-DCD6-4855-CCCC7432232B}.Profile|Durango.ActiveCfg = Profile|Durango
+		{C91ECA9C-4FC0-DCD6-4855-CCCC7432232B}.Profile|Durango.Build.0 = Profile|Durango
+		{C91ECA9C-4FC0-DCD6-4855-CCCC7432232B}.Release|Durango.ActiveCfg = Release|Durango
+		{C91ECA9C-4FC0-DCD6-4855-CCCC7432232B}.Release|Durango.Build.0 = Release|Durango
+		{5C4AD358-3A8C-7FA4-3899-CA95ED805143}.Debug_NoIteratorDebugging|Durango.ActiveCfg = Debug_NoIteratorDebugging|Durango
+		{5C4AD358-3A8C-7FA4-3899-CA95ED805143}.Debug_NoIteratorDebugging|Durango.Build.0 = Debug_NoIteratorDebugging|Durango
+		{5C4AD358-3A8C-7FA4-3899-CA95ED805143}.Debug|Durango.ActiveCfg = Debug|Durango
+		{5C4AD358-3A8C-7FA4-3899-CA95ED805143}.Debug|Durango.Build.0 = Debug|Durango
+		{5C4AD358-3A8C-7FA4-3899-CA95ED805143}.Profile_EnableAsserts|Durango.ActiveCfg = Profile_EnableAsserts|Durango
+		{5C4AD358-3A8C-7FA4-3899-CA95ED805143}.Profile_EnableAsserts|Durango.Build.0 = Profile_EnableAsserts|Durango
+		{5C4AD358-3A8C-7FA4-3899-CA95ED805143}.Profile|Durango.ActiveCfg = Profile|Durango
+		{5C4AD358-3A8C-7FA4-3899-CA95ED805143}.Profile|Durango.Build.0 = Profile|Durango
+		{5C4AD358-3A8C-7FA4-3899-CA95ED805143}.Release|Durango.ActiveCfg = Release|Durango
+		{5C4AD358-3A8C-7FA4-3899-CA95ED805143}.Release|Durango.Build.0 = Release|Durango
+		{D35C665F-3B5A-FBF6-734A-BB66034DBE06}.Debug_NoIteratorDebugging|Durango.ActiveCfg = Debug_NoIteratorDebugging|Durango
+		{D35C665F-3B5A-FBF6-734A-BB66034DBE06}.Debug_NoIteratorDebugging|Durango.Build.0 = Debug_NoIteratorDebugging|Durango
+		{D35C665F-3B5A-FBF6-734A-BB66034DBE06}.Debug|Durango.ActiveCfg = Debug|Durango
+		{D35C665F-3B5A-FBF6-734A-BB66034DBE06}.Debug|Durango.Build.0 = Debug|Durango
+		{D35C665F-3B5A-FBF6-734A-BB66034DBE06}.Profile_EnableAsserts|Durango.ActiveCfg = Profile_EnableAsserts|Durango
+		{D35C665F-3B5A-FBF6-734A-BB66034DBE06}.Profile_EnableAsserts|Durango.Build.0 = Profile_EnableAsserts|Durango
+		{D35C665F-3B5A-FBF6-734A-BB66034DBE06}.Profile|Durango.ActiveCfg = Profile|Durango
+		{D35C665F-3B5A-FBF6-734A-BB66034DBE06}.Profile|Durango.Build.0 = Profile|Durango
+		{D35C665F-3B5A-FBF6-734A-BB66034DBE06}.Release|Durango.ActiveCfg = Release|Durango
+		{D35C665F-3B5A-FBF6-734A-BB66034DBE06}.Release|Durango.Build.0 = Release|Durango
+		{104A4F8A-B2E6-2C36-7075-F4E94D398463}.Debug_NoIteratorDebugging|Durango.ActiveCfg = Debug_NoIteratorDebugging|Durango
+		{104A4F8A-B2E6-2C36-7075-F4E94D398463}.Debug_NoIteratorDebugging|Durango.Build.0 = Debug_NoIteratorDebugging|Durango
+		{104A4F8A-B2E6-2C36-7075-F4E94D398463}.Debug|Durango.ActiveCfg = Debug|Durango
+		{104A4F8A-B2E6-2C36-7075-F4E94D398463}.Debug|Durango.Build.0 = Debug|Durango
+		{104A4F8A-B2E6-2C36-7075-F4E94D398463}.Profile_EnableAsserts|Durango.ActiveCfg = Profile_EnableAsserts|Durango
+		{104A4F8A-B2E6-2C36-7075-F4E94D398463}.Profile_EnableAsserts|Durango.Build.0 = Profile_EnableAsserts|Durango
+		{104A4F8A-B2E6-2C36-7075-F4E94D398463}.Profile|Durango.ActiveCfg = Profile|Durango
+		{104A4F8A-B2E6-2C36-7075-F4E94D398463}.Profile|Durango.Build.0 = Profile|Durango
+		{104A4F8A-B2E6-2C36-7075-F4E94D398463}.Release|Durango.ActiveCfg = Release|Durango
+		{104A4F8A-B2E6-2C36-7075-F4E94D398463}.Release|Durango.Build.0 = Release|Durango
+		{D861CBC8-00D4-462F-F9A8-36F0630D37F3}.Debug_NoIteratorDebugging|Durango.ActiveCfg = Debug_NoIteratorDebugging|Durango
+		{D861CBC8-00D4-462F-F9A8-36F0630D37F3}.Debug_NoIteratorDebugging|Durango.Build.0 = Debug_NoIteratorDebugging|Durango
+		{D861CBC8-00D4-462F-F9A8-36F0630D37F3}.Debug|Durango.ActiveCfg = Debug|Durango
+		{D861CBC8-00D4-462F-F9A8-36F0630D37F3}.Debug|Durango.Build.0 = Debug|Durango
+		{D861CBC8-00D4-462F-F9A8-36F0630D37F3}.Profile_EnableAsserts|Durango.ActiveCfg = Profile_EnableAsserts|Durango
+		{D861CBC8-00D4-462F-F9A8-36F0630D37F3}.Profile_EnableAsserts|Durango.Build.0 = Profile_EnableAsserts|Durango
+		{D861CBC8-00D4-462F-F9A8-36F0630D37F3}.Profile|Durango.ActiveCfg = Profile|Durango
+		{D861CBC8-00D4-462F-F9A8-36F0630D37F3}.Profile|Durango.Build.0 = Profile|Durango
+		{D861CBC8-00D4-462F-F9A8-36F0630D37F3}.Release|Durango.ActiveCfg = Release|Durango
+		{82F0808D-DE54-4C2D-4062-49356A247288}.Debug_NoIteratorDebugging|Durango.ActiveCfg = Debug_NoIteratorDebugging|Durango
+		{82F0808D-DE54-4C2D-4062-49356A247288}.Debug_NoIteratorDebugging|Durango.Build.0 = Debug_NoIteratorDebugging|Durango
+		{82F0808D-DE54-4C2D-4062-49356A247288}.Debug|Durango.ActiveCfg = Debug|Durango
+		{82F0808D-DE54-4C2D-4062-49356A247288}.Debug|Durango.Build.0 = Debug|Durango
+		{82F0808D-DE54-4C2D-4062-49356A247288}.Profile_EnableAsserts|Durango.ActiveCfg = Profile_EnableAsserts|Durango
+		{82F0808D-DE54-4C2D-4062-49356A247288}.Profile_EnableAsserts|Durango.Build.0 = Profile_EnableAsserts|Durango
+		{82F0808D-DE54-4C2D-4062-49356A247288}.Profile|Durango.ActiveCfg = Profile|Durango
+		{82F0808D-DE54-4C2D-4062-49356A247288}.Profile|Durango.Build.0 = Profile|Durango
+		{82F0808D-DE54-4C2D-4062-49356A247288}.Release|Durango.ActiveCfg = Release|Durango
+		{82F0808D-DE54-4C2D-4062-49356A247288}.Release|Durango.Build.0 = Release|Durango
+		{CCAE8BB4-999A-7E96-B732-6830A717AF97}.Debug_NoIteratorDebugging|Durango.ActiveCfg = Debug_NoIteratorDebugging|Durango
+		{CCAE8BB4-999A-7E96-B732-6830A717AF97}.Debug_NoIteratorDebugging|Durango.Build.0 = Debug_NoIteratorDebugging|Durango
+		{CCAE8BB4-999A-7E96-B732-6830A717AF97}.Debug|Durango.ActiveCfg = Debug|Durango
+		{CCAE8BB4-999A-7E96-B732-6830A717AF97}.Debug|Durango.Build.0 = Debug|Durango
+		{CCAE8BB4-999A-7E96-B732-6830A717AF97}.Profile_EnableAsserts|Durango.ActiveCfg = Profile_EnableAsserts|Durango
+		{CCAE8BB4-999A-7E96-B732-6830A717AF97}.Profile_EnableAsserts|Durango.Build.0 = Profile_EnableAsserts|Durango
+		{CCAE8BB4-999A-7E96-B732-6830A717AF97}.Profile|Durango.ActiveCfg = Profile|Durango
+		{CCAE8BB4-999A-7E96-B732-6830A717AF97}.Profile|Durango.Build.0 = Profile|Durango
+		{CCAE8BB4-999A-7E96-B732-6830A717AF97}.Release|Durango.ActiveCfg = Release|Durango
+		{CCAE8BB4-999A-7E96-B732-6830A717AF97}.Release|Durango.Build.0 = Release|Durango
+		{3BBADECD-D415-FE56-364E-F8FC67DBBE14}.Debug_NoIteratorDebugging|Durango.ActiveCfg = Debug_NoIteratorDebugging|Durango
+		{3BBADECD-D415-FE56-364E-F8FC67DBBE14}.Debug_NoIteratorDebugging|Durango.Build.0 = Debug_NoIteratorDebugging|Durango
+		{3BBADECD-D415-FE56-364E-F8FC67DBBE14}.Debug|Durango.ActiveCfg = Debug|Durango
+		{3BBADECD-D415-FE56-364E-F8FC67DBBE14}.Debug|Durango.Build.0 = Debug|Durango
+		{3BBADECD-D415-FE56-364E-F8FC67DBBE14}.Profile_EnableAsserts|Durango.ActiveCfg = Profile_EnableAsserts|Durango
+		{3BBADECD-D415-FE56-364E-F8FC67DBBE14}.Profile_EnableAsserts|Durango.Build.0 = Profile_EnableAsserts|Durango
+		{3BBADECD-D415-FE56-364E-F8FC67DBBE14}.Profile|Durango.ActiveCfg = Profile|Durango
+		{3BBADECD-D415-FE56-364E-F8FC67DBBE14}.Profile|Durango.Build.0 = Profile|Durango
+		{3BBADECD-D415-FE56-364E-F8FC67DBBE14}.Release|Durango.ActiveCfg = Release|Durango
+		{3BBADECD-D415-FE56-364E-F8FC67DBBE14}.Release|Durango.Build.0 = Release|Durango
+		{9A05DB90-AB7E-BA06-70F3-5F87E35D2C20}.Debug_NoIteratorDebugging|Durango.ActiveCfg = Debug_NoIteratorDebugging|Durango
+		{9A05DB90-AB7E-BA06-70F3-5F87E35D2C20}.Debug_NoIteratorDebugging|Durango.Build.0 = Debug_NoIteratorDebugging|Durango
+		{9A05DB90-AB7E-BA06-70F3-5F87E35D2C20}.Debug|Durango.ActiveCfg = Debug|Durango
+		{9A05DB90-AB7E-BA06-70F3-5F87E35D2C20}.Debug|Durango.Build.0 = Debug|Durango
+		{9A05DB90-AB7E-BA06-70F3-5F87E35D2C20}.Profile_EnableAsserts|Durango.ActiveCfg = Profile_EnableAsserts|Durango
+		{9A05DB90-AB7E-BA06-70F3-5F87E35D2C20}.Profile_EnableAsserts|Durango.Build.0 = Profile_EnableAsserts|Durango
+		{9A05DB90-AB7E-BA06-70F3-5F87E35D2C20}.Profile|Durango.ActiveCfg = Profile|Durango
+		{9A05DB90-AB7E-BA06-70F3-5F87E35D2C20}.Profile|Durango.Build.0 = Profile|Durango
+		{9A05DB90-AB7E-BA06-70F3-5F87E35D2C20}.Release|Durango.ActiveCfg = Release|Durango
+		{9A05DB90-AB7E-BA06-70F3-5F87E35D2C20}.Release|Durango.Build.0 = Release|Durango
+		{93216E13-68AE-9DAB-9D12-D00D4B77D84F}.Debug_NoIteratorDebugging|Durango.ActiveCfg = Debug_NoIteratorDebugging|Durango
+		{93216E13-68AE-9DAB-9D12-D00D4B77D84F}.Debug_NoIteratorDebugging|Durango.Build.0 = Debug_NoIteratorDebugging|Durango
+		{93216E13-68AE-9DAB-9D12-D00D4B77D84F}.Debug|Durango.ActiveCfg = Debug|Durango
+		{93216E13-68AE-9DAB-9D12-D00D4B77D84F}.Debug|Durango.Build.0 = Debug|Durango
+		{93216E13-68AE-9DAB-9D12-D00D4B77D84F}.Profile_EnableAsserts|Durango.ActiveCfg = Profile_EnableAsserts|Durango
+		{93216E13-68AE-9DAB-9D12-D00D4B77D84F}.Profile_EnableAsserts|Durango.Build.0 = Profile_EnableAsserts|Durango
+		{93216E13-68AE-9DAB-9D12-D00D4B77D84F}.Profile|Durango.ActiveCfg = Profile|Durango
+		{93216E13-68AE-9DAB-9D12-D00D4B77D84F}.Profile|Durango.Build.0 = Profile|Durango
+		{93216E13-68AE-9DAB-9D12-D00D4B77D84F}.Release|Durango.ActiveCfg = Release|Durango
+		{93216E13-68AE-9DAB-9D12-D00D4B77D84F}.Release|Durango.Build.0 = Release|Durango
+		{6F507751-C441-177A-EE2C-DA2A46637511}.Debug_NoIteratorDebugging|Durango.ActiveCfg = Debug_NoIteratorDebugging|Durango
+		{6F507751-C441-177A-EE2C-DA2A46637511}.Debug_NoIteratorDebugging|Durango.Build.0 = Debug_NoIteratorDebugging|Durango
+		{6F507751-C441-177A-EE2C-DA2A46637511}.Debug|Durango.ActiveCfg = Debug|Durango
+		{6F507751-C441-177A-EE2C-DA2A46637511}.Debug|Durango.Build.0 = Debug|Durango
+		{6F507751-C441-177A-EE2C-DA2A46637511}.Profile_EnableAsserts|Durango.ActiveCfg = Profile_EnableAsserts|Durango
+		{6F507751-C441-177A-EE2C-DA2A46637511}.Profile_EnableAsserts|Durango.Build.0 = Profile_EnableAsserts|Durango
+		{6F507751-C441-177A-EE2C-DA2A46637511}.Profile|Durango.ActiveCfg = Profile|Durango
+		{6F507751-C441-177A-EE2C-DA2A46637511}.Profile|Durango.Build.0 = Profile|Durango
+		{6F507751-C441-177A-EE2C-DA2A46637511}.Release|Durango.ActiveCfg = Release|Durango
+		{6F507751-C441-177A-EE2C-DA2A46637511}.Release|Durango.Build.0 = Release|Durango
+		{0E6859F6-F303-372A-975B-CAAF4B95C362}.Debug_NoIteratorDebugging|Durango.ActiveCfg = Debug_NoIteratorDebugging|Durango
+		{0E6859F6-F303-372A-975B-CAAF4B95C362}.Debug_NoIteratorDebugging|Durango.Build.0 = Debug_NoIteratorDebugging|Durango
+		{0E6859F6-F303-372A-975B-CAAF4B95C362}.Debug|Durango.ActiveCfg = Debug|Durango
+		{0E6859F6-F303-372A-975B-CAAF4B95C362}.Debug|Durango.Build.0 = Debug|Durango
+		{0E6859F6-F303-372A-975B-CAAF4B95C362}.Profile_EnableAsserts|Durango.ActiveCfg = Profile_EnableAsserts|Durango
+		{0E6859F6-F303-372A-975B-CAAF4B95C362}.Profile_EnableAsserts|Durango.Build.0 = Profile_EnableAsserts|Durango
+		{0E6859F6-F303-372A-975B-CAAF4B95C362}.Profile|Durango.ActiveCfg = Profile|Durango
+		{0E6859F6-F303-372A-975B-CAAF4B95C362}.Profile|Durango.Build.0 = Profile|Durango
+		{0E6859F6-F303-372A-975B-CAAF4B95C362}.Release|Durango.ActiveCfg = Release|Durango
+		{0E6859F6-F303-372A-975B-CAAF4B95C362}.Release|Durango.Build.0 = Release|Durango
+		{B6F318DB-C469-3E49-1B6A-DE4AAA16DAFD}.Debug_NoIteratorDebugging|Durango.ActiveCfg = Debug_NoIteratorDebugging|Durango
+		{B6F318DB-C469-3E49-1B6A-DE4AAA16DAFD}.Debug_NoIteratorDebugging|Durango.Build.0 = Debug_NoIteratorDebugging|Durango
+		{B6F318DB-C469-3E49-1B6A-DE4AAA16DAFD}.Debug|Durango.ActiveCfg = Debug|Durango
+		{B6F318DB-C469-3E49-1B6A-DE4AAA16DAFD}.Debug|Durango.Build.0 = Debug|Durango
+		{B6F318DB-C469-3E49-1B6A-DE4AAA16DAFD}.Profile_EnableAsserts|Durango.ActiveCfg = Profile_EnableAsserts|Durango
+		{B6F318DB-C469-3E49-1B6A-DE4AAA16DAFD}.Profile_EnableAsserts|Durango.Build.0 = Profile_EnableAsserts|Durango
+		{B6F318DB-C469-3E49-1B6A-DE4AAA16DAFD}.Profile|Durango.ActiveCfg = Profile|Durango
+		{B6F318DB-C469-3E49-1B6A-DE4AAA16DAFD}.Profile|Durango.Build.0 = Profile|Durango
+		{B6F318DB-C469-3E49-1B6A-DE4AAA16DAFD}.Release|Durango.ActiveCfg = Release|Durango
+		{B6F318DB-C469-3E49-1B6A-DE4AAA16DAFD}.Release|Durango.Build.0 = Release|Durango
+		{5548D2D2-70CC-D05D-3358-D3487929D152}.Debug_NoIteratorDebugging|Durango.ActiveCfg = Debug_NoIteratorDebugging|Durango
+		{5548D2D2-70CC-D05D-3358-D3487929D152}.Debug_NoIteratorDebugging|Durango.Build.0 = Debug_NoIteratorDebugging|Durango
+		{5548D2D2-70CC-D05D-3358-D3487929D152}.Debug|Durango.ActiveCfg = Debug|Durango
+		{5548D2D2-70CC-D05D-3358-D3487929D152}.Debug|Durango.Build.0 = Debug|Durango
+		{5548D2D2-70CC-D05D-3358-D3487929D152}.Profile_EnableAsserts|Durango.ActiveCfg = Profile_EnableAsserts|Durango
+		{5548D2D2-70CC-D05D-3358-D3487929D152}.Profile_EnableAsserts|Durango.Build.0 = Profile_EnableAsserts|Durango
+		{5548D2D2-70CC-D05D-3358-D3487929D152}.Profile|Durango.ActiveCfg = Profile|Durango
+		{5548D2D2-70CC-D05D-3358-D3487929D152}.Profile|Durango.Build.0 = Profile|Durango
+		{5548D2D2-70CC-D05D-3358-D3487929D152}.Release|Durango.ActiveCfg = Release|Durango
+		{5548D2D2-70CC-D05D-3358-D3487929D152}.Release|Durango.Build.0 = Release|Durango
+		{D234FDA9-A578-7164-D487-22F274A28A73}.Debug_NoIteratorDebugging|Durango.ActiveCfg = Debug_NoIteratorDebugging|Durango
+		{D234FDA9-A578-7164-D487-22F274A28A73}.Debug_NoIteratorDebugging|Durango.Build.0 = Debug_NoIteratorDebugging|Durango
+		{D234FDA9-A578-7164-D487-22F274A28A73}.Debug|Durango.ActiveCfg = Debug|Durango
+		{D234FDA9-A578-7164-D487-22F274A28A73}.Debug|Durango.Build.0 = Debug|Durango
+		{D234FDA9-A578-7164-D487-22F274A28A73}.Profile_EnableAsserts|Durango.ActiveCfg = Profile_EnableAsserts|Durango
+		{D234FDA9-A578-7164-D487-22F274A28A73}.Profile_EnableAsserts|Durango.Build.0 = Profile_EnableAsserts|Durango
+		{D234FDA9-A578-7164-D487-22F274A28A73}.Profile|Durango.ActiveCfg = Profile|Durango
+		{D234FDA9-A578-7164-D487-22F274A28A73}.Profile|Durango.Build.0 = Profile|Durango
+		{D234FDA9-A578-7164-D487-22F274A28A73}.Release|Durango.ActiveCfg = Release|Durango
+		{D234FDA9-A578-7164-D487-22F274A28A73}.Release|Durango.Build.0 = Release|Durango
+		{65D24E01-FFF9-0433-E559-BBEA5CAA639D}.Debug_NoIteratorDebugging|Durango.ActiveCfg = Debug_NoIteratorDebugging|Durango
+		{65D24E01-FFF9-0433-E559-BBEA5CAA639D}.Debug_NoIteratorDebugging|Durango.Build.0 = Debug_NoIteratorDebugging|Durango
+		{65D24E01-FFF9-0433-E559-BBEA5CAA639D}.Debug|Durango.ActiveCfg = Debug|Durango
+		{65D24E01-FFF9-0433-E559-BBEA5CAA639D}.Debug|Durango.Build.0 = Debug|Durango
+		{65D24E01-FFF9-0433-E559-BBEA5CAA639D}.Profile_EnableAsserts|Durango.ActiveCfg = Profile_EnableAsserts|Durango
+		{65D24E01-FFF9-0433-E559-BBEA5CAA639D}.Profile_EnableAsserts|Durango.Build.0 = Profile_EnableAsserts|Durango
+		{65D24E01-FFF9-0433-E559-BBEA5CAA639D}.Profile|Durango.ActiveCfg = Profile|Durango
+		{65D24E01-FFF9-0433-E559-BBEA5CAA639D}.Profile|Durango.Build.0 = Profile|Durango
+		{65D24E01-FFF9-0433-E559-BBEA5CAA639D}.Release|Durango.ActiveCfg = Release|Durango
+		{65D24E01-FFF9-0433-E559-BBEA5CAA639D}.Release|Durango.Build.0 = Release|Durango
+		{EBA5452C-2C51-6279-091E-A1DC07E87971}.Debug_NoIteratorDebugging|Durango.ActiveCfg = Debug_NoIteratorDebugging|Durango
+		{EBA5452C-2C51-6279-091E-A1DC07E87971}.Debug_NoIteratorDebugging|Durango.Build.0 = Debug_NoIteratorDebugging|Durango
+		{EBA5452C-2C51-6279-091E-A1DC07E87971}.Debug|Durango.ActiveCfg = Debug|Durango
+		{EBA5452C-2C51-6279-091E-A1DC07E87971}.Debug|Durango.Build.0 = Debug|Durango
+		{EBA5452C-2C51-6279-091E-A1DC07E87971}.Profile_EnableAsserts|Durango.ActiveCfg = Profile_EnableAsserts|Durango
+		{EBA5452C-2C51-6279-091E-A1DC07E87971}.Profile_EnableAsserts|Durango.Build.0 = Profile_EnableAsserts|Durango
+		{EBA5452C-2C51-6279-091E-A1DC07E87971}.Profile|Durango.ActiveCfg = Profile|Durango
+		{EBA5452C-2C51-6279-091E-A1DC07E87971}.Profile|Durango.Build.0 = Profile|Durango
+		{EBA5452C-2C51-6279-091E-A1DC07E87971}.Release|Durango.ActiveCfg = Release|Durango
+		{EBA5452C-2C51-6279-091E-A1DC07E87971}.Release|Durango.Build.0 = Release|Durango
+		{CE75106E-4E4A-519B-9529-92EC841BE51A}.Debug_NoIteratorDebugging|Durango.ActiveCfg = Debug_NoIteratorDebugging|Durango
+		{CE75106E-4E4A-519B-9529-92EC841BE51A}.Debug_NoIteratorDebugging|Durango.Build.0 = Debug_NoIteratorDebugging|Durango
+		{CE75106E-4E4A-519B-9529-92EC841BE51A}.Debug|Durango.ActiveCfg = Debug|Durango
+		{CE75106E-4E4A-519B-9529-92EC841BE51A}.Debug|Durango.Build.0 = Debug|Durango
+		{CE75106E-4E4A-519B-9529-92EC841BE51A}.Profile_EnableAsserts|Durango.ActiveCfg = Profile_EnableAsserts|Durango
+		{CE75106E-4E4A-519B-9529-92EC841BE51A}.Profile_EnableAsserts|Durango.Build.0 = Profile_EnableAsserts|Durango
+		{CE75106E-4E4A-519B-9529-92EC841BE51A}.Profile|Durango.ActiveCfg = Profile|Durango
+		{CE75106E-4E4A-519B-9529-92EC841BE51A}.Profile|Durango.Build.0 = Profile|Durango
+		{CE75106E-4E4A-519B-9529-92EC841BE51A}.Release|Durango.ActiveCfg = Release|Durango
+		{CE75106E-4E4A-519B-9529-92EC841BE51A}.Release|Durango.Build.0 = Release|Durango
+		{3A0519A5-2A48-7F60-951F-28121DBC1130}.Debug_NoIteratorDebugging|Durango.ActiveCfg = Debug_NoIteratorDebugging|Durango
+		{3A0519A5-2A48-7F60-951F-28121DBC1130}.Debug_NoIteratorDebugging|Durango.Build.0 = Debug_NoIteratorDebugging|Durango
+		{3A0519A5-2A48-7F60-951F-28121DBC1130}.Debug|Durango.ActiveCfg = Debug|Durango
+		{3A0519A5-2A48-7F60-951F-28121DBC1130}.Debug|Durango.Build.0 = Debug|Durango
+		{3A0519A5-2A48-7F60-951F-28121DBC1130}.Profile_EnableAsserts|Durango.ActiveCfg = Profile_EnableAsserts|Durango
+		{3A0519A5-2A48-7F60-951F-28121DBC1130}.Profile_EnableAsserts|Durango.Build.0 = Profile_EnableAsserts|Durango
+		{3A0519A5-2A48-7F60-951F-28121DBC1130}.Profile|Durango.ActiveCfg = Profile|Durango
+		{3A0519A5-2A48-7F60-951F-28121DBC1130}.Profile|Durango.Build.0 = Profile|Durango
+		{3A0519A5-2A48-7F60-951F-28121DBC1130}.Release|Durango.ActiveCfg = Release|Durango
+		{3A0519A5-2A48-7F60-951F-28121DBC1130}.Release|Durango.Build.0 = Release|Durango
+		{0BAFB78F-CF78-4AFC-BB43-3464969A5BFE}.Debug_NoIteratorDebugging|Durango.ActiveCfg = Debug_NoIteratorDebugging|Durango
+		{0BAFB78F-CF78-4AFC-BB43-3464969A5BFE}.Debug_NoIteratorDebugging|Durango.Build.0 = Debug_NoIteratorDebugging|Durango
+		{0BAFB78F-CF78-4AFC-BB43-3464969A5BFE}.Debug|Durango.ActiveCfg = Debug|Durango
+		{0BAFB78F-CF78-4AFC-BB43-3464969A5BFE}.Debug|Durango.Build.0 = Debug|Durango
+		{0BAFB78F-CF78-4AFC-BB43-3464969A5BFE}.Profile_EnableAsserts|Durango.ActiveCfg = Profile_EnableAsserts|Durango
+		{0BAFB78F-CF78-4AFC-BB43-3464969A5BFE}.Profile_EnableAsserts|Durango.Build.0 = Profile_EnableAsserts|Durango
+		{0BAFB78F-CF78-4AFC-BB43-3464969A5BFE}.Profile|Durango.ActiveCfg = Profile|Durango
+		{0BAFB78F-CF78-4AFC-BB43-3464969A5BFE}.Profile|Durango.Build.0 = Profile|Durango
+		{0BAFB78F-CF78-4AFC-BB43-3464969A5BFE}.Release|Durango.ActiveCfg = Release|Durango
+		{0BAFB78F-CF78-4AFC-BB43-3464969A5BFE}.Release|Durango.Build.0 = Release|Durango
+		{EDA11A8B-6CE3-A156-6531-DF92F9C1E3E2}.Debug_NoIteratorDebugging|Durango.ActiveCfg = Debug_NoIteratorDebugging|Durango
+		{EDA11A8B-6CE3-A156-6531-DF92F9C1E3E2}.Debug_NoIteratorDebugging|Durango.Build.0 = Debug_NoIteratorDebugging|Durango
+		{EDA11A8B-6CE3-A156-6531-DF92F9C1E3E2}.Debug|Durango.ActiveCfg = Debug|Durango
+		{EDA11A8B-6CE3-A156-6531-DF92F9C1E3E2}.Debug|Durango.Build.0 = Debug|Durango
+		{EDA11A8B-6CE3-A156-6531-DF92F9C1E3E2}.Profile_EnableAsserts|Durango.ActiveCfg = Profile_EnableAsserts|Durango
+		{EDA11A8B-6CE3-A156-6531-DF92F9C1E3E2}.Profile_EnableAsserts|Durango.Build.0 = Profile_EnableAsserts|Durango
+		{EDA11A8B-6CE3-A156-6531-DF92F9C1E3E2}.Profile|Durango.ActiveCfg = Profile|Durango
+		{EDA11A8B-6CE3-A156-6531-DF92F9C1E3E2}.Profile|Durango.Build.0 = Profile|Durango
+		{EDA11A8B-6CE3-A156-6531-DF92F9C1E3E2}.Release|Durango.ActiveCfg = Release|Durango
+		{EDA11A8B-6CE3-A156-6531-DF92F9C1E3E2}.Release|Durango.Build.0 = Release|Durango
+		{742FA585-2ED8-6F94-BAEB-0CFB8A991ABF}.Debug_NoIteratorDebugging|Durango.ActiveCfg = Debug_NoIteratorDebugging|Durango
+		{742FA585-2ED8-6F94-BAEB-0CFB8A991ABF}.Debug_NoIteratorDebugging|Durango.Build.0 = Debug_NoIteratorDebugging|Durango
+		{742FA585-2ED8-6F94-BAEB-0CFB8A991ABF}.Debug|Durango.ActiveCfg = Debug|Durango
+		{742FA585-2ED8-6F94-BAEB-0CFB8A991ABF}.Debug|Durango.Build.0 = Debug|Durango
+		{742FA585-2ED8-6F94-BAEB-0CFB8A991ABF}.Profile_EnableAsserts|Durango.ActiveCfg = Profile_EnableAsserts|Durango
+		{742FA585-2ED8-6F94-BAEB-0CFB8A991ABF}.Profile_EnableAsserts|Durango.Build.0 = Profile_EnableAsserts|Durango
+		{742FA585-2ED8-6F94-BAEB-0CFB8A991ABF}.Profile|Durango.ActiveCfg = Profile|Durango
+		{742FA585-2ED8-6F94-BAEB-0CFB8A991ABF}.Profile|Durango.Build.0 = Profile|Durango
+		{742FA585-2ED8-6F94-BAEB-0CFB8A991ABF}.Release|Durango.ActiveCfg = Release|Durango
+		{742FA585-2ED8-6F94-BAEB-0CFB8A991ABF}.Release|Durango.Build.0 = Release|Durango
+		{C0FFAA68-1C7F-301B-0EA8-3EF5D29100C6}.Debug_NoIteratorDebugging|Durango.ActiveCfg = Debug_NoIteratorDebugging|Durango
+		{C0FFAA68-1C7F-301B-0EA8-3EF5D29100C6}.Debug_NoIteratorDebugging|Durango.Build.0 = Debug_NoIteratorDebugging|Durango
+		{C0FFAA68-1C7F-301B-0EA8-3EF5D29100C6}.Debug|Durango.ActiveCfg = Debug|Durango
+		{C0FFAA68-1C7F-301B-0EA8-3EF5D29100C6}.Debug|Durango.Build.0 = Debug|Durango
+		{C0FFAA68-1C7F-301B-0EA8-3EF5D29100C6}.Profile_EnableAsserts|Durango.ActiveCfg = Profile_EnableAsserts|Durango
+		{C0FFAA68-1C7F-301B-0EA8-3EF5D29100C6}.Profile_EnableAsserts|Durango.Build.0 = Profile_EnableAsserts|Durango
+		{C0FFAA68-1C7F-301B-0EA8-3EF5D29100C6}.Profile|Durango.ActiveCfg = Profile|Durango
+		{C0FFAA68-1C7F-301B-0EA8-3EF5D29100C6}.Profile|Durango.Build.0 = Profile|Durango
+		{C0FFAA68-1C7F-301B-0EA8-3EF5D29100C6}.Release|Durango.ActiveCfg = Release|Durango
+		{C0FFAA68-1C7F-301B-0EA8-3EF5D29100C6}.Release|Durango.Build.0 = Release|Durango
+		{30C74FBE-13F4-3275-9D41-DC1880B35D78}.Debug_NoIteratorDebugging|Durango.ActiveCfg = Debug_NoIteratorDebugging|Durango
+		{30C74FBE-13F4-3275-9D41-DC1880B35D78}.Debug_NoIteratorDebugging|Durango.Build.0 = Debug_NoIteratorDebugging|Durango
+		{30C74FBE-13F4-3275-9D41-DC1880B35D78}.Debug|Durango.ActiveCfg = Debug|Durango
+		{30C74FBE-13F4-3275-9D41-DC1880B35D78}.Debug|Durango.Build.0 = Debug|Durango
+		{30C74FBE-13F4-3275-9D41-DC1880B35D78}.Profile_EnableAsserts|Durango.ActiveCfg = Profile_EnableAsserts|Durango
+		{30C74FBE-13F4-3275-9D41-DC1880B35D78}.Profile_EnableAsserts|Durango.Build.0 = Profile_EnableAsserts|Durango
+		{30C74FBE-13F4-3275-9D41-DC1880B35D78}.Profile|Durango.ActiveCfg = Profile|Durango
+		{30C74FBE-13F4-3275-9D41-DC1880B35D78}.Profile|Durango.Build.0 = Profile|Durango
+		{30C74FBE-13F4-3275-9D41-DC1880B35D78}.Release|Durango.ActiveCfg = Release|Durango
+		{30C74FBE-13F4-3275-9D41-DC1880B35D78}.Release|Durango.Build.0 = Release|Durango
+		{15B9BAA3-3F82-468C-BF84-CD55CE7FC060}.Debug_NoIteratorDebugging|Durango.ActiveCfg = Debug_NoIteratorDebugging|Durango
+		{15B9BAA3-3F82-468C-BF84-CD55CE7FC060}.Debug_NoIteratorDebugging|Durango.Build.0 = Debug_NoIteratorDebugging|Durango
+		{15B9BAA3-3F82-468C-BF84-CD55CE7FC060}.Debug|Durango.ActiveCfg = Debug|Durango
+		{15B9BAA3-3F82-468C-BF84-CD55CE7FC060}.Debug|Durango.Build.0 = Debug|Durango
+		{15B9BAA3-3F82-468C-BF84-CD55CE7FC060}.Profile_EnableAsserts|Durango.ActiveCfg = Profile_EnableAsserts|Durango
+		{15B9BAA3-3F82-468C-BF84-CD55CE7FC060}.Profile_EnableAsserts|Durango.Build.0 = Profile_EnableAsserts|Durango
+		{15B9BAA3-3F82-468C-BF84-CD55CE7FC060}.Profile|Durango.ActiveCfg = Profile|Durango
+		{15B9BAA3-3F82-468C-BF84-CD55CE7FC060}.Profile|Durango.Build.0 = Profile|Durango
+		{15B9BAA3-3F82-468C-BF84-CD55CE7FC060}.Release|Durango.ActiveCfg = Release|Durango
+		{15B9BAA3-3F82-468C-BF84-CD55CE7FC060}.Release|Durango.Build.0 = Release|Durango
+		{1EA08CCB-A358-4C67-0B3A-9645157F1ED3}.Debug_NoIteratorDebugging|Durango.ActiveCfg = Debug_NoIteratorDebugging|Durango
+		{1EA08CCB-A358-4C67-0B3A-9645157F1ED3}.Debug_NoIteratorDebugging|Durango.Build.0 = Debug_NoIteratorDebugging|Durango
+		{1EA08CCB-A358-4C67-0B3A-9645157F1ED3}.Debug|Durango.ActiveCfg = Debug|Durango
+		{1EA08CCB-A358-4C67-0B3A-9645157F1ED3}.Debug|Durango.Build.0 = Debug|Durango
+		{1EA08CCB-A358-4C67-0B3A-9645157F1ED3}.Profile_EnableAsserts|Durango.ActiveCfg = Profile_EnableAsserts|Durango
+		{1EA08CCB-A358-4C67-0B3A-9645157F1ED3}.Profile_EnableAsserts|Durango.Build.0 = Profile_EnableAsserts|Durango
+		{1EA08CCB-A358-4C67-0B3A-9645157F1ED3}.Profile|Durango.ActiveCfg = Profile|Durango
+		{1EA08CCB-A358-4C67-0B3A-9645157F1ED3}.Profile|Durango.Build.0 = Profile|Durango
+		{1EA08CCB-A358-4C67-0B3A-9645157F1ED3}.Release|Durango.ActiveCfg = Release|Durango
+		{1EA08CCB-A358-4C67-0B3A-9645157F1ED3}.Release|Durango.Build.0 = Release|Durango
+		{E8266BA6-46CD-C4B8-2427-57859693459C}.Debug_NoIteratorDebugging|Durango.ActiveCfg = Debug_NoIteratorDebugging|Durango
+		{E8266BA6-46CD-C4B8-2427-57859693459C}.Debug_NoIteratorDebugging|Durango.Build.0 = Debug_NoIteratorDebugging|Durango
+		{E8266BA6-46CD-C4B8-2427-57859693459C}.Debug|Durango.ActiveCfg = Debug|Durango
+		{E8266BA6-46CD-C4B8-2427-57859693459C}.Debug|Durango.Build.0 = Debug|Durango
+		{E8266BA6-46CD-C4B8-2427-57859693459C}.Profile_EnableAsserts|Durango.ActiveCfg = Profile_EnableAsserts|Durango
+		{E8266BA6-46CD-C4B8-2427-57859693459C}.Profile_EnableAsserts|Durango.Build.0 = Profile_EnableAsserts|Durango
+		{E8266BA6-46CD-C4B8-2427-57859693459C}.Profile|Durango.ActiveCfg = Profile|Durango
+		{E8266BA6-46CD-C4B8-2427-57859693459C}.Profile|Durango.Build.0 = Profile|Durango
+		{E8266BA6-46CD-C4B8-2427-57859693459C}.Release|Durango.ActiveCfg = Release|Durango
+		{E8266BA6-46CD-C4B8-2427-57859693459C}.Release|Durango.Build.0 = Release|Durango
+		{940CA7BD-20A7-395C-CE77-8A7F94F6F1EC}.Debug_NoIteratorDebugging|Durango.ActiveCfg = Debug_NoIteratorDebugging|Durango
+		{940CA7BD-20A7-395C-CE77-8A7F94F6F1EC}.Debug_NoIteratorDebugging|Durango.Build.0 = Debug_NoIteratorDebugging|Durango
+		{940CA7BD-20A7-395C-CE77-8A7F94F6F1EC}.Debug|Durango.ActiveCfg = Debug|Durango
+		{940CA7BD-20A7-395C-CE77-8A7F94F6F1EC}.Debug|Durango.Build.0 = Debug|Durango
+		{940CA7BD-20A7-395C-CE77-8A7F94F6F1EC}.Profile_EnableAsserts|Durango.ActiveCfg = Profile_EnableAsserts|Durango
+		{940CA7BD-20A7-395C-CE77-8A7F94F6F1EC}.Profile_EnableAsserts|Durango.Build.0 = Profile_EnableAsserts|Durango
+		{940CA7BD-20A7-395C-CE77-8A7F94F6F1EC}.Profile|Durango.ActiveCfg = Profile|Durango
+		{940CA7BD-20A7-395C-CE77-8A7F94F6F1EC}.Profile|Durango.Build.0 = Profile|Durango
+		{940CA7BD-20A7-395C-CE77-8A7F94F6F1EC}.Release|Durango.ActiveCfg = Release|Durango
+		{940CA7BD-20A7-395C-CE77-8A7F94F6F1EC}.Release|Durango.Build.0 = Release|Durango
+		{4444F101-BE13-175D-06D8-24719C3A5249}.Debug_NoIteratorDebugging|Durango.ActiveCfg = Debug_NoIteratorDebugging|Durango
+		{4444F101-BE13-175D-06D8-24719C3A5249}.Debug_NoIteratorDebugging|Durango.Build.0 = Debug_NoIteratorDebugging|Durango
+		{4444F101-BE13-175D-06D8-24719C3A5249}.Debug|Durango.ActiveCfg = Debug|Durango
+		{4444F101-BE13-175D-06D8-24719C3A5249}.Debug|Durango.Build.0 = Debug|Durango
+		{4444F101-BE13-175D-06D8-24719C3A5249}.Profile_EnableAsserts|Durango.ActiveCfg = Profile_EnableAsserts|Durango
+		{4444F101-BE13-175D-06D8-24719C3A5249}.Profile_EnableAsserts|Durango.Build.0 = Profile_EnableAsserts|Durango
+		{4444F101-BE13-175D-06D8-24719C3A5249}.Profile|Durango.ActiveCfg = Profile|Durango
+		{4444F101-BE13-175D-06D8-24719C3A5249}.Profile|Durango.Build.0 = Profile|Durango
+		{4444F101-BE13-175D-06D8-24719C3A5249}.Release|Durango.ActiveCfg = Release|Durango
+		{4444F101-BE13-175D-06D8-24719C3A5249}.Release|Durango.Build.0 = Release|Durango
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D861CBC8-00D4-462F-F9A8-36F0630D37F3} = {118C63B7-7D99-919D-0680-8D88728C5D54}
+		{82F0808D-DE54-4C2D-4062-49356A247288} = {5339CA5D-3FF1-0BAB-A8F8-E40694CFA69B}
+		{1DFD763D-8969-3238-525D-CA95BE8854A0} = {6EEF9964-DAAF-159B-A3EA-5E180F6A5A77}
+		{CCAE8BB4-999A-7E96-B732-6830A717AF97} = {1DFD763D-8969-3238-525D-CA95BE8854A0}
+		{3BBADECD-D415-FE56-364E-F8FC67DBBE14} = {1DFD763D-8969-3238-525D-CA95BE8854A0}
+		{9A05DB90-AB7E-BA06-70F3-5F87E35D2C20} = {1DFD763D-8969-3238-525D-CA95BE8854A0}
+		{93216E13-68AE-9DAB-9D12-D00D4B77D84F} = {1DFD763D-8969-3238-525D-CA95BE8854A0}
+		{6F507751-C441-177A-EE2C-DA2A46637511} = {1DFD763D-8969-3238-525D-CA95BE8854A0}
+		{0E6859F6-F303-372A-975B-CAAF4B95C362} = {1DFD763D-8969-3238-525D-CA95BE8854A0}
+		{B6F318DB-C469-3E49-1B6A-DE4AAA16DAFD} = {1DFD763D-8969-3238-525D-CA95BE8854A0}
+		{5548D2D2-70CC-D05D-3358-D3487929D152} = {1DFD763D-8969-3238-525D-CA95BE8854A0}
+		{D234FDA9-A578-7164-D487-22F274A28A73} = {1DFD763D-8969-3238-525D-CA95BE8854A0}
+		{65D24E01-FFF9-0433-E559-BBEA5CAA639D} = {1DFD763D-8969-3238-525D-CA95BE8854A0}
+		{EBA5452C-2C51-6279-091E-A1DC07E87971} = {1DFD763D-8969-3238-525D-CA95BE8854A0}
+		{CE75106E-4E4A-519B-9529-92EC841BE51A} = {1DFD763D-8969-3238-525D-CA95BE8854A0}
+		{3A0519A5-2A48-7F60-951F-28121DBC1130} = {1DFD763D-8969-3238-525D-CA95BE8854A0}
+		{0BAFB78F-CF78-4AFC-BB43-3464969A5BFE} = {1DFD763D-8969-3238-525D-CA95BE8854A0}
+		{EDA11A8B-6CE3-A156-6531-DF92F9C1E3E2} = {1DFD763D-8969-3238-525D-CA95BE8854A0}
+		{742FA585-2ED8-6F94-BAEB-0CFB8A991ABF} = {1DFD763D-8969-3238-525D-CA95BE8854A0}
+		{C0FFAA68-1C7F-301B-0EA8-3EF5D29100C6} = {1DFD763D-8969-3238-525D-CA95BE8854A0}
+		{E14B3B89-4DB8-F683-16AC-8EE182D718EC} = {6EEF9964-DAAF-159B-A3EA-5E180F6A5A77}
+		{30C74FBE-13F4-3275-9D41-DC1880B35D78} = {E14B3B89-4DB8-F683-16AC-8EE182D718EC}
+		{15B9BAA3-3F82-468C-BF84-CD55CE7FC060} = {E14B3B89-4DB8-F683-16AC-8EE182D718EC}
+		{1EA08CCB-A358-4C67-0B3A-9645157F1ED3} = {E14B3B89-4DB8-F683-16AC-8EE182D718EC}
+		{E8266BA6-46CD-C4B8-2427-57859693459C} = {E14B3B89-4DB8-F683-16AC-8EE182D718EC}
+		{940CA7BD-20A7-395C-CE77-8A7F94F6F1EC} = {E14B3B89-4DB8-F683-16AC-8EE182D718EC}
+		{4444F101-BE13-175D-06D8-24719C3A5249} = {81FE7D09-6D61-0DAE-16E7-45640229D930}
+	EndGlobalSection
+EndGlobal
