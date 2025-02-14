@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A14F863F-9481-472A-8211-491A55B4FE49}" SchemaVersion="97">
+	<AudioObjects>
+		<WorkUnit Name="Motion" ID="{A14F863F-9481-472A-8211-491A55B4FE49}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="DoorSliding" ID="{6AEE604E-3FCC-40E2-8D35-2EB740B95B85}" ShortID="20097492">
+					<ChildrenList>
+						<Sound Name="DoorSliding" ID="{8F3D8AF5-313F-4F5B-9F1F-9CDE14A64388}" ShortID="512879976">
+							<Comment>Audiokinetic Inc. All rights reserved.
+Audio content provided by Soundelux Design Music Group
+© 2007 Soundelux Design Music Group
+www.soundeluxdmg.com
+
+The Audio Content contained in this digitally watermarked file is the property of Soundelux Design Music Group.  Your sole right with regard to this Audio Content is to listen to the Audio Content as part of this Sample Project.  This Audio Content cannot be used or modified for a commercial purpose nor for public demonstration.</Comment>
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="SFX" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A68EC2C-27B5-4CDA-9001-41253E43ABC3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9025E453-2CB9-4A08-B85F-8DF7210E1E50}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_DoorSliding_01_Open" ID="{A719D12C-48E1-4382-8741-8AB6594352CB}">
+									<Comment>Audiokinetic Inc. All rights reserved.
+Audio content provided by Soundelux Design Music Group
+© 2007 Soundelux Design Music Group
+www.soundeluxdmg.com
+
+The Audio Content contained in this digitally watermarked file is the property of Soundelux Design Music Group.  
+Your sole right with regard to this Audio Content is to listen to the Audio Content as part of this Sample Project. 
+This Audio Content cannot be used or modified for a commercial purpose nor for public demonstration.</Comment>
+									<Language>SFX</Language>
+									<AudioFile>SFX_DoorSliding_01_Open.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="346371935"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_DoorSliding_01_Open" ID="{A719D12C-48E1-4382-8741-8AB6594352CB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DoorSliding_Motion" ID="{F48A6899-7A68-49C4-9022-2F7185CE3055}" ShortID="400058017">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="MotionBus" ID="{73F9D323-5176-4E13-B804-2B68E9D2FC40}" WorkUnitID="{9025E453-2CB9-4A08-B85F-8DF7210E1E50}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Wwise Motion Source" ID="{48D984DC-8E8A-4084-983E-D440D80F65CD}" ShortID="749369914" PluginName="Wwise Motion Source" CompanyID="0" PluginID="409">
+									<PropertyList>
+										<Property Name="DriverA" Type="Real32">
+											<RTPCList>
+												<RTPC Name="" ID="{FE9F8D68-8C20-48C7-B4F6-A28CA6559310}" ShortID="905999290">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<Custom>
+																<ModulatorTime Name="Modulator Time (Custom)" ID="{5A9F5DB1-8CA7-4E95-9208-9C109B6D811F}" ShortID="590584856"/>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{4926FB91-8DF0-4A10-BBEE-2F61846AD6D1}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>1</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>1</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Wwise Motion Source" ID="{48D984DC-8E8A-4084-983E-D440D80F65CD}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="GunFire" ID="{A2734DDA-04E6-4455-8019-ECB3506BF4DC}" ShortID="1010598224">
+					<ChildrenList>
+						<Sound Name="GunFire" ID="{B7A6F13C-3ADB-426E-AA27-1CC72778DCCB}" ShortID="714652247">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="SFX" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A68EC2C-27B5-4CDA-9001-41253E43ABC3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9025E453-2CB9-4A08-B85F-8DF7210E1E50}"/>
+								</Reference>
+								<Reference Name="OutputBus" Platform="Pellegrino">
+									<ObjectRef Name="Game Pad Bus" ID="{FD68121B-868E-4234-B543-D1C00935A473}" WorkUnitID="{9025E453-2CB9-4A08-B85F-8DF7210E1E50}"/>
+								</Reference>
+								<Reference Name="OutputBus" Platform="XboxOne">
+									<ObjectRef Name="Game Pad Bus" ID="{FD68121B-868E-4234-B543-D1C00935A473}" WorkUnitID="{9025E453-2CB9-4A08-B85F-8DF7210E1E50}"/>
+								</Reference>
+								<Reference Name="OutputBus" Platform="Chinook">
+									<ObjectRef Name="Game Pad Bus" ID="{FD68121B-868E-4234-B543-D1C00935A473}" WorkUnitID="{9025E453-2CB9-4A08-B85F-8DF7210E1E50}"/>
+								</Reference>
+								<Reference Name="OutputBus" Platform="PS4">
+									<ObjectRef Name="Game Pad Bus" ID="{FD68121B-868E-4234-B543-D1C00935A473}" WorkUnitID="{9025E453-2CB9-4A08-B85F-8DF7210E1E50}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Master_Motion_Bus_Aux" ID="{CF967290-9E20-4C69-834A-A30B7CD502CB}" WorkUnitID="{9025E453-2CB9-4A08-B85F-8DF7210E1E50}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Shotgun_Fire_01" ID="{58F95C7F-705A-4A20-BEDB-127E1DA04516}">
+									<Language>SFX</Language>
+									<AudioFile>Shotgun_Fire_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="69451741"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Shotgun_Fire_01" ID="{58F95C7F-705A-4A20-BEDB-127E1DA04516}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PluginInfo Project="IntegrationDemoMotion" Platform="Windows" BasePlatform="Windows">
+	<Plugins>
+		<Plugin Name="System" ID="11403271" DLL="DefaultSink"/>
+		<Plugin Name="Controller Headphones" ID="11599879" DLL="DefaultSink"/>
+		<Plugin Name="Controller Speaker" ID="11730951" DLL="DefaultSink"/>
+		<Plugin Name="No Output" ID="11862023" DLL="DefaultSink"/>
+		<Plugin Name="Wwise Motion Source" ID="26804226" DLL="AkMotion"/>
+		<Plugin Name="Wwise Motion" ID="33226759" DLL="AkMotion"/>
+	</Plugins>
+</PluginInfo>

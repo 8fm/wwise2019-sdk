@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{BD872E19-E25B-4059-A3D7-F114BBBD7076}" SchemaVersion="97">
+	<AudioDevices>
+		<WorkUnit Name="Default Work Unit" ID="{BD872E19-E25B-4059-A3D7-F114BBBD7076}" PersistMode="Standalone">
+			<ChildrenList>
+				<AudioDevice Name="System" ID="{36AF9AF2-6AD7-4AD7-A5FA-9AB61A258311}" PluginName="System" CompanyID="0" PluginID="174" PluginType="7"/>
+				<AudioDevice Name="No_Output" ID="{8D0F035C-8062-424E-A3D4-E94FD7643420}" PluginName="No Output" CompanyID="0" PluginID="181" PluginType="7"/>
+				<AudioDevice Name="Wwise_Motion" ID="{FEF7606D-7EC2-4AEE-9373-F5717DC60C9F}" PluginName="Wwise Motion" CompanyID="0" PluginID="507" PluginType="7"/>
+				<AudioDevice Name="Controller_Headphones" ID="{3397238E-E5FA-4756-977E-9588952F2F08}" PluginName="Controller Headphones" CompanyID="0" PluginID="177" PluginType="7"/>
+				<AudioDevice Name="Pad_Output" ID="{F595DB07-7A43-4412-9F36-24132B27E6AC}" PluginName="Controller Speaker" CompanyID="0" PluginID="179" PluginType="7"/>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioDevices>
+</WwiseDocument>

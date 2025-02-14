@@ -1,0 +1,15 @@
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	1955472259	MotionBus			\Default Work Unit\MotionBus	
+	3596053402	Game Pad Bus			\Default Work Unit\Game Pad Bus	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	3616209736	Master_Motion_Bus_Aux			\Default Work Unit\MotionBus\Master_Motion_Bus_Aux	
+
+Audio Devices	ID	Name	Type				Notes
+	666305828	Pad_Output	Controller Speaker			
+	1156359885	Wwise_Motion	Wwise Motion			
+	2317455096	No_Output	No Output			
+	2868300805	Controller_Headphones	Controller Headphones			
+	3859886410	System	System			
+

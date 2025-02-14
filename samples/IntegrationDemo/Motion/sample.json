@@ -1,0 +1,22 @@
+{
+	"id": "IntegrationDemoMotion",
+	"displayName": "Integration Demo Motion",
+	"description": "Code samples (C++) demonstrating how to implement the haptic feedback of a control interface, with the companion Wwise project.",
+	"imagePath": "IntegrationDemoMotion.png",
+	"wwiseProjectFilePath": "WwiseProject/IntegrationDemoMotion.wproj",
+	"demos": [
+		{
+			"displayName": "Run Integration Demo Motion (vc140/x64/Profile)",
+			"filePath": "../../../x64_vc140/Profile/bin/IntegrationDemoMotion/IntegrationDemoMotion.exe"
+		},
+		{
+			"displayName": "Run Integration Demo Motion (vc150/x64/Profile)",
+			"filePath": "../../../x64_vc150/Profile/bin/IntegrationDemoMotion/IntegrationDemoMotion.exe"
+		},
+		{
+			"displayName": "Run Integration Demo Motion (vc160/x64/Profile)",
+			"filePath": "../../../x64_vc160/Profile/bin/IntegrationDemoMotion/IntegrationDemoMotion.exe"
+		}
+	],
+	"documentation": []
+}

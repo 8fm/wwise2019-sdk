@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4A68EC2C-27B5-4CDA-9001-41253E43ABC3}" SchemaVersion="97">
+	<Conversions>
+		<WorkUnit Name="Default Work Unit" ID="{4A68EC2C-27B5-4CDA-9001-41253E43ABC3}" PersistMode="Standalone">
+			<ChildrenList>
+				<Conversion Name="SFX" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}">
+					<PropertyList>
+						<Property Name="Channels" Type="int32">
+							<ValueList>
+								<Value Platform="Android">4</Value>
+								<Value Platform="Windows">4</Value>
+								<Value Platform="Switch">4</Value>
+								<Value Platform="Chinook">4</Value>
+								<Value Platform="PS4">4</Value>
+								<Value Platform="XboxOne">4</Value>
+								<Value Platform="Pellegrino">4</Value>
+								<Value Platform="Stadia">4</Value>
+							</ValueList>
+						</Property>
+						<Property Name="LRMix" Type="Real64">
+							<ValueList>
+								<Value Platform="Android">0</Value>
+								<Value Platform="Windows">0</Value>
+								<Value Platform="Switch">0</Value>
+								<Value Platform="Chinook">0</Value>
+								<Value Platform="PS4">0</Value>
+								<Value Platform="XboxOne">0</Value>
+								<Value Platform="Pellegrino">0</Value>
+								<Value Platform="Stadia">0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="MaxSampleRate" Type="int32">
+							<ValueList>
+								<Value Platform="Android">0</Value>
+								<Value Platform="Windows">0</Value>
+								<Value Platform="Switch">0</Value>
+								<Value Platform="Chinook">0</Value>
+								<Value Platform="PS4">0</Value>
+								<Value Platform="XboxOne">0</Value>
+								<Value Platform="Pellegrino">0</Value>
+								<Value Platform="Stadia">0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="MinSampleRate" Type="int32">
+							<ValueList>
+								<Value Platform="Android">0</Value>
+								<Value Platform="Windows">0</Value>
+								<Value Platform="Switch">0</Value>
+								<Value Platform="Chinook">0</Value>
+								<Value Platform="PS4">0</Value>
+								<Value Platform="XboxOne">0</Value>
+								<Value Platform="Pellegrino">0</Value>
+								<Value Platform="Stadia">0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="RemoveDCOffset" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="SampleRate" Type="int32">
+							<ValueList>
+								<Value Platform="Android">32000</Value>
+								<Value Platform="Windows">0</Value>
+								<Value Platform="Switch">0</Value>
+								<Value Platform="Chinook">0</Value>
+								<Value Platform="PS4">0</Value>
+								<Value Platform="XboxOne">0</Value>
+								<Value Platform="Pellegrino">0</Value>
+								<Value Platform="Stadia">0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseDither" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ConversionPluginInfoList>
+						<ConversionPluginInfo Platform="Android">
+							<ConversionPlugin Name="" ID="{71CDD113-1313-4F12-B785-9C00E4E32983}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="Windows">
+							<ConversionPlugin Name="" ID="{BD61357F-94A7-4F3E-9012-09A6D428313C}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="Switch">
+							<ConversionPlugin Name="" ID="{EF4758C9-4857-4690-9E9C-E02ED18A0E73}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="Chinook">
+							<ConversionPlugin Name="" ID="{E5E4D486-4082-44DE-B016-EAAC5D29DC46}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="PS4">
+							<ConversionPlugin Name="" ID="{A353CD81-331E-42AE-BE80-C848F2A78862}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="XboxOne">
+							<ConversionPlugin Name="" ID="{693B4976-73BA-4B45-B8D2-48598288BC8F}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="Pellegrino">
+							<ConversionPlugin Name="" ID="{61DD4CF1-25C9-48A5-BD25-2DFEEB5FF593}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="Stadia">
+							<ConversionPlugin Name="" ID="{9D6C9800-086F-42D5-9E10-45C462444B05}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+						</ConversionPluginInfo>
+					</ConversionPluginInfoList>
+				</Conversion>
+			</ChildrenList>
+		</WorkUnit>
+	</Conversions>
+</WwiseDocument>

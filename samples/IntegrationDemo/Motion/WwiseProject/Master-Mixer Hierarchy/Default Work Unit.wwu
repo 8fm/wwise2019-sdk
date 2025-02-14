@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9025E453-2CB9-4A08-B85F-8DF7210E1E50}" SchemaVersion="97">
+	<Busses>
+		<WorkUnit Name="Default Work Unit" ID="{9025E453-2CB9-4A08-B85F-8DF7210E1E50}" PersistMode="Standalone">
+			<ChildrenList>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{36AF9AF2-6AD7-4AD7-A5FA-9AB61A258311}" WorkUnitID="{BD872E19-E25B-4059-A3D7-F114BBBD7076}"/>
+						</Reference>
+					</ReferenceList>
+				</Bus>
+				<Bus Name="MotionBus" ID="{73F9D323-5176-4E13-B804-2B68E9D2FC40}">
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="Wwise Motion" CompanyID="0" PluginID="507" PluginType="7">
+							<ObjectRef Name="Wwise_Motion" ID="{FEF7606D-7EC2-4AEE-9373-F5717DC60C9F}" WorkUnitID="{BD872E19-E25B-4059-A3D7-F114BBBD7076}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AuxBus Name="Master_Motion_Bus_Aux" ID="{CF967290-9E20-4C69-834A-A30B7CD502CB}"/>
+					</ChildrenList>
+				</Bus>
+				<Bus Name="Game Pad Bus" ID="{FD68121B-868E-4234-B543-D1C00935A473}">
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{36AF9AF2-6AD7-4AD7-A5FA-9AB61A258311}" WorkUnitID="{BD872E19-E25B-4059-A3D7-F114BBBD7076}"/>
+						</Reference>
+						<Reference Name="AudioDevice" Platform="Pellegrino" PluginName="Controller Speaker" CompanyID="0" PluginID="179" PluginType="7">
+							<ObjectRef Name="Pad_Output" ID="{F595DB07-7A43-4412-9F36-24132B27E6AC}" WorkUnitID="{BD872E19-E25B-4059-A3D7-F114BBBD7076}"/>
+						</Reference>
+						<Reference Name="AudioDevice" Platform="XboxOne" PluginName="Controller Headphones" CompanyID="0" PluginID="177" PluginType="7">
+							<ObjectRef Name="Controller_Headphones" ID="{3397238E-E5FA-4756-977E-9588952F2F08}" WorkUnitID="{BD872E19-E25B-4059-A3D7-F114BBBD7076}"/>
+						</Reference>
+						<Reference Name="AudioDevice" Platform="Chinook" PluginName="Controller Headphones" CompanyID="0" PluginID="177" PluginType="7">
+							<ObjectRef Name="Controller_Headphones" ID="{3397238E-E5FA-4756-977E-9588952F2F08}" WorkUnitID="{BD872E19-E25B-4059-A3D7-F114BBBD7076}"/>
+						</Reference>
+						<Reference Name="AudioDevice" Platform="PS4" PluginName="Controller Speaker" CompanyID="0" PluginID="179" PluginType="7">
+							<ObjectRef Name="Pad_Output" ID="{F595DB07-7A43-4412-9F36-24132B27E6AC}" WorkUnitID="{BD872E19-E25B-4059-A3D7-F114BBBD7076}"/>
+						</Reference>
+					</ReferenceList>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>
