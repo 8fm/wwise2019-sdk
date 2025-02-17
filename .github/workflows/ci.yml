@@ -1,0 +1,31 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  windows-sln:
+    name: Windows sln ${{ matrix.Configuration }} ${{ matrix.Platform }}
+    runs-on: windows-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        Configuration: [Debug(StaticCRT), Profile(StaticCRT), Release(StaticCRT)]
+        Platform: [x64]
+    steps:
+    - uses: actions/checkout@main
+      with:
+        submodules: recursive
+
+    - uses: microsoft/setup-msbuild@main
+    - name: Build libs
+      working-directory: source/SoundEngine
+      run: msbuild /m /p:Configuration="${{ matrix.Configuration }}" /p:Platform="${{ matrix.Platform }}" AllWindowsSoundEngine_vc170.sln
+    - name: Build IntegrationDemo
+      working-directory: samples/IntegrationDemo/Windows
+      run: msbuild /m /p:Configuration="${{ matrix.Configuration }}" /p:Platform="${{ matrix.Platform }}" IntegrationDemo_Windows_vc170.sln
+
+    - name: Upload artifacts
+      uses: actions/upload-artifact@main
+      with:
+        name: IntegrationDemo.${{ matrix.Configuration }}.${{ matrix.Platform }}.sln.ci-${{ github.run_number }}
+        path: ${{ matrix.Platform }}_vc170/${{ matrix.Configuration }}/bin/IntegrationDemo/*.exe
