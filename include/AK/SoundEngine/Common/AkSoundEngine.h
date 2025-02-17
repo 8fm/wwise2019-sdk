@@ -111,6 +111,8 @@ the specific language governing permissions and limitations under the License.
 	#define AK_ASSERT_HOOK
 #endif
 
+#define WWISE_SCOPED_PROFILE_MARKER( name )
+
 /// Callback function prototype for User Music notifications
 ///	It is useful for reacting to user music playback.
 ///

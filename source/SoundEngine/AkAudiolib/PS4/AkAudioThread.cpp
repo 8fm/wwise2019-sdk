@@ -25,7 +25,6 @@ using namespace AKPLATFORM;
 
 extern AkInitSettings g_settings;
 extern AkPlatformInitSettings g_PDSettings;
-extern RedEventThreadPerform g_eventPerformFunc;
 
 AkThread		CAkAudioThread::m_hEventMgrThread;
 AkThreadID		CAkAudioThread::m_hEventMgrThreadID;
@@ -69,15 +68,7 @@ AK_DECLARE_THREAD_ROUTINE(CAkAudioThread::EventMgrThreadFunc)
 
 	AKASSERT( g_pAudioMgr );
 	do
-    {
-		if ( g_eventPerformFunc )
-		{
-			AkCreateEvent( executeEventPerformEvent );
-			g_eventPerformFunc( executeEventPerform );
-			AkWaitForEvent( executeEventPerformEvent );
-			AkDestroyEvent( executeEventPerformEvent );
-		}
-		else
+	{
 		{
 			g_pAudioMgr->Perform();
 		}

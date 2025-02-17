@@ -185,6 +185,7 @@ enum AKRESULT
 	AK_PlayingIDNotFound		= 94,	///< Calling a function with a playing ID that is not known.
 	AK_InvalidFloatValue		= 95,	///< One parameter has a invalid float value such as NaN, INF or FLT_MAX.
 	AK_FileFormatMismatch       = 96,   ///< Media file format unexpected
+	AK_NoDistinctListener		= 97,	///< No distinct listener provided for AddOutput
 };
 
 /// Game sync group type

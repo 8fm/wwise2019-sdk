@@ -84,11 +84,6 @@ CAkModulatorMgr*		g_pModulatorMgr		 = NULL;
 CAkVirtualAcousticsMgr*	g_pVirtualAcousticsMgr = NULL;
 CAkBusCallbackMgr*		g_pBusCallbackMgr	 = NULL;
 
-RedEventThreadPerform   g_eventPerformFunc = nullptr;
-
-WwiseProfileMarkerPush	g_profileMarkerPush = NULL;
-WwiseProfileMarkerPop	g_profileMarkerPop = NULL;
-
 AkUInt64 AKRANDOM::g_uSeed = 0;
 
 #ifndef AK_OPTIMIZED
@@ -421,15 +416,6 @@ AKRESULT Init(
 
 	if (g_settings.pfnAssertHook)
 	g_pAssertHook = g_settings.pfnAssertHook;
-
-	if ( g_settings.pfnEventPerformHook )
-		g_eventPerformFunc = g_settings.pfnEventPerformHook;
-
-	if ( g_settings.pfnProfileMarkerPush && g_settings.pfnProfileMarkerPop )
-	{
-		g_profileMarkerPush = g_settings.pfnProfileMarkerPush;
-		g_profileMarkerPop = g_settings.pfnProfileMarkerPop;
-	}
 
 	// Store lower engine global settings.
 	CAkLEngine::ApplyGlobalSettings( in_pPlatformSettings );

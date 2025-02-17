@@ -31,8 +31,7 @@ extern void AkMemDebugFreeDefault(AkMemPoolId poolId, void* pAddress);
 
 #define RPMALLOC_INSTANCE(_poolId) ((_poolId & AkMemType_Device) ? 1 : 0)
 
-//RED
-static void AkMemInitforThreadDefault( const char * in_szThreadName )
+static void AkMemInitforThreadDefault()
 {
 	rpmalloc_thread_initialize(0);
 }
@@ -256,11 +255,10 @@ void GetDefaultSettings( AkMemSettings & out_pSettings )
 	out_pSettings.pfDebugCheckForOverwrite = NULL;
 }
 
-//RED
-void InitForThread( const char * in_szThreadName )
+void InitForThread()
 {
 	if ( g_settings.pfInitForThread )
-		g_settings.pfInitForThread( in_szThreadName );
+		g_settings.pfInitForThread();
 }
 
 void TermForThread()

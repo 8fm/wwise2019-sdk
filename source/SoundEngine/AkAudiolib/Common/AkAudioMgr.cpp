@@ -597,7 +597,7 @@ void CAkAudioMgr::Perform()
 	}
 	while ( true );
 
-	AK::IAkStreamMgr::Get()->SignalAllDevices();
+	//AK::IAkStreamMgr::Get()->SignalAllDevices();
 
 	_CallGlobalExtensions( AkGlobalCallbackLocation_End );
 
