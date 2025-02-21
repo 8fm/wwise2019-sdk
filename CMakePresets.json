@@ -1,0 +1,132 @@
+{
+  "version": 3,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 20,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "ninja-Final-x64",
+      "generator": "Ninja Multi-Config",
+      "binaryDir": "${sourceDir}/build/${presetName}",
+      "architecture": {
+        "value": "x64",
+        "strategy": "external"
+      },
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "GAME_CONFIG": "Final",
+        "GAME_PLATFORM": "x64"
+      }
+    },
+    {
+      "name": "ninja-Profile-x64",
+      "generator": "Ninja Multi-Config",
+      "binaryDir": "${sourceDir}/build/${presetName}",
+      "architecture": {
+        "value": "x64",
+        "strategy": "external"
+      },
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "RelWithDebInfo",
+        "GAME_CONFIG": "Profile",
+        "GAME_PLATFORM": "x64"
+      }
+    },
+    {
+      "name": "ninja-Debug-x64",
+      "generator": "Ninja Multi-Config",
+      "binaryDir": "${sourceDir}/build/${presetName}",
+      "architecture": {
+        "value": "x64",
+        "strategy": "external"
+      },
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "GAME_CONFIG": "Debug",
+        "GAME_PLATFORM": "x64"
+      }
+    },
+    {
+      "name": "msbuild-Final-x64",
+      "generator": "Visual Studio 17 2022",
+      "binaryDir": "${sourceDir}/build/${presetName}",
+      "architecture": {
+        "value": "x64",
+        "strategy": "external"
+      },
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "GAME_CONFIG": "Final",
+        "GAME_PLATFORM": "x64"
+      }
+    },
+    {
+      "name": "msbuild-Profile-x64",
+      "generator": "Visual Studio 17 2022",
+      "binaryDir": "${sourceDir}/build/${presetName}",
+      "architecture": {
+        "value": "x64",
+        "strategy": "external"
+      },
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "RelWithDebInfo",
+        "GAME_CONFIG": "Profile",
+        "GAME_PLATFORM": "x64"
+      }
+    },
+    {
+      "name": "msbuild-Debug-x64",
+      "generator": "Visual Studio 17 2022",
+      "binaryDir": "${sourceDir}/build/${presetName}",
+      "architecture": {
+        "value": "x64",
+        "strategy": "external"
+      },
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "GAME_CONFIG": "Debug",
+        "GAME_PLATFORM": "x64"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "ninja-Final-x64",
+      "displayName": "Ninja Final x64",
+      "configurePreset": "ninja-Final-x64",
+      "configuration": "Release"
+    },
+    {
+      "name": "ninja-Profile-x64",
+      "displayName": "Ninja Profile x64",
+      "configurePreset": "ninja-Profile-x64",
+      "configuration": "RelWithDebInfo"
+    },
+    {
+      "name": "ninja-Debug-x64",
+      "displayName": "Ninja Debug x64",
+      "configurePreset": "ninja-Debug-x64",
+      "configuration": "Debug"
+    },
+    {
+      "name": "msbuild-Final-x64",
+      "displayName": "MSBuild Final x64",
+      "configurePreset": "msbuild-Final-x64",
+      "configuration": "Release"
+    },
+    {
+      "name": "msbuild-Profile-x64",
+      "displayName": "MSBuild Profile x64",
+      "configurePreset": "msbuild-Profile-x64",
+      "configuration": "RelWithDebInfo"
+    },
+    {
+      "name": "msbuild-Debug-x64",
+      "displayName": "MSBuild Debug x64",
+      "configurePreset": "msbuild-Debug-x64",
+      "configuration": "Debug"
+    }
+  ]
+}

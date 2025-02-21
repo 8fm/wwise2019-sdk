@@ -1,0 +1,88 @@
+cmake_minimum_required(VERSION 3.18)
+project(Wwise)
+
+#set(CMAKE_VERBOSE_MAKEFILE ON)
+if (NOT CMAKE_BUILD_TYPE)
+    set(CMAKE_BUILD_TYPE "Release" CACHE STRING "" FORCE)
+endif()
+message("CMAKE_BUILD_TYPE=${CMAKE_BUILD_TYPE}")
+message("CMAKE_SYSTEM_NAME=${CMAKE_SYSTEM_NAME}")
+
+# GAME_CONFIG: Debug, Profile or Final
+if (NOT GAME_CONFIG)
+    set(GAME_CONFIG "Final" CACHE STRING "" FORCE)
+endif()
+message("GAME_CONFIG=${GAME_CONFIG}")
+
+# GAME_PLATFORM: x64 or arm64
+if (NOT GAME_PLATFORM)
+    set(GAME_PLATFORM "x64" CACHE STRING "" FORCE)
+endif()
+message("GAME_PLATFORM=${GAME_PLATFORM}")
+
+### Set up output paths
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/${CMAKE_SYSTEM_NAME}_${GAME_PLATFORM}/${GAME_CONFIG}/bin/IntegrationDemo)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELWITHDEBINFO ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
+
+### Definitions
+add_definitions(-DAUDIOKINETIC -DAKSOUNDENGINE_EXPORTS -D_CRT_STDIO_ARBITRARY_WIDE_SPECIFIERS -D_CRT_SECURE_NO_WARNINGS -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -D_UNICODE -DUNICODE)
+if (${GAME_CONFIG} STREQUAL "Debug")
+    add_definitions(-D_DEBUG)
+elseif (${GAME_CONFIG} STREQUAL "Profile")
+    add_definitions(-DNDEBUG)
+elseif (${GAME_CONFIG} STREQUAL "Final")
+    add_definitions(-DNDEBUG -DAK_OPTIMIZED)
+endif()
+
+### Compile options
+if (NOT MSVC)
+    add_compile_options(-std=c++14)
+    add_compile_options(-MMD -MP -g -fPIC -fvisibility=hidden -Wno-invalid-offsetof -fno-rtti -fno-exceptions)
+    if (NOT ${GAME_CONFIG} STREQUAL "Debug")
+        add_compile_options(-O3)
+    endif()
+
+    # Verbose output
+    add_compile_options(-v)
+    add_link_options(-v)
+endif()
+
+add_subdirectory(samples/Plugins/AkAudioInput/Sources/AudioEngineFX)
+add_subdirectory(samples/Plugins/AkDelay/Sources/AudioEngineFX)
+add_subdirectory(samples/Plugins/AkSineTone/Sources/AudioEngineFX)
+if (WIN32)
+add_subdirectory(samples/Plugins/AkSink/Sources/AudioEngineFX)
+endif()
+add_subdirectory(samples/Plugins/AkToneGenerator/Sources/AudioEngineFX)
+add_subdirectory(source/SoundEngine/AkAudiolib)
+add_subdirectory(source/SoundEngine/AkMemoryMgr)
+add_subdirectory(source/SoundEngine/AkMusicEngine)
+add_subdirectory(source/SoundEngine/Codecs/AkOpusDecoder)
+add_subdirectory(source/SoundEngine/Codecs/AkVorbisDecoder)
+if (NOT ${GAME_CONFIG} STREQUAL "Final") # CommunicationCentral
+    add_subdirectory(source/SoundEngine/Communication/Remote)
+endif()
+add_subdirectory(source/SoundEngine/Plugins/Effects/AkCompressor)
+add_subdirectory(source/SoundEngine/Plugins/Effects/AkExpander)
+add_subdirectory(source/SoundEngine/Plugins/Effects/AkFDNReverb)
+add_subdirectory(source/SoundEngine/Plugins/Effects/AkFlanger)
+add_subdirectory(source/SoundEngine/Plugins/Effects/AkGain)
+add_subdirectory(source/SoundEngine/Plugins/Effects/AkGuitarDistortion)
+add_subdirectory(source/SoundEngine/Plugins/Effects/AkHarmonizer)
+add_subdirectory(source/SoundEngine/Plugins/Effects/AkMeter)
+add_subdirectory(source/SoundEngine/Plugins/Effects/AkParametricEQ)
+add_subdirectory(source/SoundEngine/Plugins/Effects/AkPeakLimiter)
+add_subdirectory(source/SoundEngine/Plugins/Effects/AkPitchShifter)
+add_subdirectory(source/SoundEngine/Plugins/Effects/AkRecorder)
+add_subdirectory(source/SoundEngine/Plugins/Effects/AkRoomVerb)
+add_subdirectory(source/SoundEngine/Plugins/Effects/AkStereoDelay)
+add_subdirectory(source/SoundEngine/Plugins/Effects/AkTimeStretch)
+add_subdirectory(source/SoundEngine/Plugins/Effects/AkTremolo)
+add_subdirectory(source/SoundEngine/Plugins/Sources/AkSilenceSource)
+add_subdirectory(source/SoundEngine/Plugins/Sources/AkSynthOne)
+add_subdirectory(source/SpatialAudio)
+add_subdirectory(source/StreamManager)
+
+add_subdirectory(samples/IntegrationDemo)
