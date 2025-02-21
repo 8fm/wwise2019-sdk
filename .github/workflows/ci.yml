@@ -29,3 +29,28 @@ jobs:
       with:
         name: IntegrationDemo.${{ matrix.Configuration }}.${{ matrix.Platform }}.sln.ci-${{ github.run_number }}
         path: ${{ matrix.Platform }}_vc170/${{ matrix.Configuration }}/bin/IntegrationDemo/*.exe
+
+  windows-cmake:
+    name: Windows cmake ${{ matrix.Configuration }} ${{ matrix.Platform }}
+    runs-on: windows-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        Configuration: [Debug, Profile, Final]
+        Platform: [x64]
+    steps:
+    - uses: actions/checkout@main
+      with:
+        submodules: recursive
+
+    - uses: ilammy/msvc-dev-cmd@v1
+    - name: Build
+      run: |
+        cmake --preset='msbuild-${{ matrix.Configuration }}-${{ matrix.Platform }}'
+        cmake --build --preset='msbuild-${{ matrix.Configuration }}-${{ matrix.Platform }}'
+
+    - name: Upload artifacts
+      uses: actions/upload-artifact@main
+      with:
+        name: IntegrationDemo.${{ matrix.Configuration }}.${{ matrix.Platform }}.cmake.ci-${{ github.run_number }}
+        path: Windows_${{ matrix.Platform }}/${{ matrix.Configuration }}/bin/IntegrationDemo/*.exe
