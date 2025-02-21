@@ -1,0 +1,9 @@
+# ignore temp files
+.vs/
+*.user
+
+# ignore src builded files
+build/
+cmake-build-*/
+*_vc*/
+*_x64/
