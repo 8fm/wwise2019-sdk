@@ -56,14 +56,18 @@ jobs:
         path: Windows_${{ matrix.Platform }}/${{ matrix.Configuration }}/bin/IntegrationDemo/*.exe
 
   linux-cmake:
-    name: Linux cmake ${{ matrix.Configuration }} ${{ matrix.Platform }} ${{ matrix.Compiler }}
-    runs-on: ubuntu-24.04
+    name: Linux cmake ${{ matrix.Configuration }} ${{ matrix.os.Platform }} ${{ matrix.Compiler }}
     strategy:
       fail-fast: false
       matrix:
         Configuration: [Debug, Profile, Final]
-        Platform: [x64]
         Compiler: [gcc, clang]
+        os:
+          - Platform: x64
+            CI: ubuntu-24.04
+          - Platform: arm64
+            CI: ubuntu-24.04-arm
+    runs-on: ${{ matrix.os.CI }}
     steps:
     - uses: actions/checkout@main
       with:
