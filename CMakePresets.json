@@ -5,128 +5,133 @@
     "minor": 20,
     "patch": 0
   },
+  "buildPresets": [
+    { "name": "x64-Debug-gcc", "configurePreset": "x64-Debug-gcc", "configuration": "Debug" },
+    { "name": "x64-Profile-gcc", "configurePreset": "x64-Profile-gcc", "configuration": "RelWithDebInfo" },
+    { "name": "x64-Final-gcc", "configurePreset": "x64-Final-gcc", "configuration": "Release" },
+
+    { "name": "x64-Debug-clang", "configurePreset": "x64-Debug-clang", "configuration": "Debug" },
+    { "name": "x64-Profile-clang", "configurePreset": "x64-Profile-clang", "configuration": "RelWithDebInfo" },
+    { "name": "x64-Final-clang", "configurePreset": "x64-Final-clang", "configuration": "Release" },
+
+    { "name": "x64-Debug-VS2022", "configurePreset": "x64-Debug-VS2022", "configuration": "Debug" },
+    { "name": "x64-Profile-VS2022", "configurePreset": "x64-Profile-VS2022", "configuration": "RelWithDebInfo" },
+    { "name": "x64-Final-VS2022", "configurePreset": "x64-Final-VS2022", "configuration": "Release" }
+  ],
+
+
   "configurePresets": [
     {
-      "name": "ninja-Final-x64",
-      "generator": "Ninja Multi-Config",
-      "binaryDir": "${sourceDir}/build/${presetName}",
-      "architecture": {
-        "value": "x64",
-        "strategy": "external"
-      },
+      "name": "Base", "hidden": true,
+      "binaryDir": "${sourceDir}/build/${presetName}"
+    },
+    {
+      "name": "LinuxBaseGCC", "inherits": "Base", "hidden": true,
+      "generator": "Ninja",
+      "condition": { "type": "equals", "lhs": "${hostSystemName}", "rhs": "Linux" },
       "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "Release",
-        "GAME_CONFIG": "Final",
-        "GAME_PLATFORM": "x64"
+        "CMAKE_C_COMPILER": "gcc",
+        "CMAKE_CXX_COMPILER": "g++"
+      },
+      "vendor": {
+        "microsoft.com/VisualStudioSettings/CMake/1.0": { "hostOS": [ "Linux" ] }
       }
     },
     {
-      "name": "ninja-Profile-x64",
-      "generator": "Ninja Multi-Config",
-      "binaryDir": "${sourceDir}/build/${presetName}",
-      "architecture": {
-        "value": "x64",
-        "strategy": "external"
-      },
+      "name": "LinuxBaseClang", "inherits": "Base", "hidden": true,
+      "generator": "Ninja",
+      "condition": { "type": "equals", "lhs": "${hostSystemName}", "rhs": "Linux" },
       "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "RelWithDebInfo",
-        "GAME_CONFIG": "Profile",
-        "GAME_PLATFORM": "x64"
+        "CMAKE_C_COMPILER": "clang",
+        "CMAKE_CXX_COMPILER": "clang++"
+      },
+      "vendor": {
+        "microsoft.com/VisualStudioSettings/CMake/1.0": { "hostOS": [ "Linux" ] }
       }
     },
     {
-      "name": "ninja-Debug-x64",
-      "generator": "Ninja Multi-Config",
-      "binaryDir": "${sourceDir}/build/${presetName}",
-      "architecture": {
-        "value": "x64",
-        "strategy": "external"
-      },
-      "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "Debug",
-        "GAME_CONFIG": "Debug",
-        "GAME_PLATFORM": "x64"
-      }
-    },
-    {
-      "name": "msbuild-Final-x64",
+      "name": "WindowsBaseVS2022", "inherits": "Base", "hidden": true,
       "generator": "Visual Studio 17 2022",
-      "binaryDir": "${sourceDir}/build/${presetName}",
-      "architecture": {
-        "value": "x64",
-        "strategy": "external"
-      },
+      "condition": { "type": "inList", "string": "$env{VisualStudioVersion}", "list": [ "17.0", "" ] },
+      "vendor": {
+        "microsoft.com/VisualStudioSettings/CMake/1.0": { "hostOS": [ "Windows" ] }
+      }
+    },
+
+    {
+      "name": "x64-Debug-gcc", "inherits": "LinuxBaseGCC",
+      "architecture": { "value": "x64", "strategy": "external" },
       "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "Release",
-        "GAME_CONFIG": "Final",
-        "GAME_PLATFORM": "x64"
+        "CMAKE_BUILD_TYPE": "Debug", "CMAKE_CONFIGURATION_TYPES": "Debug",
+        "GAME_CONFIG": "Debug", "GAME_PLATFORM": "x64"
       }
     },
     {
-      "name": "msbuild-Profile-x64",
-      "generator": "Visual Studio 17 2022",
-      "binaryDir": "${sourceDir}/build/${presetName}",
-      "architecture": {
-        "value": "x64",
-        "strategy": "external"
-      },
+      "name": "x64-Profile-gcc", "inherits": "LinuxBaseGCC",
+      "architecture": { "value": "x64", "strategy": "external" },
       "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "RelWithDebInfo",
-        "GAME_CONFIG": "Profile",
-        "GAME_PLATFORM": "x64"
+        "CMAKE_BUILD_TYPE": "RelWithDebInfo", "CMAKE_CONFIGURATION_TYPES": "RelWithDebInfo",
+        "GAME_CONFIG": "Profile", "GAME_PLATFORM": "x64"
       }
     },
     {
-      "name": "msbuild-Debug-x64",
-      "generator": "Visual Studio 17 2022",
-      "binaryDir": "${sourceDir}/build/${presetName}",
-      "architecture": {
-        "value": "x64",
-        "strategy": "external"
-      },
+      "name": "x64-Final-gcc", "inherits": "LinuxBaseGCC",
+      "architecture": { "value": "x64", "strategy": "external" },
       "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "Debug",
-        "GAME_CONFIG": "Debug",
-        "GAME_PLATFORM": "x64"
+        "CMAKE_BUILD_TYPE": "Release", "CMAKE_CONFIGURATION_TYPES": "Release",
+        "GAME_CONFIG": "Final", "GAME_PLATFORM": "x64"
       }
-    }
-  ],
-  "buildPresets": [
+    },
+
     {
-      "name": "ninja-Final-x64",
-      "displayName": "Ninja Final x64",
-      "configurePreset": "ninja-Final-x64",
-      "configuration": "Release"
+      "name": "x64-Debug-clang", "inherits": "LinuxBaseClang",
+      "architecture": { "value": "x64", "strategy": "external" },
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug", "CMAKE_CONFIGURATION_TYPES": "Debug",
+        "GAME_CONFIG": "Debug", "GAME_PLATFORM": "x64"
+      }
     },
     {
-      "name": "ninja-Profile-x64",
-      "displayName": "Ninja Profile x64",
-      "configurePreset": "ninja-Profile-x64",
-      "configuration": "RelWithDebInfo"
+      "name": "x64-Profile-clang", "inherits": "LinuxBaseClang",
+      "architecture": { "value": "x64", "strategy": "external" },
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "RelWithDebInfo", "CMAKE_CONFIGURATION_TYPES": "RelWithDebInfo",
+        "GAME_CONFIG": "Profile", "GAME_PLATFORM": "x64"
+      }
     },
     {
-      "name": "ninja-Debug-x64",
-      "displayName": "Ninja Debug x64",
-      "configurePreset": "ninja-Debug-x64",
-      "configuration": "Debug"
+      "name": "x64-Final-clang", "inherits": "LinuxBaseClang",
+      "architecture": { "value": "x64", "strategy": "external" },
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release", "CMAKE_CONFIGURATION_TYPES": "Release",
+        "GAME_CONFIG": "Final", "GAME_PLATFORM": "x64"
+      }
+    },
+
+
+    {
+      "name": "x64-Debug-VS2022", "inherits": "WindowsBaseVS2022",
+      "architecture": { "value": "x64", "strategy": "external" },
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug", "CMAKE_CONFIGURATION_TYPES": "Debug",
+        "GAME_CONFIG": "Debug", "GAME_PLATFORM": "x64"
+      }
     },
     {
-      "name": "msbuild-Final-x64",
-      "displayName": "MSBuild Final x64",
-      "configurePreset": "msbuild-Final-x64",
-      "configuration": "Release"
+      "name": "x64-Profile-VS2022", "inherits": "WindowsBaseVS2022",
+      "architecture": { "value": "x64", "strategy": "external" },
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "RelWithDebInfo", "CMAKE_CONFIGURATION_TYPES": "RelWithDebInfo",
+        "GAME_CONFIG": "Profile", "GAME_PLATFORM": "x64"
+      }
     },
     {
-      "name": "msbuild-Profile-x64",
-      "displayName": "MSBuild Profile x64",
-      "configurePreset": "msbuild-Profile-x64",
-      "configuration": "RelWithDebInfo"
-    },
-    {
-      "name": "msbuild-Debug-x64",
-      "displayName": "MSBuild Debug x64",
-      "configurePreset": "msbuild-Debug-x64",
-      "configuration": "Debug"
+      "name": "x64-Final-VS2022", "inherits": "WindowsBaseVS2022",
+      "architecture": { "value": "x64", "strategy": "external" },
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release", "CMAKE_CONFIGURATION_TYPES": "Release",
+        "GAME_CONFIG": "Final", "GAME_PLATFORM": "x64"
+      }
     }
   ]
 }

@@ -46,8 +46,8 @@ jobs:
     - uses: ilammy/msvc-dev-cmd@v1
     - name: Build
       run: |
-        cmake --preset='msbuild-${{ matrix.Configuration }}-${{ matrix.Platform }}'
-        cmake --build --preset='msbuild-${{ matrix.Configuration }}-${{ matrix.Platform }}'
+        cmake --preset='${{ matrix.Platform }}-${{ matrix.Configuration }}-VS2022'
+        cmake --build --preset='${{ matrix.Platform }}-${{ matrix.Configuration }}-VS2022'
 
     - name: Upload artifacts
       uses: actions/upload-artifact@main
