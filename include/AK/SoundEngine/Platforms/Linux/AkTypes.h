@@ -36,10 +36,24 @@ the specific language governing permissions and limitations under the License.
 
 #define AK_LINUX
 
-#if defined __x86_64
-	#define AK_CPU_X86_64
-#elif defined __i386
-	#define AK_CPU_X86
+#if defined(__LP64__) || defined(_LP64)
+#ifdef __aarch64__
+#define AK_CPU_ARM_64
+#else
+#define AK_CPU_X86_64
+#define AKSIMD_V4F32_SUPPORTED
+#endif
+#else
+#ifdef __arm__
+#define AK_CPU_ARM
+#else
+#define AK_CPU_X86 //x86
+#define AKSIMD_V4F32_SUPPORTED
+#endif
+#endif
+
+#if (defined AK_CPU_ARM || defined AK_CPU_ARM_64)
+#define AK_CPU_ARM_NEON
 #endif
 
 #define AK_71AUDIO

@@ -15,7 +15,9 @@ endif()
 message("GAME_CONFIG=${GAME_CONFIG}")
 
 # GAME_PLATFORM: x64 or arm64
-if (NOT GAME_PLATFORM)
+if (CMAKE_SYSTEM_PROCESSOR STREQUAL "aarch64" OR CMAKE_SYSTEM_PROCESSOR STREQUAL "arm64")
+    set(GAME_PLATFORM "arm64" CACHE STRING "" FORCE)
+else()
     set(GAME_PLATFORM "x64" CACHE STRING "" FORCE)
 endif()
 message("GAME_PLATFORM=${GAME_PLATFORM}")
@@ -42,6 +44,9 @@ if (NOT MSVC)
     add_compile_options(-MMD -MP -g -fPIC -fvisibility=hidden -Wno-invalid-offsetof -fno-rtti -fno-exceptions)
     if (NOT ${GAME_CONFIG} STREQUAL "Debug")
         add_compile_options(-O3)
+    endif()
+    if (${GAME_PLATFORM} STREQUAL "arm64")
+        add_compile_options(-flax-vector-conversions)
     endif()
 
     # Verbose output
