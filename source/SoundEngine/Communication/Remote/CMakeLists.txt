@@ -19,12 +19,16 @@ set(SRC_FILES
 )
 
 if (WIN32)
+    set(STDAFX_H "PC/stdafx.h")
+    set(SYSTEM_INC "PC")
     list(APPEND SRC_FILES
         "PC/GameSocket.cpp"
         "PC/Network.cpp"
         "PC/stdafx.cpp"
     )
 else()
+    set(STDAFX_H "Linux/stdafx.h")
+    set(SYSTEM_INC "Linux")
     list(APPEND SRC_FILES
         "POSIX/GameSocket.cpp"
         "POSIX/Network.cpp"
@@ -34,7 +38,7 @@ endif()
 add_library(${PROJECT_NAME} STATIC ${SRC_FILES})
 
 target_include_directories(${PROJECT_NAME} PRIVATE
-    "PC"
+    ${SYSTEM_INC}
     "../Common"
     "CodeBase"
     "../../../../include"
@@ -48,5 +52,5 @@ target_link_libraries(${PROJECT_NAME})
 
 target_precompile_headers(${PROJECT_NAME}
     PRIVATE
-    "PC/stdafx.h"
+    ${STDAFX_H}
 )

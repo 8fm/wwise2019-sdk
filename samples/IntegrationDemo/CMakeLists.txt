@@ -135,12 +135,13 @@ else()
     )
     list(APPEND SRC_FILES
         "../SoundEngine/POSIX/AkDefaultIOHookBlocking.cpp"
-        "Linux/Drawing.cpp"
+        "../SoundEngine/POSIX/AkDefaultIOHookDeferred.cpp"
+        "Linux/DemoOptionsUtil.cpp"
         "Linux/InputMgr.cpp"
         "Linux/Main.cpp"
+        "Linux/Render_SDL.cpp"
         "Linux/SoundInput.cpp"
         "Linux/SoundInputMgr.cpp"
-        "FreetypeRenderer/FreetypeGraphicRenderer.cpp"
     )
     list(APPEND INTEGRATION_LIBS
         SDL2

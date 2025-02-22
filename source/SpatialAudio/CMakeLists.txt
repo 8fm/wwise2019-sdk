@@ -24,7 +24,12 @@ if (WIN32)
     )
 else()
     set(STDAFX_H "Linux/stdafx.h")
-    set(SYSTEM_INC "Linux" "../SoundEngine/AkAudiolib/Linux")
+    set(SYSTEM_INC
+        "Linux"
+        "POSIX"
+        "../SoundEngine/AkAudiolib/Linux"
+        "../SoundEngine/AkAudiolib/POSIX"
+    )
 endif()
 
 add_library(${PROJECT_NAME} STATIC ${SRC_FILES})

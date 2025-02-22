@@ -12,7 +12,6 @@ set(SRC_FILES
     "Tremor/FloatingPoint/AkVorbisCodec.cpp"
     "Tremor/FloatingPoint/codebook.cpp"
     "Tremor/FloatingPoint/floor1.cpp"
-    "Tremor/SIMD/AVX/floor1_avx.cpp"
     "Tremor/SIMD/SinCosGen.cpp"
     "Tremor/SIMD/dsp.cpp"
     "Tremor/SIMD/mdct_SIMD.cpp"
@@ -24,6 +23,7 @@ set(SRC_FILES
 )
 if (WIN32)
     set(SYSTEM_INC "../../AkAudiolib/Win32")
+    list(APPEND SRC_FILES "Tremor/SIMD/AVX/floor1_avx.cpp")
 else()
     set(SYSTEM_INC "../../AkAudiolib/Linux")
 endif()

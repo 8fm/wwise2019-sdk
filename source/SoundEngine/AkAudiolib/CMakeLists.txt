@@ -1,6 +1,6 @@
 project(AkSoundEngine)
 
-add_definitions(-DPROXYCENTRAL_CONNECTED -D__AVX2__)
+add_definitions(-DPROXYCENTRAL_CONNECTED)
 if (MSVC)
     add_compile_options(/wd4251 /wd4250 /wd4355)
 endif()
@@ -148,7 +148,6 @@ set(SRC_FILES
     "Common/AkVirtualAcousticsManager.cpp"
     "Common/BGMSinkParams.cpp"
     "Common/FileCaptureWriter.cpp"
-    "SoftwarePipeline/AVX2/AkResamplerAVX2.cpp"
     "SoftwarePipeline/AkADPCMCodec.cpp"
     "SoftwarePipeline/AkLEngine_SoftwarePipeline.cpp"
     "SoftwarePipeline/AkLPFCommon.cpp"
@@ -231,9 +230,14 @@ if (NOT ${GAME_CONFIG} STREQUAL "Final")
     )
 endif()
 if (WIN32)
+    add_definitions(-D__AVX2__)
     set(STDAFX_H "Win32/stdafx.h")
-    set(SYSTEM_INC "Win32")
+    set(SYSTEM_INC
+        "Win32"
+        "../../../../dxsdk\(June2010\)/Include"
+    )
     list(APPEND SRC_FILES
+        "SoftwarePipeline/AVX2/AkResamplerAVX2.cpp"
         "Win32/AkAudioThread.cpp"
         "Win32/AkLEngine.cpp"
         "Win32/AkSink.cpp"
@@ -247,8 +251,13 @@ else()
     set(STDAFX_H "Linux/stdafx.h")
     set(SYSTEM_INC "Linux" "POSIX")
     list(APPEND SRC_FILES
-        "Linux/stdafx.cpp"
         "POSIX/AkAudioThread.cpp"
+        "POSIX/AkTls.cpp"
+        "Linux/AkLEngine.cpp"
+        "Linux/AkSink.cpp"
+        "Linux/AkSinkALSA.cpp"
+        "Linux/AkSinkPulseAudio.cpp"
+        "Linux/PulseAudioAPI.cpp"
     )
 endif()
 
@@ -256,7 +265,6 @@ add_library(${PROJECT_NAME} STATIC ${SRC_FILES})
 
 target_include_directories(${PROJECT_NAME} PRIVATE
     ${SYSTEM_INC}
-    "../../../../dxsdk\(June2010\)/Include"
     "../../../include"
     "SoftwarePipeline"
     "Common"

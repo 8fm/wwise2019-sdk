@@ -38,7 +38,7 @@ endif()
 
 ### Compile options
 if (NOT MSVC)
-    add_compile_options(-std=c++14)
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14" CACHE STRING "" FORCE)
     add_compile_options(-MMD -MP -g -fPIC -fvisibility=hidden -Wno-invalid-offsetof -fno-rtti -fno-exceptions)
     if (NOT ${GAME_CONFIG} STREQUAL "Debug")
         add_compile_options(-O3)
