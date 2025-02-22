@@ -54,3 +54,26 @@ jobs:
       with:
         name: IntegrationDemo.${{ matrix.Configuration }}.${{ matrix.Platform }}.cmake.ci-${{ github.run_number }}
         path: Windows_${{ matrix.Platform }}/${{ matrix.Configuration }}/bin/IntegrationDemo/*.exe
+
+  linux-cmake:
+    name: Linux cmake ${{ matrix.Configuration }} ${{ matrix.Platform }} ${{ matrix.Compiler }}
+    runs-on: ubuntu-24.04
+    strategy:
+      fail-fast: false
+      matrix:
+        Configuration: [Debug, Profile, Final]
+        Platform: [x64]
+        Compiler: [gcc, clang]
+    steps:
+    - uses: actions/checkout@main
+      with:
+        submodules: recursive
+
+    - name: Install libs
+      run: |
+        sudo apt-get update
+        sudo apt-get install libsdl2-dev clang ninja-build
+    - name: Build
+      run: |
+        cmake --preset='${{ matrix.Platform }}-${{ matrix.Configuration }}-${{ matrix.Compiler }}'
+        cmake --build --preset='${{ matrix.Platform }}-${{ matrix.Configuration }}-${{ matrix.Compiler }}'
