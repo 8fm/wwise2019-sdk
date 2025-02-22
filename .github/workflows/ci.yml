@@ -46,8 +46,8 @@ jobs:
     - uses: ilammy/msvc-dev-cmd@v1
     - name: Build
       run: |
-        cmake --preset='${{ matrix.Platform }}-${{ matrix.Configuration }}-VS2022'
-        cmake --build --preset='${{ matrix.Platform }}-${{ matrix.Configuration }}-VS2022'
+        cmake --preset='${{ matrix.Configuration }}-VS2022'
+        cmake --build --preset='${{ matrix.Configuration }}-VS2022'
 
     - name: Upload artifacts
       uses: actions/upload-artifact@main
@@ -75,5 +75,5 @@ jobs:
         sudo apt-get install libsdl2-dev clang ninja-build
     - name: Build
       run: |
-        cmake --preset='${{ matrix.Platform }}-${{ matrix.Configuration }}-${{ matrix.Compiler }}'
-        cmake --build --preset='${{ matrix.Platform }}-${{ matrix.Configuration }}-${{ matrix.Compiler }}'
+        cmake --preset='${{ matrix.Configuration }}-${{ matrix.Compiler }}'
+        cmake --build --preset='${{ matrix.Configuration }}-${{ matrix.Compiler }}'

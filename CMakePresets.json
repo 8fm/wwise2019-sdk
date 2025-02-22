@@ -6,17 +6,17 @@
     "patch": 0
   },
   "buildPresets": [
-    { "name": "x64-Debug-gcc", "configurePreset": "x64-Debug-gcc", "configuration": "Debug" },
-    { "name": "x64-Profile-gcc", "configurePreset": "x64-Profile-gcc", "configuration": "RelWithDebInfo" },
-    { "name": "x64-Final-gcc", "configurePreset": "x64-Final-gcc", "configuration": "Release" },
+    { "name": "Debug-gcc", "configurePreset": "Debug-gcc", "configuration": "Debug" },
+    { "name": "Profile-gcc", "configurePreset": "Profile-gcc", "configuration": "RelWithDebInfo" },
+    { "name": "Final-gcc", "configurePreset": "Final-gcc", "configuration": "Release" },
 
-    { "name": "x64-Debug-clang", "configurePreset": "x64-Debug-clang", "configuration": "Debug" },
-    { "name": "x64-Profile-clang", "configurePreset": "x64-Profile-clang", "configuration": "RelWithDebInfo" },
-    { "name": "x64-Final-clang", "configurePreset": "x64-Final-clang", "configuration": "Release" },
+    { "name": "Debug-clang", "configurePreset": "Debug-clang", "configuration": "Debug" },
+    { "name": "Profile-clang", "configurePreset": "Profile-clang", "configuration": "RelWithDebInfo" },
+    { "name": "Final-clang", "configurePreset": "Final-clang", "configuration": "Release" },
 
-    { "name": "x64-Debug-VS2022", "configurePreset": "x64-Debug-VS2022", "configuration": "Debug" },
-    { "name": "x64-Profile-VS2022", "configurePreset": "x64-Profile-VS2022", "configuration": "RelWithDebInfo" },
-    { "name": "x64-Final-VS2022", "configurePreset": "x64-Final-VS2022", "configuration": "Release" }
+    { "name": "Debug-VS2022", "configurePreset": "Debug-VS2022", "configuration": "Debug" },
+    { "name": "Profile-VS2022", "configurePreset": "Profile-VS2022", "configuration": "RelWithDebInfo" },
+    { "name": "Final-VS2022", "configurePreset": "Final-VS2022", "configuration": "Release" }
   ],
 
 
@@ -59,78 +59,60 @@
     },
 
     {
-      "name": "x64-Debug-gcc", "inherits": "LinuxBaseGCC",
-      "architecture": { "value": "x64", "strategy": "external" },
+      "name": "Debug-gcc", "inherits": "LinuxBaseGCC",
       "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "Debug", "CMAKE_CONFIGURATION_TYPES": "Debug",
-        "GAME_CONFIG": "Debug", "GAME_PLATFORM": "x64"
+        "CMAKE_BUILD_TYPE": "Debug", "GAME_CONFIG": "Debug"
       }
     },
     {
-      "name": "x64-Profile-gcc", "inherits": "LinuxBaseGCC",
-      "architecture": { "value": "x64", "strategy": "external" },
+      "name": "Profile-gcc", "inherits": "LinuxBaseGCC",
       "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "RelWithDebInfo", "CMAKE_CONFIGURATION_TYPES": "RelWithDebInfo",
-        "GAME_CONFIG": "Profile", "GAME_PLATFORM": "x64"
+        "CMAKE_BUILD_TYPE": "RelWithDebInfo", "GAME_CONFIG": "Profile"
       }
     },
     {
-      "name": "x64-Final-gcc", "inherits": "LinuxBaseGCC",
-      "architecture": { "value": "x64", "strategy": "external" },
+      "name": "Final-gcc", "inherits": "LinuxBaseGCC",
       "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "Release", "CMAKE_CONFIGURATION_TYPES": "Release",
-        "GAME_CONFIG": "Final", "GAME_PLATFORM": "x64"
+        "CMAKE_BUILD_TYPE": "Release", "GAME_CONFIG": "Final"
       }
     },
 
     {
-      "name": "x64-Debug-clang", "inherits": "LinuxBaseClang",
-      "architecture": { "value": "x64", "strategy": "external" },
+      "name": "Debug-clang", "inherits": "LinuxBaseClang",
       "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "Debug", "CMAKE_CONFIGURATION_TYPES": "Debug",
-        "GAME_CONFIG": "Debug", "GAME_PLATFORM": "x64"
+        "CMAKE_BUILD_TYPE": "Debug", "GAME_CONFIG": "Debug"
       }
     },
     {
-      "name": "x64-Profile-clang", "inherits": "LinuxBaseClang",
-      "architecture": { "value": "x64", "strategy": "external" },
+      "name": "Profile-clang", "inherits": "LinuxBaseClang",
       "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "RelWithDebInfo", "CMAKE_CONFIGURATION_TYPES": "RelWithDebInfo",
-        "GAME_CONFIG": "Profile", "GAME_PLATFORM": "x64"
+        "CMAKE_BUILD_TYPE": "RelWithDebInfo", "GAME_CONFIG": "Profile"
       }
     },
     {
-      "name": "x64-Final-clang", "inherits": "LinuxBaseClang",
-      "architecture": { "value": "x64", "strategy": "external" },
+      "name": "Final-clang", "inherits": "LinuxBaseClang",
       "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "Release", "CMAKE_CONFIGURATION_TYPES": "Release",
-        "GAME_CONFIG": "Final", "GAME_PLATFORM": "x64"
+        "CMAKE_BUILD_TYPE": "Release", "GAME_CONFIG": "Final"
       }
     },
 
 
     {
-      "name": "x64-Debug-VS2022", "inherits": "WindowsBaseVS2022",
-      "architecture": { "value": "x64", "strategy": "external" },
+      "name": "Debug-VS2022", "inherits": "WindowsBaseVS2022",
       "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "Debug", "CMAKE_CONFIGURATION_TYPES": "Debug",
-        "GAME_CONFIG": "Debug", "GAME_PLATFORM": "x64"
+        "CMAKE_BUILD_TYPE": "Debug", "GAME_CONFIG": "Debug"
       }
     },
     {
-      "name": "x64-Profile-VS2022", "inherits": "WindowsBaseVS2022",
-      "architecture": { "value": "x64", "strategy": "external" },
+      "name": "Profile-VS2022", "inherits": "WindowsBaseVS2022",
       "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "RelWithDebInfo", "CMAKE_CONFIGURATION_TYPES": "RelWithDebInfo",
-        "GAME_CONFIG": "Profile", "GAME_PLATFORM": "x64"
+        "CMAKE_BUILD_TYPE": "RelWithDebInfo", "GAME_CONFIG": "Profile"
       }
     },
     {
-      "name": "x64-Final-VS2022", "inherits": "WindowsBaseVS2022",
-      "architecture": { "value": "x64", "strategy": "external" },
+      "name": "Final-VS2022", "inherits": "WindowsBaseVS2022",
       "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "Release", "CMAKE_CONFIGURATION_TYPES": "Release",
-        "GAME_CONFIG": "Final", "GAME_PLATFORM": "x64"
+        "CMAKE_BUILD_TYPE": "Release", "GAME_CONFIG": "Final"
       }
     }
   ]
